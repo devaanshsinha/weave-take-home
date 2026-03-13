@@ -50,6 +50,13 @@ export interface EngineerRawMetrics {
   mergeTimeHours: number[];
 }
 
+export interface EngineerRawScoreComponents {
+  shippedWork: number;
+  ownershipBreadth: number;
+  reviewLeverage: number;
+  executionQuality: number;
+}
+
 export interface EngineerSubscores {
   shipped_work: number;
   ownership_breadth: number;
@@ -61,6 +68,7 @@ export interface EngineerScoreBreakdown {
   login: string;
   finalScore: number;
   reasons: string[];
+  rawScores: EngineerRawScoreComponents;
   metrics: {
     authoredMergedPrs: number;
     authoredOpenedPrs: number;
@@ -77,4 +85,14 @@ export interface DashboardSummary {
   generatedAt: string;
   cutoffDate: string;
   engineerCount: number;
+  mergedPrCount: number;
+  top5: EngineerScoreBreakdown[];
+  top10: EngineerScoreBreakdown[];
+}
+
+export interface RankingWeights {
+  shippedWork: number;
+  ownershipBreadth: number;
+  reviewLeverage: number;
+  executionQuality: number;
 }
