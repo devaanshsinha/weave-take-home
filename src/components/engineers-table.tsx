@@ -17,7 +17,7 @@ export function EngineersTable({ engineers }: EngineersTableProps) {
   }
 
   return (
-    <section className="rounded-2xl border border-black/10 bg-white p-6 shadow-sm">
+    <section className="rounded-2xl border border-black/10 bg-white p-6">
       <div className="mb-4">
         <h2 className="text-lg font-semibold text-slate-900">Top 10 engineers</h2>
         <p className="mt-1 text-sm text-slate-600">
@@ -27,7 +27,7 @@ export function EngineersTable({ engineers }: EngineersTableProps) {
 
       <div className="overflow-x-auto">
         <table className="min-w-full text-left text-sm">
-          <thead className="border-b border-black/10 text-slate-500">
+          <thead className="border-b border-black/10 bg-slate-50 text-slate-500">
             <tr>
               <th className="px-3 py-3 font-medium">Engineer</th>
               <th className="px-3 py-3 font-medium">Score</th>

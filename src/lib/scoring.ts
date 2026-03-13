@@ -23,7 +23,7 @@ export function normalize(values: number[]): number[] {
   const max = Math.max(...values);
 
   if (min === max) {
-    return values.map(() => 100);
+    return values.map((value) => (value === 0 ? 0 : 100));
   }
 
   return values.map((value) => ((value - min) / (max - min)) * 100);
@@ -74,6 +74,13 @@ export function getMergeTimeHours(createdAt: string, mergedAt: string): number {
 }
 
 export function buildEngineerMetrics(pullRequests: PullRequestRecord[]): EngineerRawMetrics[] {
+  return buildEngineerMetricsWithOpenedCounts(pullRequests, {});
+}
+
+export function buildEngineerMetricsWithOpenedCounts(
+  pullRequests: PullRequestRecord[],
+  authoredOpenedCounts: Record<string, number>,
+): EngineerRawMetrics[] {
   const engineers = new Map<string, EngineerRawMetrics>();
   const reviewCounts = new Map<string, number>();
 
@@ -84,7 +91,7 @@ export function buildEngineerMetrics(pullRequests: PullRequestRecord[]): Enginee
       ({
         login: pullRequest.author,
         authoredMergedPrs: 0,
-        authoredOpenedPrs: 0,
+        authoredOpenedPrs: authoredOpenedCounts[pullRequest.author] ?? 0,
         reviewsGiven: 0,
         totalAdditions: 0,
         totalDeletions: 0,
@@ -94,7 +101,6 @@ export function buildEngineerMetrics(pullRequests: PullRequestRecord[]): Enginee
       } satisfies EngineerRawMetrics);
 
     current.authoredMergedPrs += 1;
-    current.authoredOpenedPrs += 1;
     current.totalAdditions += pullRequest.additions;
     current.totalDeletions += pullRequest.deletions;
     current.totalChangedFiles += pullRequest.changedFiles;
@@ -125,8 +131,29 @@ export function buildEngineerMetrics(pullRequests: PullRequestRecord[]): Enginee
     engineers.set(login, {
       login,
       authoredMergedPrs: 0,
-      authoredOpenedPrs: 0,
+      authoredOpenedPrs: authoredOpenedCounts[login] ?? 0,
       reviewsGiven: count,
+      totalAdditions: 0,
+      totalDeletions: 0,
+      totalChangedFiles: 0,
+      distinctAreas: [],
+      mergeTimeHours: [],
+    });
+  }
+
+  for (const [login, authoredOpenedPrs] of Object.entries(authoredOpenedCounts)) {
+    const existing = engineers.get(login);
+
+    if (existing) {
+      existing.authoredOpenedPrs = authoredOpenedPrs;
+      continue;
+    }
+
+    engineers.set(login, {
+      login,
+      authoredMergedPrs: 0,
+      authoredOpenedPrs,
+      reviewsGiven: 0,
       totalAdditions: 0,
       totalDeletions: 0,
       totalChangedFiles: 0,
@@ -173,9 +200,16 @@ export function computeRawScoreComponents(
 
 export function buildEngineerRankings(
   pullRequests: PullRequestRecord[],
-  weights: RankingWeights = DEFAULT_RANKING_WEIGHTS,
+  options?: {
+    weights?: RankingWeights;
+    authoredOpenedCounts?: Record<string, number>;
+  },
 ): EngineerScoreBreakdown[] {
-  const engineers = buildEngineerMetrics(pullRequests);
+  const weights = options?.weights ?? DEFAULT_RANKING_WEIGHTS;
+  const engineers = buildEngineerMetricsWithOpenedCounts(
+    pullRequests,
+    options?.authoredOpenedCounts ?? {},
+  );
   const rawScores = computeRawScoreComponents(engineers);
 
   const shippedValues = normalize(rawScores.map((score) => score.shippedWork));
@@ -233,9 +267,13 @@ function buildReasonBullets(
   const bullets: string[] = [];
 
   if (engineer.authoredMergedPrs > 0) {
-    bullets.push(
-      `Shipped ${engineer.authoredMergedPrs} merged PRs across ${Math.max(engineer.distinctAreas.length, 1)} code areas`,
-    );
+    if (engineer.distinctAreas.length > 0) {
+      bullets.push(
+        `Shipped ${engineer.authoredMergedPrs} merged PRs across ${engineer.distinctAreas.length} code areas`,
+      );
+    } else {
+      bullets.push(`Shipped ${engineer.authoredMergedPrs} merged PRs in the last 90 days`);
+    }
   }
 
   if (engineer.reviewsGiven > 0) {

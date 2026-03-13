@@ -18,11 +18,19 @@ export default async function Home() {
   const { summary, engineers } = await getDashboardData();
   const topFive = summary.top5.length > 0 ? summary.top5 : engineers.slice(0, 5);
   const topTen = summary.top10.length > 0 ? summary.top10 : engineers.slice(0, 10);
+  const hasAreaData = engineers.some((engineer) => engineer.metrics.distinctAreas.length > 0);
+  const hasReviewData = engineers.some((engineer) => engineer.metrics.reviewsGiven > 0);
+  const dataCompleteness =
+    hasAreaData && hasReviewData
+      ? "Full snapshot"
+      : hasAreaData || hasReviewData
+        ? "Partially enriched snapshot"
+        : "PR-only snapshot";
 
   return (
     <main className="min-h-screen bg-[#f5f7fb] text-slate-900">
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-8 px-5 py-8 md:px-8 lg:px-10">
-        <section className="rounded-3xl bg-slate-900 px-6 py-8 text-white shadow-sm md:px-8">
+        <section className="rounded-3xl border border-slate-900 bg-slate-900 px-6 py-8 text-white md:px-8">
           <p className="text-xs font-medium uppercase tracking-[0.22em] text-slate-300">
             Engineering impact
           </p>
@@ -35,7 +43,7 @@ export default async function Home() {
             precomputed GitHub snapshot so reviewers are not blocked on live API fetches.
           </p>
 
-          <div className="mt-6 grid gap-4 text-sm md:grid-cols-4">
+          <div className="mt-6 grid gap-4 text-sm md:grid-cols-5">
             <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
               <p className="text-slate-400">Repository</p>
               <p className="mt-1 font-medium text-white">{summary.repo}</p>
@@ -45,6 +53,10 @@ export default async function Home() {
               <p className="mt-1 font-medium text-white">
                 {formatSnapshotDate(summary.generatedAt)}
               </p>
+            </div>
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <p className="text-slate-400">Snapshot status</p>
+              <p className="mt-1 font-medium text-white">{dataCompleteness}</p>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
               <p className="text-slate-400">Merged PRs</p>
@@ -57,26 +69,48 @@ export default async function Home() {
           </div>
         </section>
 
-        <section className="rounded-2xl border border-black/10 bg-white p-6 shadow-sm">
+        <section className="rounded-2xl border border-black/10 bg-white p-6">
           <h2 className="text-lg font-semibold text-slate-900">How the metric works</h2>
           <div className="mt-4 grid gap-4 text-sm text-slate-600 md:grid-cols-4">
             <div>
               <p className="font-medium text-slate-900">Shipped work</p>
-              <p className="mt-1">Merged output, scaled to avoid rewarding raw volume alone.</p>
+              <p className="mt-1">
+                Weighted from merged PR count, code churn, and changed files with log scaling
+                so one giant PR does not dominate.
+              </p>
             </div>
             <div>
               <p className="font-medium text-slate-900">Ownership breadth</p>
-              <p className="mt-1">Distinct top-level code areas touched across shipped work.</p>
+              <p className="mt-1">
+                Counts distinct top-level code areas inferred from file paths rather than raw
+                file totals.
+              </p>
             </div>
             <div>
               <p className="font-medium text-slate-900">Review leverage</p>
-              <p className="mt-1">How much an engineer helps others move work forward.</p>
+              <p className="mt-1">
+                Rewards reviewers who help peers move work forward instead of looking only at
+                authored output.
+              </p>
             </div>
             <div>
               <p className="font-medium text-slate-900">Execution quality</p>
-              <p className="mt-1">Merge rate and time-to-merge as pragmatic delivery signals.</p>
+              <p className="mt-1">
+                Uses merge rate and median time to merge as pragmatic delivery signals, not as
+                absolute performance measures.
+              </p>
             </div>
           </div>
+          <p className="mt-4 border-t border-black/10 pt-4 text-xs leading-5 text-slate-500">
+            Impact is inferred from GitHub collaboration signals, not direct performance
+            evaluation. Snapshot data is precomputed for speed and reliability.
+          </p>
+          {dataCompleteness !== "Full snapshot" ? (
+            <p className="mt-3 text-xs leading-5 text-amber-700">
+              Current data status: {dataCompleteness}. Some dimensions may be understated until
+              review and file enrichment is fully present in the snapshot.
+            </p>
+          ) : null}
         </section>
 
         <section>

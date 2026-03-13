@@ -1,6 +1,830 @@
 {
   "repo": "PostHog/posthog",
-  "generatedAt": "2026-03-13T09:09:48.064Z",
-  "cutoffDate": "2025-12-13T10:04:06.282Z",
-  "engineerCount": 146
+  "generatedAt": "2026-03-13T09:28:14.009Z",
+  "cutoffDate": "2025-12-13T10:20:20.956Z",
+  "engineerCount": 166,
+  "mergedPrCount": 5204,
+  "top5": [
+    {
+      "login": "rafaeelaudibert",
+      "finalScore": 87.7,
+      "reasons": [
+        "Shipped 147 merged PRs across 38 code areas",
+        "Reviewed 479 peer PRs during the window",
+        "Created leverage through above-average code review activity"
+      ],
+      "rawScores": {
+        "shippedWork": 26.10518659520539,
+        "ownershipBreadth": 3.6635616461296463,
+        "reviewLeverage": 6.173786103901937,
+        "executionQuality": 0.09302512475500732
+      },
+      "metrics": {
+        "authoredMergedPrs": 147,
+        "authoredOpenedPrs": 0,
+        "reviewsGiven": 479,
+        "distinctAreas": [
+          ".agents",
+          ".claude",
+          ".config",
+          ".devcontainer",
+          ".env.example",
+          ".flox",
+          ".github",
+          ".gitignore",
+          ".oxfmtrc.json",
+          ".oxlintrc.json",
+          ".prettierignore",
+          ".stylelintignore",
+          ".test_durations",
+          ".vscode",
+          ".watchmanconfig",
+          "AGENTS.md",
+          "bin",
+          "cli",
+          "common",
+          "devenv",
+          "docs",
+          "ee",
+          "frontend",
+          "hedgebox-dummy",
+          "livestream",
+          "nodejs",
+          "package.json",
+          "playwright",
+          "pnpm-lock.yaml",
+          "pnpm-workspace.yaml",
+          "posthog",
+          "products",
+          "pyproject.toml",
+          "rust",
+          "services",
+          "test-snapshot-resolver.js",
+          "tsconfig.json",
+          "uv.lock"
+        ],
+        "mergeRate": 0,
+        "medianTimeToMergeHours": 23.2
+      },
+      "subscores": {
+        "shipped_work": 100,
+        "ownership_breadth": 94.1,
+        "review_leverage": 100,
+        "execution_quality": 27.8
+      }
+    },
+    {
+      "login": "webjunkie",
+      "finalScore": 85.5,
+      "reasons": [
+        "Shipped 146 merged PRs across 48 code areas",
+        "Reviewed 134 peer PRs during the window",
+        "Touched 48 distinct top-level code areas"
+      ],
+      "rawScores": {
+        "shippedWork": 25.66266249175245,
+        "ownershipBreadth": 3.8918202981106265,
+        "reviewLeverage": 4.90527477843843,
+        "executionQuality": 0.1177559331188804
+      },
+      "metrics": {
+        "authoredMergedPrs": 146,
+        "authoredOpenedPrs": 0,
+        "reviewsGiven": 134,
+        "distinctAreas": [
+          ".agents",
+          ".claude",
+          ".flox",
+          ".github",
+          ".gitignore",
+          ".husky",
+          ".oxlintrc.json",
+          ".semgrep",
+          ".test_durations",
+          ".watchmanconfig",
+          "AGENTS.md",
+          "CLAUDE.md",
+          "Dockerfile",
+          "Dockerfile.ai-evals",
+          "README.md",
+          "bin",
+          "common",
+          "devenv",
+          "docker-compose.base.yml",
+          "docker-compose.dev-coordinator.yml",
+          "docker-compose.dev-full.yml",
+          "docker-compose.dev-minimal.yml",
+          "docker-compose.dev.yml",
+          "docker-compose.hobby.yml",
+          "docker-compose.profiles.yml",
+          "docs",
+          "ee",
+          "frontend",
+          "greptile.json",
+          "mypy-baseline.txt",
+          "mypy.ini",
+          "nodejs",
+          "package.json",
+          "playwright",
+          "pnpm-lock.yaml",
+          "pnpm-workspace.yaml",
+          "posthog",
+          "products",
+          "pyproject.toml",
+          "rust",
+          "services",
+          "share",
+          "tach.toml",
+          "test-runner-jest-environment.js",
+          "tools",
+          "turbo.json",
+          "ty-baseline.txt",
+          "uv.lock"
+        ],
+        "mergeRate": 0,
+        "medianTimeToMergeHours": 10.8
+      },
+      "subscores": {
+        "shipped_work": 98.3,
+        "ownership_breadth": 100,
+        "review_leverage": 79.5,
+        "execution_quality": 35.2
+      }
+    },
+    {
+      "login": "pauldambra",
+      "finalScore": 81.1,
+      "reasons": [
+        "Shipped 209 merged PRs across 23 code areas",
+        "Reviewed 310 peer PRs during the window",
+        "Created leverage through above-average code review activity"
+      ],
+      "rawScores": {
+        "shippedWork": 23.890443758850914,
+        "ownershipBreadth": 3.1780538303479458,
+        "reviewLeverage": 5.739792912179234,
+        "executionQuality": 0.12131782996020624
+      },
+      "metrics": {
+        "authoredMergedPrs": 209,
+        "authoredOpenedPrs": 0,
+        "reviewsGiven": 310,
+        "distinctAreas": [
+          ".claude",
+          ".github",
+          ".idea",
+          "AGENTS.md",
+          "_tmp_55540_b174ca869c51fd1a4f68613650fecc0e",
+          "bin",
+          "common",
+          "docker",
+          "docker-compose.base.yml",
+          "docker-compose.hobby.yml",
+          "docs",
+          "ee",
+          "frontend",
+          "livestream",
+          "nodejs",
+          "package.json",
+          "playwright",
+          "plugin-server",
+          "pnpm-lock.yaml",
+          "pnpm-workspace.yaml",
+          "posthog",
+          "products",
+          "rust"
+        ],
+        "mergeRate": 0,
+        "medianTimeToMergeHours": 9.9
+      },
+      "subscores": {
+        "shipped_work": 91.5,
+        "ownership_breadth": 81.7,
+        "review_leverage": 93,
+        "execution_quality": 36.2
+      }
+    },
+    {
+      "login": "joshsny",
+      "finalScore": 80.6,
+      "reasons": [
+        "Shipped 78 merged PRs across 17 code areas",
+        "Reviewed 144 peer PRs during the window",
+        "Balanced shipping volume, repo breadth, and execution efficiency"
+      ],
+      "rawScores": {
+        "shippedWork": 21.919666535452535,
+        "ownershipBreadth": 2.8903717578961645,
+        "reviewLeverage": 4.976733742420574,
+        "executionQuality": 0.2754509915674561
+      },
+      "metrics": {
+        "authoredMergedPrs": 78,
+        "authoredOpenedPrs": 0,
+        "reviewsGiven": 144,
+        "distinctAreas": [
+          ".env.example",
+          ".github",
+          ".gitignore",
+          ".oxlintrc.json",
+          ".prettierignore",
+          "bin",
+          "common",
+          "docker-compose.base.yml",
+          "ee",
+          "frontend",
+          "pnpm-lock.yaml",
+          "pnpm-workspace.yaml",
+          "posthog",
+          "products",
+          "pyproject.toml",
+          "services",
+          "uv.lock"
+        ],
+        "mergeRate": 0,
+        "medianTimeToMergeHours": 1
+      },
+      "subscores": {
+        "shipped_work": 84,
+        "ownership_breadth": 74.3,
+        "review_leverage": 80.6,
+        "execution_quality": 82.2
+      }
+    },
+    {
+      "login": "andrewm4894",
+      "finalScore": 79.4,
+      "reasons": [
+        "Shipped 218 merged PRs across 17 code areas",
+        "Reviewed 136 peer PRs during the window",
+        "Balanced shipping volume, repo breadth, and execution efficiency"
+      ],
+      "rawScores": {
+        "shippedWork": 24.231644612160267,
+        "ownershipBreadth": 2.8903717578961645,
+        "reviewLeverage": 4.919980925828125,
+        "executionQuality": 0.17343931075925934
+      },
+      "metrics": {
+        "authoredMergedPrs": 218,
+        "authoredOpenedPrs": 0,
+        "reviewsGiven": 136,
+        "distinctAreas": [
+          ".claude",
+          ".github",
+          ".semgrep",
+          "Dockerfile.llm-analytics",
+          "bin",
+          "common",
+          "docs",
+          "ee",
+          "frontend",
+          "nodejs",
+          "plugin-server",
+          "pnpm-lock.yaml",
+          "posthog",
+          "products",
+          "pyproject.toml",
+          "services",
+          "uv.lock"
+        ],
+        "mergeRate": 0,
+        "medianTimeToMergeHours": 3.6
+      },
+      "subscores": {
+        "shipped_work": 92.8,
+        "ownership_breadth": 74.3,
+        "review_leverage": 79.7,
+        "execution_quality": 51.8
+      }
+    }
+  ],
+  "top10": [
+    {
+      "login": "rafaeelaudibert",
+      "finalScore": 87.7,
+      "reasons": [
+        "Shipped 147 merged PRs across 38 code areas",
+        "Reviewed 479 peer PRs during the window",
+        "Created leverage through above-average code review activity"
+      ],
+      "rawScores": {
+        "shippedWork": 26.10518659520539,
+        "ownershipBreadth": 3.6635616461296463,
+        "reviewLeverage": 6.173786103901937,
+        "executionQuality": 0.09302512475500732
+      },
+      "metrics": {
+        "authoredMergedPrs": 147,
+        "authoredOpenedPrs": 0,
+        "reviewsGiven": 479,
+        "distinctAreas": [
+          ".agents",
+          ".claude",
+          ".config",
+          ".devcontainer",
+          ".env.example",
+          ".flox",
+          ".github",
+          ".gitignore",
+          ".oxfmtrc.json",
+          ".oxlintrc.json",
+          ".prettierignore",
+          ".stylelintignore",
+          ".test_durations",
+          ".vscode",
+          ".watchmanconfig",
+          "AGENTS.md",
+          "bin",
+          "cli",
+          "common",
+          "devenv",
+          "docs",
+          "ee",
+          "frontend",
+          "hedgebox-dummy",
+          "livestream",
+          "nodejs",
+          "package.json",
+          "playwright",
+          "pnpm-lock.yaml",
+          "pnpm-workspace.yaml",
+          "posthog",
+          "products",
+          "pyproject.toml",
+          "rust",
+          "services",
+          "test-snapshot-resolver.js",
+          "tsconfig.json",
+          "uv.lock"
+        ],
+        "mergeRate": 0,
+        "medianTimeToMergeHours": 23.2
+      },
+      "subscores": {
+        "shipped_work": 100,
+        "ownership_breadth": 94.1,
+        "review_leverage": 100,
+        "execution_quality": 27.8
+      }
+    },
+    {
+      "login": "webjunkie",
+      "finalScore": 85.5,
+      "reasons": [
+        "Shipped 146 merged PRs across 48 code areas",
+        "Reviewed 134 peer PRs during the window",
+        "Touched 48 distinct top-level code areas"
+      ],
+      "rawScores": {
+        "shippedWork": 25.66266249175245,
+        "ownershipBreadth": 3.8918202981106265,
+        "reviewLeverage": 4.90527477843843,
+        "executionQuality": 0.1177559331188804
+      },
+      "metrics": {
+        "authoredMergedPrs": 146,
+        "authoredOpenedPrs": 0,
+        "reviewsGiven": 134,
+        "distinctAreas": [
+          ".agents",
+          ".claude",
+          ".flox",
+          ".github",
+          ".gitignore",
+          ".husky",
+          ".oxlintrc.json",
+          ".semgrep",
+          ".test_durations",
+          ".watchmanconfig",
+          "AGENTS.md",
+          "CLAUDE.md",
+          "Dockerfile",
+          "Dockerfile.ai-evals",
+          "README.md",
+          "bin",
+          "common",
+          "devenv",
+          "docker-compose.base.yml",
+          "docker-compose.dev-coordinator.yml",
+          "docker-compose.dev-full.yml",
+          "docker-compose.dev-minimal.yml",
+          "docker-compose.dev.yml",
+          "docker-compose.hobby.yml",
+          "docker-compose.profiles.yml",
+          "docs",
+          "ee",
+          "frontend",
+          "greptile.json",
+          "mypy-baseline.txt",
+          "mypy.ini",
+          "nodejs",
+          "package.json",
+          "playwright",
+          "pnpm-lock.yaml",
+          "pnpm-workspace.yaml",
+          "posthog",
+          "products",
+          "pyproject.toml",
+          "rust",
+          "services",
+          "share",
+          "tach.toml",
+          "test-runner-jest-environment.js",
+          "tools",
+          "turbo.json",
+          "ty-baseline.txt",
+          "uv.lock"
+        ],
+        "mergeRate": 0,
+        "medianTimeToMergeHours": 10.8
+      },
+      "subscores": {
+        "shipped_work": 98.3,
+        "ownership_breadth": 100,
+        "review_leverage": 79.5,
+        "execution_quality": 35.2
+      }
+    },
+    {
+      "login": "pauldambra",
+      "finalScore": 81.1,
+      "reasons": [
+        "Shipped 209 merged PRs across 23 code areas",
+        "Reviewed 310 peer PRs during the window",
+        "Created leverage through above-average code review activity"
+      ],
+      "rawScores": {
+        "shippedWork": 23.890443758850914,
+        "ownershipBreadth": 3.1780538303479458,
+        "reviewLeverage": 5.739792912179234,
+        "executionQuality": 0.12131782996020624
+      },
+      "metrics": {
+        "authoredMergedPrs": 209,
+        "authoredOpenedPrs": 0,
+        "reviewsGiven": 310,
+        "distinctAreas": [
+          ".claude",
+          ".github",
+          ".idea",
+          "AGENTS.md",
+          "_tmp_55540_b174ca869c51fd1a4f68613650fecc0e",
+          "bin",
+          "common",
+          "docker",
+          "docker-compose.base.yml",
+          "docker-compose.hobby.yml",
+          "docs",
+          "ee",
+          "frontend",
+          "livestream",
+          "nodejs",
+          "package.json",
+          "playwright",
+          "plugin-server",
+          "pnpm-lock.yaml",
+          "pnpm-workspace.yaml",
+          "posthog",
+          "products",
+          "rust"
+        ],
+        "mergeRate": 0,
+        "medianTimeToMergeHours": 9.9
+      },
+      "subscores": {
+        "shipped_work": 91.5,
+        "ownership_breadth": 81.7,
+        "review_leverage": 93,
+        "execution_quality": 36.2
+      }
+    },
+    {
+      "login": "joshsny",
+      "finalScore": 80.6,
+      "reasons": [
+        "Shipped 78 merged PRs across 17 code areas",
+        "Reviewed 144 peer PRs during the window",
+        "Balanced shipping volume, repo breadth, and execution efficiency"
+      ],
+      "rawScores": {
+        "shippedWork": 21.919666535452535,
+        "ownershipBreadth": 2.8903717578961645,
+        "reviewLeverage": 4.976733742420574,
+        "executionQuality": 0.2754509915674561
+      },
+      "metrics": {
+        "authoredMergedPrs": 78,
+        "authoredOpenedPrs": 0,
+        "reviewsGiven": 144,
+        "distinctAreas": [
+          ".env.example",
+          ".github",
+          ".gitignore",
+          ".oxlintrc.json",
+          ".prettierignore",
+          "bin",
+          "common",
+          "docker-compose.base.yml",
+          "ee",
+          "frontend",
+          "pnpm-lock.yaml",
+          "pnpm-workspace.yaml",
+          "posthog",
+          "products",
+          "pyproject.toml",
+          "services",
+          "uv.lock"
+        ],
+        "mergeRate": 0,
+        "medianTimeToMergeHours": 1
+      },
+      "subscores": {
+        "shipped_work": 84,
+        "ownership_breadth": 74.3,
+        "review_leverage": 80.6,
+        "execution_quality": 82.2
+      }
+    },
+    {
+      "login": "andrewm4894",
+      "finalScore": 79.4,
+      "reasons": [
+        "Shipped 218 merged PRs across 17 code areas",
+        "Reviewed 136 peer PRs during the window",
+        "Balanced shipping volume, repo breadth, and execution efficiency"
+      ],
+      "rawScores": {
+        "shippedWork": 24.231644612160267,
+        "ownershipBreadth": 2.8903717578961645,
+        "reviewLeverage": 4.919980925828125,
+        "executionQuality": 0.17343931075925934
+      },
+      "metrics": {
+        "authoredMergedPrs": 218,
+        "authoredOpenedPrs": 0,
+        "reviewsGiven": 136,
+        "distinctAreas": [
+          ".claude",
+          ".github",
+          ".semgrep",
+          "Dockerfile.llm-analytics",
+          "bin",
+          "common",
+          "docs",
+          "ee",
+          "frontend",
+          "nodejs",
+          "plugin-server",
+          "pnpm-lock.yaml",
+          "posthog",
+          "products",
+          "pyproject.toml",
+          "services",
+          "uv.lock"
+        ],
+        "mergeRate": 0,
+        "medianTimeToMergeHours": 3.6
+      },
+      "subscores": {
+        "shipped_work": 92.8,
+        "ownership_breadth": 74.3,
+        "review_leverage": 79.7,
+        "execution_quality": 51.8
+      }
+    },
+    {
+      "login": "skoob13",
+      "finalScore": 77.4,
+      "reasons": [
+        "Shipped 95 merged PRs across 17 code areas",
+        "Reviewed 140 peer PRs during the window",
+        "Balanced shipping volume, repo breadth, and execution efficiency"
+      ],
+      "rawScores": {
+        "shippedWork": 22.875708014112504,
+        "ownershipBreadth": 2.8903717578961645,
+        "reviewLeverage": 4.948759890378168,
+        "executionQuality": 0.17296998527523566
+      },
+      "metrics": {
+        "authoredMergedPrs": 95,
+        "authoredOpenedPrs": 0,
+        "reviewsGiven": 140,
+        "distinctAreas": [
+          ".agents",
+          ".claude",
+          ".cursor",
+          ".github",
+          ".gitignore",
+          ".prettierignore",
+          ".vscode",
+          "common",
+          "docs",
+          "ee",
+          "frontend",
+          "pnpm-lock.yaml",
+          "posthog",
+          "products",
+          "pyproject.toml",
+          "services",
+          "uv.lock"
+        ],
+        "mergeRate": 0,
+        "medianTimeToMergeHours": 3.7
+      },
+      "subscores": {
+        "shipped_work": 87.6,
+        "ownership_breadth": 74.3,
+        "review_leverage": 80.2,
+        "execution_quality": 51.6
+      }
+    },
+    {
+      "login": "jose-sequeira",
+      "finalScore": 77,
+      "reasons": [
+        "Shipped 81 merged PRs across 24 code areas",
+        "Reviewed 147 peer PRs during the window",
+        "Balanced shipping volume, repo breadth, and execution efficiency"
+      ],
+      "rawScores": {
+        "shippedWork": 22.72107970967091,
+        "ownershipBreadth": 3.2188758248682006,
+        "reviewLeverage": 4.997212273764115,
+        "executionQuality": 0.11967256315195439
+      },
+      "metrics": {
+        "authoredMergedPrs": 81,
+        "authoredOpenedPrs": 0,
+        "reviewsGiven": 147,
+        "distinctAreas": [
+          ".flox",
+          ".github",
+          ".nvmrc",
+          "Dockerfile",
+          "Dockerfile.node",
+          "common",
+          "docker",
+          "docker-compose.base.yml",
+          "docker-compose.dev-full.yml",
+          "docker-compose.dev.yml",
+          "docker-compose.hobby.yml",
+          "ee",
+          "frontend",
+          "mypy-baseline.txt",
+          "nodejs",
+          "package.json",
+          "plugin-server",
+          "pnpm-lock.yaml",
+          "posthog",
+          "products",
+          "proto",
+          "pyproject.toml",
+          "rust",
+          "uv.lock"
+        ],
+        "mergeRate": 0,
+        "medianTimeToMergeHours": 10.3
+      },
+      "subscores": {
+        "shipped_work": 87,
+        "ownership_breadth": 82.7,
+        "review_leverage": 80.9,
+        "execution_quality": 35.7
+      }
+    },
+    {
+      "login": "oliverb123",
+      "finalScore": 76.1,
+      "reasons": [
+        "Shipped 53 merged PRs across 16 code areas",
+        "Reviewed 98 peer PRs during the window",
+        "Balanced shipping volume, repo breadth, and execution efficiency"
+      ],
+      "rawScores": {
+        "shippedWork": 20.366337901252777,
+        "ownershipBreadth": 2.833213344056216,
+        "reviewLeverage": 4.59511985013459,
+        "executionQuality": 0.2650318087838229
+      },
+      "metrics": {
+        "authoredMergedPrs": 53,
+        "authoredOpenedPrs": 0,
+        "reviewsGiven": 98,
+        "distinctAreas": [
+          ".flox",
+          ".github",
+          ".gitignore",
+          "Dockerfile",
+          "Dockerfile.node",
+          "bin",
+          "cli",
+          "docker-compose.hobby.yml",
+          "ee",
+          "frontend",
+          "playwright",
+          "posthog",
+          "products",
+          "rust",
+          "services",
+          "tach.toml"
+        ],
+        "mergeRate": 0,
+        "medianTimeToMergeHours": 1.1
+      },
+      "subscores": {
+        "shipped_work": 78,
+        "ownership_breadth": 72.8,
+        "review_leverage": 74.4,
+        "execution_quality": 79.1
+      }
+    },
+    {
+      "login": "Piccirello",
+      "finalScore": 76.1,
+      "reasons": [
+        "Shipped 97 merged PRs across 14 code areas",
+        "Reviewed 195 peer PRs during the window",
+        "Created leverage through above-average code review activity"
+      ],
+      "rawScores": {
+        "shippedWork": 21.80570065662089,
+        "ownershipBreadth": 2.70805020110221,
+        "reviewLeverage": 5.278114659230518,
+        "executionQuality": 0.18376686960822516
+      },
+      "metrics": {
+        "authoredMergedPrs": 97,
+        "authoredOpenedPrs": 0,
+        "reviewsGiven": 195,
+        "distinctAreas": [
+          ".github",
+          ".semgrep",
+          "AGENTS.md",
+          "ee",
+          "frontend",
+          "mypy-baseline.txt",
+          "nodejs",
+          "package.json",
+          "pnpm-lock.yaml",
+          "posthog",
+          "products",
+          "pyproject.toml",
+          "services",
+          "uv.lock"
+        ],
+        "mergeRate": 0,
+        "medianTimeToMergeHours": 3.1
+      },
+      "subscores": {
+        "shipped_work": 83.5,
+        "ownership_breadth": 69.6,
+        "review_leverage": 85.5,
+        "execution_quality": 54.9
+      }
+    },
+    {
+      "login": "adamleithp",
+      "finalScore": 76,
+      "reasons": [
+        "Shipped 94 merged PRs across 12 code areas",
+        "Reviewed 123 peer PRs during the window",
+        "Balanced shipping volume, repo breadth, and execution efficiency"
+      ],
+      "rawScores": {
+        "shippedWork": 24.162340676990066,
+        "ownershipBreadth": 2.5649493574615367,
+        "reviewLeverage": 4.820281565605037,
+        "executionQuality": 0.15305076808376006
+      },
+      "metrics": {
+        "authoredMergedPrs": 94,
+        "authoredOpenedPrs": 0,
+        "reviewsGiven": 123,
+        "distinctAreas": [
+          ".github",
+          ".gitignore",
+          ".stylelintrc.js",
+          "common",
+          "ee",
+          "frontend",
+          "mypy-baseline.txt",
+          "playwright",
+          "pnpm-lock.yaml",
+          "posthog",
+          "products",
+          "services"
+        ],
+        "mergeRate": 0,
+        "medianTimeToMergeHours": 5.1
+      },
+      "subscores": {
+        "shipped_work": 92.6,
+        "ownership_breadth": 65.9,
+        "review_leverage": 78.1,
+        "execution_quality": 45.7
+      }
+    }
+  ]
 }

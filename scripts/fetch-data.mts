@@ -3,7 +3,11 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { formatIsoDate, getCutoffDate } from "../src/lib/format.ts";
-import { buildEngineerRankings, isBotLogin } from "../src/lib/scoring.ts";
+import {
+  buildEngineerRankings,
+  deriveTopLevelArea,
+  isBotLogin,
+} from "../src/lib/scoring.ts";
 import type { DashboardSummary, PullRequestRecord } from "../src/lib/types.ts";
 
 const REPO_OWNER = "PostHog";
@@ -42,6 +46,22 @@ interface GraphQLPullRequestNode {
   labels: {
     nodes: GraphQLLabelNode[];
   };
+  files: {
+    nodes: Array<{
+      path: string;
+      additions: number;
+      deletions: number;
+      changeType: string;
+    } | null>;
+  };
+  reviews: {
+    nodes: Array<{
+      id: string;
+      state: string;
+      submittedAt: string | null;
+      author: GraphQLActor | null;
+    } | null>;
+  };
 }
 
 interface GraphQLSearchResponse {
@@ -51,6 +71,20 @@ interface GraphQLSearchResponse {
       endCursor: string | null;
     };
     nodes: Array<GraphQLPullRequestNode | null>;
+  };
+}
+
+interface GraphQLOpenedPullRequestNode {
+  author: GraphQLActor | null;
+}
+
+interface GraphQLOpenedPullRequestSearchResponse {
+  search: {
+    pageInfo: {
+      hasNextPage: boolean;
+      endCursor: string | null;
+    };
+    nodes: Array<GraphQLOpenedPullRequestNode | null>;
   };
 }
 
@@ -110,6 +144,12 @@ function getSearchQuery(bucket: DateBucket): string {
   return `repo:${REPO_OWNER}/${REPO_NAME} is:pr is:merged merged:${start}..${end}`;
 }
 
+function getOpenedPullRequestSearchQuery(bucket: DateBucket): string {
+  const start = bucket.start.toISOString().slice(0, 10);
+  const end = bucket.end.toISOString().slice(0, 10);
+  return `repo:${REPO_OWNER}/${REPO_NAME} is:pr created:${start}..${end}`;
+}
+
 function buildPullRequestSearchQuery(): string {
   return `
     query PullRequests($query: String!, $first: Int!, $after: String) {
@@ -136,6 +176,46 @@ function buildPullRequestSearchQuery(): string {
               nodes {
                 name
               }
+            }
+            files(first: 100) {
+              nodes {
+                path
+                additions
+                deletions
+                changeType
+              }
+            }
+            reviews(first: 100) {
+              nodes {
+                id
+                state
+                submittedAt
+                author {
+                  __typename
+                  login
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `;
+}
+
+function buildOpenedPullRequestSearchQuery(): string {
+  return `
+    query OpenedPullRequests($query: String!, $first: Int!, $after: String) {
+      search(query: $query, type: ISSUE, first: $first, after: $after) {
+        pageInfo {
+          hasNextPage
+          endCursor
+        }
+        nodes {
+          ... on PullRequest {
+            author {
+              __typename
+              login
             }
           }
         }
@@ -225,6 +305,44 @@ function toPullRequestRecord(node: GraphQLPullRequestNode): PullRequestRecord | 
     return null;
   }
 
+  const files = node.files.nodes
+    .flatMap((file) => {
+      if (!file?.path) {
+        return [];
+      }
+
+      return [
+        {
+          path: file.path,
+          additions: file.additions,
+          deletions: file.deletions,
+          changes: file.additions + file.deletions,
+        },
+      ];
+    })
+    .sort((a, b) => a.path.localeCompare(b.path));
+
+  const reviews = node.reviews.nodes.flatMap((review) => {
+    const reviewerLogin = review?.author?.login ?? "";
+    const isBotReviewer =
+      review?.author?.__typename === "Bot" || isBotLogin(reviewerLogin);
+
+    if (!review || !reviewerLogin || isBotReviewer) {
+      return [];
+    }
+
+    return [
+      {
+        id: Number.parseInt(review.id.replace(/\D/g, ""), 10) || 0,
+        author: reviewerLogin,
+        state: review.state,
+        submittedAt: review.submittedAt,
+      },
+    ];
+  });
+
+  const topLevelAreas = [...new Set(files.map((file) => deriveTopLevelArea(file.path)))];
+
   return {
     number: node.number,
     author: login,
@@ -236,9 +354,9 @@ function toPullRequestRecord(node: GraphQLPullRequestNode): PullRequestRecord | 
     deletions: node.deletions,
     changedFiles: node.changedFiles,
     labels: node.labels.nodes.map((label) => label.name),
-    files: [],
-    reviews: [],
-    topLevelAreas: [],
+    files,
+    reviews,
+    topLevelAreas,
   };
 }
 
@@ -296,6 +414,52 @@ async function fetchMergedPullRequests(
   return [...pullRequests.values()].sort((a, b) => a.number - b.number);
 }
 
+async function fetchOpenedPullRequestCounts(
+  token: string,
+  cutoffDate: Date,
+): Promise<Record<string, number>> {
+  const now = new Date();
+  const buckets = buildDateBuckets(cutoffDate, now, BUCKET_DAYS);
+  const query = buildOpenedPullRequestSearchQuery();
+  const authoredOpenedCounts = new Map<string, number>();
+
+  for (const bucket of buckets) {
+    let hasNextPage = true;
+    let cursor: string | null = null;
+
+    while (hasNextPage) {
+      const data: GraphQLOpenedPullRequestSearchResponse =
+        await graphqlRequest<GraphQLOpenedPullRequestSearchResponse>(token, query, {
+          query: getOpenedPullRequestSearchQuery(bucket),
+          first: SEARCH_PAGE_SIZE,
+          after: cursor,
+        });
+
+      for (const node of data.search.nodes) {
+        const login = node?.author?.login ?? "";
+        const isBotAuthor = node?.author?.__typename === "Bot" || isBotLogin(login);
+
+        if (!login || isBotAuthor) {
+          continue;
+        }
+
+        authoredOpenedCounts.set(login, (authoredOpenedCounts.get(login) ?? 0) + 1);
+      }
+
+      hasNextPage = data.search.pageInfo.hasNextPage;
+      cursor = data.search.pageInfo.endCursor;
+
+      if (hasNextPage) {
+        await sleep(REQUEST_DELAY_MS);
+      }
+    }
+
+    await sleep(REQUEST_DELAY_MS);
+  }
+
+  return Object.fromEntries(authoredOpenedCounts.entries());
+}
+
 async function main(): Promise<void> {
   const token = await loadGitHubToken();
 
@@ -312,7 +476,11 @@ async function main(): Promise<void> {
   console.log(`Fetching merged pull requests for ${REPO_OWNER}/${REPO_NAME} via GraphQL...`);
 
   const pullRequests = await fetchMergedPullRequests(token, cutoffDate);
-  const engineerRankings = buildEngineerRankings(pullRequests);
+  console.log(`Fetching opened PR counts for ${REPO_OWNER}/${REPO_NAME}...`);
+  const authoredOpenedCounts = await fetchOpenedPullRequestCounts(token, cutoffDate);
+  const engineerRankings = buildEngineerRankings(pullRequests, {
+    authoredOpenedCounts,
+  });
   const top5 = engineerRankings.slice(0, 5);
   const top10 = engineerRankings.slice(0, 10);
 
@@ -334,6 +502,11 @@ async function main(): Promise<void> {
   await writeFile(
     path.join(outputDir, "engineers.json"),
     `${JSON.stringify(engineerRankings, null, 2)}\n`,
+    "utf8",
+  );
+  await writeFile(
+    path.join(outputDir, "opened-pr-counts.json"),
+    `${JSON.stringify(authoredOpenedCounts, null, 2)}\n`,
     "utf8",
   );
   await writeFile(

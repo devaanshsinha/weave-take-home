@@ -1,6 +1,16 @@
 "use client";
 
 import { useState } from "react";
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Cell,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
 
 import type { EngineerScoreBreakdown } from "@/lib/types";
 
@@ -31,6 +41,11 @@ export function EngineerBreakdown({ engineers }: EngineerBreakdownProps) {
     );
   }
 
+  const chartData = scoreLabels.map(({ key, label }) => ({
+    label,
+    value: engineer.subscores[key],
+  }));
+
   return (
     <section className="rounded-2xl border border-black/10 bg-white p-6 shadow-sm">
       <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
@@ -58,25 +73,40 @@ export function EngineerBreakdown({ engineers }: EngineerBreakdownProps) {
       </div>
 
       <div className="mt-6 grid gap-6 lg:grid-cols-[1.4fr_0.9fr]">
-        <div className="space-y-4">
-          {scoreLabels.map(({ key, label }) => {
-            const value = engineer.subscores[key];
-
-            return (
-              <div key={key}>
-                <div className="mb-1 flex items-center justify-between text-sm text-slate-700">
-                  <span>{label}</span>
-                  <span className="font-medium text-slate-900">{value}</span>
-                </div>
-                <div className="h-3 rounded-full bg-slate-100">
-                  <div
-                    className="h-3 rounded-full bg-slate-900"
-                    style={{ width: `${Math.max(value, 4)}%` }}
+        <div className="h-72 rounded-2xl border border-black/10 bg-slate-50 p-3">
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart data={chartData} margin={{ top: 12, right: 8, left: -16, bottom: 12 }}>
+              <CartesianGrid stroke="#dbe2ea" strokeDasharray="2 2" vertical={false} />
+              <XAxis
+                dataKey="label"
+                tick={{ fill: "#475569", fontSize: 12 }}
+                axisLine={false}
+                tickLine={false}
+              />
+              <YAxis
+                domain={[0, 100]}
+                tick={{ fill: "#475569", fontSize: 12 }}
+                axisLine={false}
+                tickLine={false}
+              />
+              <Tooltip
+                cursor={{ fill: "#e2e8f0" }}
+                contentStyle={{
+                  borderRadius: 12,
+                  border: "1px solid rgba(15, 23, 42, 0.1)",
+                  boxShadow: "0 1px 2px rgba(15, 23, 42, 0.04)",
+                }}
+              />
+              <Bar dataKey="value" radius={[8, 8, 0, 0]}>
+                {chartData.map((entry) => (
+                  <Cell
+                    key={entry.label}
+                    fill={entry.label === "Shipped work" ? "#0f172a" : "#94a3b8"}
                   />
-                </div>
-              </div>
-            );
-          })}
+                ))}
+              </Bar>
+            </BarChart>
+          </ResponsiveContainer>
         </div>
 
         <div className="rounded-2xl bg-slate-50 p-4">

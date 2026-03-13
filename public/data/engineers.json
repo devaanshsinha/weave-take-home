@@ -1,0 +1,5991 @@
+[
+  {
+    "login": "rafaeelaudibert",
+    "finalScore": 87.7,
+    "reasons": [
+      "Shipped 147 merged PRs across 38 code areas",
+      "Reviewed 479 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 26.10518659520539,
+      "ownershipBreadth": 3.6635616461296463,
+      "reviewLeverage": 6.173786103901937,
+      "executionQuality": 0.09302512475500732
+    },
+    "metrics": {
+      "authoredMergedPrs": 147,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 479,
+      "distinctAreas": [
+        ".agents",
+        ".claude",
+        ".config",
+        ".devcontainer",
+        ".env.example",
+        ".flox",
+        ".github",
+        ".gitignore",
+        ".oxfmtrc.json",
+        ".oxlintrc.json",
+        ".prettierignore",
+        ".stylelintignore",
+        ".test_durations",
+        ".vscode",
+        ".watchmanconfig",
+        "AGENTS.md",
+        "bin",
+        "cli",
+        "common",
+        "devenv",
+        "docs",
+        "ee",
+        "frontend",
+        "hedgebox-dummy",
+        "livestream",
+        "nodejs",
+        "package.json",
+        "playwright",
+        "pnpm-lock.yaml",
+        "pnpm-workspace.yaml",
+        "posthog",
+        "products",
+        "pyproject.toml",
+        "rust",
+        "services",
+        "test-snapshot-resolver.js",
+        "tsconfig.json",
+        "uv.lock"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 23.2
+    },
+    "subscores": {
+      "shipped_work": 100,
+      "ownership_breadth": 94.1,
+      "review_leverage": 100,
+      "execution_quality": 27.8
+    }
+  },
+  {
+    "login": "webjunkie",
+    "finalScore": 85.5,
+    "reasons": [
+      "Shipped 146 merged PRs across 48 code areas",
+      "Reviewed 134 peer PRs during the window",
+      "Touched 48 distinct top-level code areas"
+    ],
+    "rawScores": {
+      "shippedWork": 25.66266249175245,
+      "ownershipBreadth": 3.8918202981106265,
+      "reviewLeverage": 4.90527477843843,
+      "executionQuality": 0.1177559331188804
+    },
+    "metrics": {
+      "authoredMergedPrs": 146,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 134,
+      "distinctAreas": [
+        ".agents",
+        ".claude",
+        ".flox",
+        ".github",
+        ".gitignore",
+        ".husky",
+        ".oxlintrc.json",
+        ".semgrep",
+        ".test_durations",
+        ".watchmanconfig",
+        "AGENTS.md",
+        "CLAUDE.md",
+        "Dockerfile",
+        "Dockerfile.ai-evals",
+        "README.md",
+        "bin",
+        "common",
+        "devenv",
+        "docker-compose.base.yml",
+        "docker-compose.dev-coordinator.yml",
+        "docker-compose.dev-full.yml",
+        "docker-compose.dev-minimal.yml",
+        "docker-compose.dev.yml",
+        "docker-compose.hobby.yml",
+        "docker-compose.profiles.yml",
+        "docs",
+        "ee",
+        "frontend",
+        "greptile.json",
+        "mypy-baseline.txt",
+        "mypy.ini",
+        "nodejs",
+        "package.json",
+        "playwright",
+        "pnpm-lock.yaml",
+        "pnpm-workspace.yaml",
+        "posthog",
+        "products",
+        "pyproject.toml",
+        "rust",
+        "services",
+        "share",
+        "tach.toml",
+        "test-runner-jest-environment.js",
+        "tools",
+        "turbo.json",
+        "ty-baseline.txt",
+        "uv.lock"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 10.8
+    },
+    "subscores": {
+      "shipped_work": 98.3,
+      "ownership_breadth": 100,
+      "review_leverage": 79.5,
+      "execution_quality": 35.2
+    }
+  },
+  {
+    "login": "pauldambra",
+    "finalScore": 81.1,
+    "reasons": [
+      "Shipped 209 merged PRs across 23 code areas",
+      "Reviewed 310 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 23.890443758850914,
+      "ownershipBreadth": 3.1780538303479458,
+      "reviewLeverage": 5.739792912179234,
+      "executionQuality": 0.12131782996020624
+    },
+    "metrics": {
+      "authoredMergedPrs": 209,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 310,
+      "distinctAreas": [
+        ".claude",
+        ".github",
+        ".idea",
+        "AGENTS.md",
+        "_tmp_55540_b174ca869c51fd1a4f68613650fecc0e",
+        "bin",
+        "common",
+        "docker",
+        "docker-compose.base.yml",
+        "docker-compose.hobby.yml",
+        "docs",
+        "ee",
+        "frontend",
+        "livestream",
+        "nodejs",
+        "package.json",
+        "playwright",
+        "plugin-server",
+        "pnpm-lock.yaml",
+        "pnpm-workspace.yaml",
+        "posthog",
+        "products",
+        "rust"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 9.9
+    },
+    "subscores": {
+      "shipped_work": 91.5,
+      "ownership_breadth": 81.7,
+      "review_leverage": 93,
+      "execution_quality": 36.2
+    }
+  },
+  {
+    "login": "joshsny",
+    "finalScore": 80.6,
+    "reasons": [
+      "Shipped 78 merged PRs across 17 code areas",
+      "Reviewed 144 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 21.919666535452535,
+      "ownershipBreadth": 2.8903717578961645,
+      "reviewLeverage": 4.976733742420574,
+      "executionQuality": 0.2754509915674561
+    },
+    "metrics": {
+      "authoredMergedPrs": 78,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 144,
+      "distinctAreas": [
+        ".env.example",
+        ".github",
+        ".gitignore",
+        ".oxlintrc.json",
+        ".prettierignore",
+        "bin",
+        "common",
+        "docker-compose.base.yml",
+        "ee",
+        "frontend",
+        "pnpm-lock.yaml",
+        "pnpm-workspace.yaml",
+        "posthog",
+        "products",
+        "pyproject.toml",
+        "services",
+        "uv.lock"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 1
+    },
+    "subscores": {
+      "shipped_work": 84,
+      "ownership_breadth": 74.3,
+      "review_leverage": 80.6,
+      "execution_quality": 82.2
+    }
+  },
+  {
+    "login": "andrewm4894",
+    "finalScore": 79.4,
+    "reasons": [
+      "Shipped 218 merged PRs across 17 code areas",
+      "Reviewed 136 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 24.231644612160267,
+      "ownershipBreadth": 2.8903717578961645,
+      "reviewLeverage": 4.919980925828125,
+      "executionQuality": 0.17343931075925934
+    },
+    "metrics": {
+      "authoredMergedPrs": 218,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 136,
+      "distinctAreas": [
+        ".claude",
+        ".github",
+        ".semgrep",
+        "Dockerfile.llm-analytics",
+        "bin",
+        "common",
+        "docs",
+        "ee",
+        "frontend",
+        "nodejs",
+        "plugin-server",
+        "pnpm-lock.yaml",
+        "posthog",
+        "products",
+        "pyproject.toml",
+        "services",
+        "uv.lock"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 3.6
+    },
+    "subscores": {
+      "shipped_work": 92.8,
+      "ownership_breadth": 74.3,
+      "review_leverage": 79.7,
+      "execution_quality": 51.8
+    }
+  },
+  {
+    "login": "skoob13",
+    "finalScore": 77.4,
+    "reasons": [
+      "Shipped 95 merged PRs across 17 code areas",
+      "Reviewed 140 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 22.875708014112504,
+      "ownershipBreadth": 2.8903717578961645,
+      "reviewLeverage": 4.948759890378168,
+      "executionQuality": 0.17296998527523566
+    },
+    "metrics": {
+      "authoredMergedPrs": 95,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 140,
+      "distinctAreas": [
+        ".agents",
+        ".claude",
+        ".cursor",
+        ".github",
+        ".gitignore",
+        ".prettierignore",
+        ".vscode",
+        "common",
+        "docs",
+        "ee",
+        "frontend",
+        "pnpm-lock.yaml",
+        "posthog",
+        "products",
+        "pyproject.toml",
+        "services",
+        "uv.lock"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 3.7
+    },
+    "subscores": {
+      "shipped_work": 87.6,
+      "ownership_breadth": 74.3,
+      "review_leverage": 80.2,
+      "execution_quality": 51.6
+    }
+  },
+  {
+    "login": "jose-sequeira",
+    "finalScore": 77,
+    "reasons": [
+      "Shipped 81 merged PRs across 24 code areas",
+      "Reviewed 147 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 22.72107970967091,
+      "ownershipBreadth": 3.2188758248682006,
+      "reviewLeverage": 4.997212273764115,
+      "executionQuality": 0.11967256315195439
+    },
+    "metrics": {
+      "authoredMergedPrs": 81,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 147,
+      "distinctAreas": [
+        ".flox",
+        ".github",
+        ".nvmrc",
+        "Dockerfile",
+        "Dockerfile.node",
+        "common",
+        "docker",
+        "docker-compose.base.yml",
+        "docker-compose.dev-full.yml",
+        "docker-compose.dev.yml",
+        "docker-compose.hobby.yml",
+        "ee",
+        "frontend",
+        "mypy-baseline.txt",
+        "nodejs",
+        "package.json",
+        "plugin-server",
+        "pnpm-lock.yaml",
+        "posthog",
+        "products",
+        "proto",
+        "pyproject.toml",
+        "rust",
+        "uv.lock"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 10.3
+    },
+    "subscores": {
+      "shipped_work": 87,
+      "ownership_breadth": 82.7,
+      "review_leverage": 80.9,
+      "execution_quality": 35.7
+    }
+  },
+  {
+    "login": "oliverb123",
+    "finalScore": 76.1,
+    "reasons": [
+      "Shipped 53 merged PRs across 16 code areas",
+      "Reviewed 98 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 20.366337901252777,
+      "ownershipBreadth": 2.833213344056216,
+      "reviewLeverage": 4.59511985013459,
+      "executionQuality": 0.2650318087838229
+    },
+    "metrics": {
+      "authoredMergedPrs": 53,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 98,
+      "distinctAreas": [
+        ".flox",
+        ".github",
+        ".gitignore",
+        "Dockerfile",
+        "Dockerfile.node",
+        "bin",
+        "cli",
+        "docker-compose.hobby.yml",
+        "ee",
+        "frontend",
+        "playwright",
+        "posthog",
+        "products",
+        "rust",
+        "services",
+        "tach.toml"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 1.1
+    },
+    "subscores": {
+      "shipped_work": 78,
+      "ownership_breadth": 72.8,
+      "review_leverage": 74.4,
+      "execution_quality": 79.1
+    }
+  },
+  {
+    "login": "Piccirello",
+    "finalScore": 76.1,
+    "reasons": [
+      "Shipped 97 merged PRs across 14 code areas",
+      "Reviewed 195 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 21.80570065662089,
+      "ownershipBreadth": 2.70805020110221,
+      "reviewLeverage": 5.278114659230518,
+      "executionQuality": 0.18376686960822516
+    },
+    "metrics": {
+      "authoredMergedPrs": 97,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 195,
+      "distinctAreas": [
+        ".github",
+        ".semgrep",
+        "AGENTS.md",
+        "ee",
+        "frontend",
+        "mypy-baseline.txt",
+        "nodejs",
+        "package.json",
+        "pnpm-lock.yaml",
+        "posthog",
+        "products",
+        "pyproject.toml",
+        "services",
+        "uv.lock"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 3.1
+    },
+    "subscores": {
+      "shipped_work": 83.5,
+      "ownership_breadth": 69.6,
+      "review_leverage": 85.5,
+      "execution_quality": 54.9
+    }
+  },
+  {
+    "login": "adamleithp",
+    "finalScore": 76,
+    "reasons": [
+      "Shipped 94 merged PRs across 12 code areas",
+      "Reviewed 123 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 24.162340676990066,
+      "ownershipBreadth": 2.5649493574615367,
+      "reviewLeverage": 4.820281565605037,
+      "executionQuality": 0.15305076808376006
+    },
+    "metrics": {
+      "authoredMergedPrs": 94,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 123,
+      "distinctAreas": [
+        ".github",
+        ".gitignore",
+        ".stylelintrc.js",
+        "common",
+        "ee",
+        "frontend",
+        "mypy-baseline.txt",
+        "playwright",
+        "pnpm-lock.yaml",
+        "posthog",
+        "products",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 5.1
+    },
+    "subscores": {
+      "shipped_work": 92.6,
+      "ownership_breadth": 65.9,
+      "review_leverage": 78.1,
+      "execution_quality": 45.7
+    }
+  },
+  {
+    "login": "pl",
+    "finalScore": 74.3,
+    "reasons": [
+      "Shipped 61 merged PRs across 16 code areas",
+      "Reviewed 115 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 21.782646750440428,
+      "ownershipBreadth": 2.833213344056216,
+      "reviewLeverage": 4.7535901911063645,
+      "executionQuality": 0.16378695580289765
+    },
+    "metrics": {
+      "authoredMergedPrs": 61,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 115,
+      "distinctAreas": [
+        ".agents",
+        ".claude",
+        ".github",
+        "bin",
+        "common",
+        "docker-compose.base.yml",
+        "docker-compose.dev-minimal.yml",
+        "docker-compose.dev.yml",
+        "ee",
+        "frontend",
+        "nodejs",
+        "plugin-server",
+        "posthog",
+        "products",
+        "pytest.ini",
+        "rust"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 4.2
+    },
+    "subscores": {
+      "shipped_work": 83.4,
+      "ownership_breadth": 72.8,
+      "review_leverage": 77,
+      "execution_quality": 48.9
+    }
+  },
+  {
+    "login": "TueHaulund",
+    "finalScore": 74.2,
+    "reasons": [
+      "Shipped 60 merged PRs across 19 code areas",
+      "Reviewed 103 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 22.240034113910653,
+      "ownershipBreadth": 2.995732273553991,
+      "reviewLeverage": 4.6443908991413725,
+      "executionQuality": 0.12929654396134424
+    },
+    "metrics": {
+      "authoredMergedPrs": 60,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 103,
+      "distinctAreas": [
+        ".dockerignore",
+        ".github",
+        "Dockerfile",
+        "Dockerfile.recording-rasterizer",
+        "bin",
+        "common",
+        "devenv",
+        "docker-compose.base.yml",
+        "docker-compose.hobby.yml",
+        "ee",
+        "frontend",
+        "nodejs",
+        "plugin-server",
+        "pnpm-lock.yaml",
+        "pnpm-workspace.yaml",
+        "posthog",
+        "products",
+        "services",
+        "tsconfig.json"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 8.2
+    },
+    "subscores": {
+      "shipped_work": 85.2,
+      "ownership_breadth": 77,
+      "review_leverage": 75.2,
+      "execution_quality": 38.6
+    }
+  },
+  {
+    "login": "veryayskiy",
+    "finalScore": 73.9,
+    "reasons": [
+      "Shipped 94 merged PRs across 9 code areas",
+      "Reviewed 60 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 22.131033593353237,
+      "ownershipBreadth": 2.302585092994046,
+      "reviewLeverage": 4.110873864173311,
+      "executionQuality": 0.2656315424953085
+    },
+    "metrics": {
+      "authoredMergedPrs": 94,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 60,
+      "distinctAreas": [
+        ".github",
+        ".semgrep",
+        "Dockerfile",
+        "frontend",
+        "nodejs",
+        "pnpm-lock.yaml",
+        "posthog",
+        "products",
+        "rust"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 1.1
+    },
+    "subscores": {
+      "shipped_work": 84.8,
+      "ownership_breadth": 59.2,
+      "review_leverage": 66.6,
+      "execution_quality": 79.3
+    }
+  },
+  {
+    "login": "Gilbert09",
+    "finalScore": 73.6,
+    "reasons": [
+      "Shipped 59 merged PRs across 10 code areas",
+      "Reviewed 166 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 21.294967321832246,
+      "ownershipBreadth": 2.3978952727983707,
+      "reviewLeverage": 5.117993812416755,
+      "executionQuality": 0.19998414056572847
+    },
+    "metrics": {
+      "authoredMergedPrs": 59,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 166,
+      "distinctAreas": [
+        ".github",
+        "ee",
+        "frontend",
+        "mypy-baseline.txt",
+        "nodejs",
+        "posthog",
+        "products",
+        "pyproject.toml",
+        "services",
+        "uv.lock"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 2.5
+    },
+    "subscores": {
+      "shipped_work": 81.6,
+      "ownership_breadth": 61.6,
+      "review_leverage": 82.9,
+      "execution_quality": 59.7
+    }
+  },
+  {
+    "login": "mariusandra",
+    "finalScore": 73.6,
+    "reasons": [
+      "Shipped 56 merged PRs across 14 code areas",
+      "Reviewed 149 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 21.61492870694027,
+      "ownershipBreadth": 2.70805020110221,
+      "reviewLeverage": 5.0106352940962555,
+      "executionQuality": 0.1525741323207394
+    },
+    "metrics": {
+      "authoredMergedPrs": 56,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 149,
+      "distinctAreas": [
+        ".github",
+        "AGENTS.md",
+        "common",
+        "ee",
+        "frontend",
+        "mypy-baseline.txt",
+        "playwright",
+        "pnpm-lock.yaml",
+        "pnpm-workspace.yaml",
+        "posthog",
+        "products",
+        "pyproject.toml",
+        "services",
+        "uv.lock"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 5.1
+    },
+    "subscores": {
+      "shipped_work": 82.8,
+      "ownership_breadth": 69.6,
+      "review_leverage": 81.2,
+      "execution_quality": 45.5
+    }
+  },
+  {
+    "login": "haacked",
+    "finalScore": 73.3,
+    "reasons": [
+      "Shipped 110 merged PRs across 16 code areas",
+      "Reviewed 136 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 22.6022627387083,
+      "ownershipBreadth": 2.833213344056216,
+      "reviewLeverage": 4.919980925828125,
+      "executionQuality": 0.10064596150702894
+    },
+    "metrics": {
+      "authoredMergedPrs": 110,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 136,
+      "distinctAreas": [
+        ".dockerignore",
+        ".github",
+        ".semgrep",
+        "Dockerfile",
+        "bin",
+        "common",
+        "docs",
+        "ee",
+        "infra-scripts",
+        "manage.py",
+        "mypy-baseline.txt",
+        "playwright",
+        "posthog",
+        "products",
+        "rust",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 17.7
+    },
+    "subscores": {
+      "shipped_work": 86.6,
+      "ownership_breadth": 72.8,
+      "review_leverage": 79.7,
+      "execution_quality": 30
+    }
+  },
+  {
+    "login": "frankh",
+    "finalScore": 73.3,
+    "reasons": [
+      "Shipped 48 merged PRs across 13 code areas",
+      "Reviewed 120 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 20.212784655180037,
+      "ownershipBreadth": 2.639057329615259,
+      "reviewLeverage": 4.795790545596741,
+      "executionQuality": 0.2201651637419801
+    },
+    "metrics": {
+      "authoredMergedPrs": 48,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 120,
+      "distinctAreas": [
+        ".github",
+        "bin",
+        "devenv",
+        "docker-compose.base.yml",
+        "docker-compose.dev.yml",
+        "frontend",
+        "nodejs",
+        "otel-collector-config.dev.yaml",
+        "pnpm-lock.yaml",
+        "posthog",
+        "products",
+        "rust",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 1.9
+    },
+    "subscores": {
+      "shipped_work": 77.4,
+      "ownership_breadth": 67.8,
+      "review_leverage": 77.7,
+      "execution_quality": 65.7
+    }
+  },
+  {
+    "login": "tatoalo",
+    "finalScore": 72.8,
+    "reasons": [
+      "Shipped 49 merged PRs across 9 code areas",
+      "Reviewed 112 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 21.0704674601507,
+      "ownershipBreadth": 2.302585092994046,
+      "reviewLeverage": 4.727387818712341,
+      "executionQuality": 0.23294560784082272
+    },
+    "metrics": {
+      "authoredMergedPrs": 49,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 112,
+      "distinctAreas": [
+        ".semgrep",
+        "docker-compose.base.yml",
+        "ee",
+        "frontend",
+        "package.json",
+        "plugin-server",
+        "posthog",
+        "products",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 1.6
+    },
+    "subscores": {
+      "shipped_work": 80.7,
+      "ownership_breadth": 59.2,
+      "review_leverage": 76.6,
+      "execution_quality": 69.5
+    }
+  },
+  {
+    "login": "eli-r-ph",
+    "finalScore": 72.6,
+    "reasons": [
+      "Shipped 109 merged PRs across 6 code areas",
+      "Reviewed 139 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 22.756477479452943,
+      "ownershipBreadth": 1.9459101490553132,
+      "reviewLeverage": 4.941642422609304,
+      "executionQuality": 0.20561082936551692
+    },
+    "metrics": {
+      "authoredMergedPrs": 109,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 139,
+      "distinctAreas": [
+        ".flox",
+        ".github",
+        "nodejs",
+        "posthog",
+        "products",
+        "rust"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 2.3
+    },
+    "subscores": {
+      "shipped_work": 87.2,
+      "ownership_breadth": 50,
+      "review_leverage": 80,
+      "execution_quality": 61.4
+    }
+  },
+  {
+    "login": "adboio",
+    "finalScore": 72.5,
+    "reasons": [
+      "Shipped 152 merged PRs across 15 code areas",
+      "Reviewed 118 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 23.28299843987203,
+      "ownershipBreadth": 2.772588722239781,
+      "reviewLeverage": 4.77912349311153,
+      "executionQuality": 0.07988154397955803
+    },
+    "metrics": {
+      "authoredMergedPrs": 152,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 118,
+      "distinctAreas": [
+        ".agents",
+        ".claude",
+        ".github",
+        ".prettierignore",
+        "cli",
+        "dist-workspace.toml",
+        "docs",
+        "ee",
+        "frontend",
+        "mypy-baseline.txt",
+        "playwright",
+        "pnpm-lock.yaml",
+        "posthog",
+        "products",
+        "rust"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 40.8
+    },
+    "subscores": {
+      "shipped_work": 89.2,
+      "ownership_breadth": 71.2,
+      "review_leverage": 77.4,
+      "execution_quality": 23.8
+    }
+  },
+  {
+    "login": "dmarticus",
+    "finalScore": 72.5,
+    "reasons": [
+      "Shipped 84 merged PRs across 14 code areas",
+      "Reviewed 123 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 22.893665884456844,
+      "ownershipBreadth": 2.70805020110221,
+      "reviewLeverage": 4.820281565605037,
+      "executionQuality": 0.09746294830134676
+    },
+    "metrics": {
+      "authoredMergedPrs": 84,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 123,
+      "distinctAreas": [
+        ".github",
+        ".semgrep",
+        ".test_durations",
+        "common",
+        "ee",
+        "frontend",
+        "nodejs",
+        "playwright",
+        "pnpm-lock.yaml",
+        "posthog",
+        "products",
+        "rust",
+        "services",
+        "tach.toml"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 19.7
+    },
+    "subscores": {
+      "shipped_work": 87.7,
+      "ownership_breadth": 69.6,
+      "review_leverage": 78.1,
+      "execution_quality": 29.1
+    }
+  },
+  {
+    "login": "robbie-c",
+    "finalScore": 72.1,
+    "reasons": [
+      "Shipped 71 merged PRs across 19 code areas",
+      "Reviewed 65 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 21.477097330394184,
+      "ownershipBreadth": 2.995732273553991,
+      "reviewLeverage": 4.189654742026425,
+      "executionQuality": 0.14119726337964195
+    },
+    "metrics": {
+      "authoredMergedPrs": 71,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 65,
+      "distinctAreas": [
+        ".flox",
+        ".github",
+        ".idea",
+        ".oxlintrc.json",
+        "AGENTS.md",
+        "CLAUDE.md",
+        "CLAUDE_CODE_WEB.md",
+        "bin",
+        "common",
+        "devenv",
+        "docker-compose.base.yml",
+        "ee",
+        "frontend",
+        "mypy-baseline.txt",
+        "nodejs",
+        "pnpm-lock.yaml",
+        "posthog",
+        "products",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 6.4
+    },
+    "subscores": {
+      "shipped_work": 82.3,
+      "ownership_breadth": 77,
+      "review_leverage": 67.9,
+      "execution_quality": 42.1
+    }
+  },
+  {
+    "login": "sakce",
+    "finalScore": 71.6,
+    "reasons": [
+      "Shipped 121 merged PRs across 13 code areas",
+      "Reviewed 115 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 22.646226317388493,
+      "ownershipBreadth": 2.639057329615259,
+      "reviewLeverage": 4.7535901911063645,
+      "executionQuality": 0.10271582663343984
+    },
+    "metrics": {
+      "authoredMergedPrs": 121,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 115,
+      "distinctAreas": [
+        "bin",
+        "cli",
+        "common",
+        "devenv",
+        "docker",
+        "docker-compose.base.yml",
+        "docker-compose.dev.yml",
+        "ee",
+        "frontend",
+        "playwright",
+        "posthog",
+        "products",
+        "tach.toml"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 16.6
+    },
+    "subscores": {
+      "shipped_work": 86.7,
+      "ownership_breadth": 67.8,
+      "review_leverage": 77,
+      "execution_quality": 30.7
+    }
+  },
+  {
+    "login": "nickbest-ph",
+    "finalScore": 71.6,
+    "reasons": [
+      "Shipped 46 merged PRs across 18 code areas",
+      "Reviewed 91 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 20.89291990101543,
+      "ownershipBreadth": 2.9444389791664403,
+      "reviewLeverage": 4.5217885770490405,
+      "executionQuality": 0.1349262631253269
+    },
+    "metrics": {
+      "authoredMergedPrs": 46,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 91,
+      "distinctAreas": [
+        ".flox",
+        ".github",
+        "Dockerfile",
+        "bin",
+        "common",
+        "devenv",
+        "docker-compose.hobby.yml",
+        "ee",
+        "frontend",
+        "mypy-baseline.txt",
+        "nodejs",
+        "package.json",
+        "posthog",
+        "products",
+        "proto",
+        "pyproject.toml",
+        "rust",
+        "uv.lock"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 7.2
+    },
+    "subscores": {
+      "shipped_work": 80,
+      "ownership_breadth": 75.7,
+      "review_leverage": 73.2,
+      "execution_quality": 40.3
+    }
+  },
+  {
+    "login": "andrewjmcgehee",
+    "finalScore": 71,
+    "reasons": [
+      "Shipped 68 merged PRs across 13 code areas",
+      "Reviewed 96 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 21.27547418223723,
+      "ownershipBreadth": 2.639057329615259,
+      "reviewLeverage": 4.574710978503383,
+      "executionQuality": 0.14718974843802038
+    },
+    "metrics": {
+      "authoredMergedPrs": 68,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 96,
+      "distinctAreas": [
+        ".flox",
+        ".github",
+        ".semgrep",
+        "common",
+        "devenv",
+        "docker",
+        "ee",
+        "frontend",
+        "playwright",
+        "pnpm-lock.yaml",
+        "posthog",
+        "products",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 5.7
+    },
+    "subscores": {
+      "shipped_work": 81.5,
+      "ownership_breadth": 67.8,
+      "review_leverage": 74.1,
+      "execution_quality": 43.9
+    }
+  },
+  {
+    "login": "ablaszkiewicz",
+    "finalScore": 70.5,
+    "reasons": [
+      "Shipped 65 merged PRs across 15 code areas",
+      "Reviewed 93 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 20.31835798895152,
+      "ownershipBreadth": 2.772588722239781,
+      "reviewLeverage": 4.543294782270004,
+      "executionQuality": 0.15379404118375337
+    },
+    "metrics": {
+      "authoredMergedPrs": 65,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 93,
+      "distinctAreas": [
+        ".flox",
+        ".github",
+        ".semgrep",
+        "bin",
+        "cli",
+        "docker-compose.base.yml",
+        "docker-compose.hobby.yml",
+        "docs",
+        "frontend",
+        "mypy-baseline.txt",
+        "nodejs",
+        "posthog",
+        "products",
+        "rust",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 5
+    },
+    "subscores": {
+      "shipped_work": 77.8,
+      "ownership_breadth": 71.2,
+      "review_leverage": 73.6,
+      "execution_quality": 45.9
+    }
+  },
+  {
+    "login": "sortafreel",
+    "finalScore": 70.5,
+    "reasons": [
+      "Shipped 28 merged PRs across 11 code areas",
+      "Reviewed 151 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 18.589969093750316,
+      "ownershipBreadth": 2.4849066497880004,
+      "reviewLeverage": 5.0238805208462765,
+      "executionQuality": 0.21907138840914187
+    },
+    "metrics": {
+      "authoredMergedPrs": 28,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 151,
+      "distinctAreas": [
+        ".flox",
+        ".github",
+        "Dockerfile",
+        "bin",
+        "ee",
+        "frontend",
+        "nodejs",
+        "pnpm-lock.yaml",
+        "pnpm-workspace.yaml",
+        "posthog",
+        "products"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 1.9
+    },
+    "subscores": {
+      "shipped_work": 71.2,
+      "ownership_breadth": 63.8,
+      "review_leverage": 81.4,
+      "execution_quality": 65.4
+    }
+  },
+  {
+    "login": "Twixes",
+    "finalScore": 70.4,
+    "reasons": [
+      "Shipped 72 merged PRs across 16 code areas",
+      "Reviewed 60 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 22.769075729951584,
+      "ownershipBreadth": 2.833213344056216,
+      "reviewLeverage": 4.110873864173311,
+      "executionQuality": 0.08971884455386359
+    },
+    "metrics": {
+      "authoredMergedPrs": 72,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 60,
+      "distinctAreas": [
+        ".flox",
+        ".gitattributes",
+        ".github",
+        ".semgrep",
+        "AGENTS.md",
+        "bin",
+        "ee",
+        "frontend",
+        "mypy-baseline.txt",
+        "nodejs",
+        "posthog",
+        "products",
+        "pyproject.toml",
+        "services",
+        "tach.toml",
+        "uv.lock"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 26.3
+    },
+    "subscores": {
+      "shipped_work": 87.2,
+      "ownership_breadth": 72.8,
+      "review_leverage": 66.6,
+      "execution_quality": 26.8
+    }
+  },
+  {
+    "login": "thmsobrmlr",
+    "finalScore": 70.4,
+    "reasons": [
+      "Shipped 79 merged PRs across 11 code areas",
+      "Reviewed 196 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 21.62943002377977,
+      "ownershipBreadth": 2.4849066497880004,
+      "reviewLeverage": 5.2832037287379885,
+      "executionQuality": 0.09234512167432364
+    },
+    "metrics": {
+      "authoredMergedPrs": 79,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 196,
+      "distinctAreas": [
+        ".vscode",
+        ".zed",
+        "CONTRIBUTING.md",
+        "common",
+        "docker-compose.dev.yml",
+        "ee",
+        "frontend",
+        "nodejs",
+        "posthog",
+        "products",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 23.8
+    },
+    "subscores": {
+      "shipped_work": 82.9,
+      "ownership_breadth": 63.8,
+      "review_leverage": 85.6,
+      "execution_quality": 27.6
+    }
+  },
+  {
+    "login": "benjackwhite",
+    "finalScore": 69.6,
+    "reasons": [
+      "Shipped 40 merged PRs across 21 code areas",
+      "Reviewed 49 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 21.96113038909656,
+      "ownershipBreadth": 3.091042453358316,
+      "reviewLeverage": 3.912023005428146,
+      "executionQuality": 0.07650632836187353
+    },
+    "metrics": {
+      "authoredMergedPrs": 40,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 49,
+      "distinctAreas": [
+        ".dockerignore",
+        ".github",
+        ".oxlintrc.json",
+        ".run",
+        ".vscode",
+        "Dockerfile",
+        "Dockerfile.node",
+        "bin",
+        "common",
+        "docker-compose.base.yml",
+        "docs",
+        "ee",
+        "frontend",
+        "nodejs",
+        "plugin-server",
+        "pnpm-lock.yaml",
+        "pnpm-workspace.yaml",
+        "posthog",
+        "products",
+        "rust",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 48.5
+    },
+    "subscores": {
+      "shipped_work": 84.1,
+      "ownership_breadth": 79.4,
+      "review_leverage": 63.4,
+      "execution_quality": 22.8
+    }
+  },
+  {
+    "login": "havenbarnes",
+    "finalScore": 69.5,
+    "reasons": [
+      "Shipped 69 merged PRs across 11 code areas",
+      "Reviewed 148 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 21.39436650094624,
+      "ownershipBreadth": 2.4849066497880004,
+      "reviewLeverage": 5.003946305945459,
+      "executionQuality": 0.1004937265600301
+    },
+    "metrics": {
+      "authoredMergedPrs": 69,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 148,
+      "distinctAreas": [
+        ".github",
+        "common",
+        "frontend",
+        "nodejs",
+        "playwright",
+        "plugin-server",
+        "pnpm-lock.yaml",
+        "posthog",
+        "products",
+        "rust",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 17.8
+    },
+    "subscores": {
+      "shipped_work": 82,
+      "ownership_breadth": 63.8,
+      "review_leverage": 81.1,
+      "execution_quality": 30
+    }
+  },
+  {
+    "login": "jonmcwest",
+    "finalScore": 69.1,
+    "reasons": [
+      "Shipped 114 merged PRs across 11 code areas",
+      "Reviewed 44 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 22.031791617213774,
+      "ownershipBreadth": 2.4849066497880004,
+      "reviewLeverage": 3.8066624897703196,
+      "executionQuality": 0.15786270893457463
+    },
+    "metrics": {
+      "authoredMergedPrs": 114,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 44,
+      "distinctAreas": [
+        ".semgrep",
+        "ee",
+        "frontend",
+        "nodejs",
+        "playwright",
+        "pnpm-lock.yaml",
+        "posthog",
+        "products",
+        "rust",
+        "services",
+        "tach.toml"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 4.7
+    },
+    "subscores": {
+      "shipped_work": 84.4,
+      "ownership_breadth": 63.8,
+      "review_leverage": 61.7,
+      "execution_quality": 47.1
+    }
+  },
+  {
+    "login": "meikelmosby",
+    "finalScore": 69,
+    "reasons": [
+      "Shipped 67 merged PRs across 12 code areas",
+      "Reviewed 138 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 20.94514299207767,
+      "ownershipBreadth": 2.5649493574615367,
+      "reviewLeverage": 4.9344739331306915,
+      "executionQuality": 0.09959204120340603
+    },
+    "metrics": {
+      "authoredMergedPrs": 67,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 138,
+      "distinctAreas": [
+        ".github",
+        "bin",
+        "common",
+        "devenv",
+        "docker",
+        "frontend",
+        "nodejs",
+        "plugin-server",
+        "posthog",
+        "products",
+        "rust",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 18.3
+    },
+    "subscores": {
+      "shipped_work": 80.2,
+      "ownership_breadth": 65.9,
+      "review_leverage": 79.9,
+      "execution_quality": 29.7
+    }
+  },
+  {
+    "login": "Radu-Raicea",
+    "finalScore": 69,
+    "reasons": [
+      "Shipped 45 merged PRs across 9 code areas",
+      "Reviewed 275 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 20.518524446304156,
+      "ownershipBreadth": 2.302585092994046,
+      "reviewLeverage": 5.62040086571715,
+      "executionQuality": 0.1009868065765669
+    },
+    "metrics": {
+      "authoredMergedPrs": 45,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 275,
+      "distinctAreas": [
+        ".github",
+        ".semgrep",
+        "AGENTS.md",
+        "common",
+        "ee",
+        "frontend",
+        "posthog",
+        "products",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 17.5
+    },
+    "subscores": {
+      "shipped_work": 78.6,
+      "ownership_breadth": 59.2,
+      "review_leverage": 91,
+      "execution_quality": 30.1
+    }
+  },
+  {
+    "login": "ReeceJones",
+    "finalScore": 68.8,
+    "reasons": [
+      "Shipped 78 merged PRs across 15 code areas",
+      "Reviewed 79 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 21.782905380492696,
+      "ownershipBreadth": 2.772588722239781,
+      "reviewLeverage": 4.382026634673881,
+      "executionQuality": 0.07683766503217025
+    },
+    "metrics": {
+      "authoredMergedPrs": 78,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 79,
+      "distinctAreas": [
+        ".claude",
+        ".github",
+        "AGENTS.md",
+        "_tmp_55540_b174ca869c51fd1a4f68613650fecc0e",
+        "bin",
+        "docs",
+        "ee",
+        "frontend",
+        "mypy-baseline.txt",
+        "playwright",
+        "pnpm-lock.yaml",
+        "posthog",
+        "products",
+        "pyproject.toml",
+        "uv.lock"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 47.6
+    },
+    "subscores": {
+      "shipped_work": 83.4,
+      "ownership_breadth": 71.2,
+      "review_leverage": 71,
+      "execution_quality": 22.9
+    }
+  },
+  {
+    "login": "vdekrijger",
+    "finalScore": 68.5,
+    "reasons": [
+      "Shipped 66 merged PRs across 13 code areas",
+      "Reviewed 132 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 20.76345816102613,
+      "ownershipBreadth": 2.639057329615259,
+      "reviewLeverage": 4.890349128221754,
+      "executionQuality": 0.08682612485228745
+    },
+    "metrics": {
+      "authoredMergedPrs": 66,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 132,
+      "distinctAreas": [
+        ".claude",
+        ".github",
+        "bin",
+        "docker",
+        "ee",
+        "frontend",
+        "mypy-baseline.txt",
+        "posthog",
+        "products",
+        "pyproject.toml",
+        "services",
+        "terraform",
+        "uv.lock"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 29.7
+    },
+    "subscores": {
+      "shipped_work": 79.5,
+      "ownership_breadth": 67.8,
+      "review_leverage": 79.2,
+      "execution_quality": 25.9
+    }
+  },
+  {
+    "login": "kappa90",
+    "finalScore": 68.2,
+    "reasons": [
+      "Shipped 68 merged PRs across 12 code areas",
+      "Reviewed 98 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 21.78186089413211,
+      "ownershipBreadth": 2.5649493574615367,
+      "reviewLeverage": 4.59511985013459,
+      "executionQuality": 0.07802711606764061
+    },
+    "metrics": {
+      "authoredMergedPrs": 68,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 98,
+      "distinctAreas": [
+        ".github",
+        ".test_durations",
+        "ee",
+        "frontend",
+        "playwright",
+        "pnpm-lock.yaml",
+        "posthog",
+        "products",
+        "pyproject.toml",
+        "services",
+        "ty-baseline.txt",
+        "uv.lock"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 44.8
+    },
+    "subscores": {
+      "shipped_work": 83.4,
+      "ownership_breadth": 65.9,
+      "review_leverage": 74.4,
+      "execution_quality": 23.3
+    }
+  },
+  {
+    "login": "hpouillot",
+    "finalScore": 68.2,
+    "reasons": [
+      "Shipped 48 merged PRs across 16 code areas",
+      "Reviewed 75 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 20.512570774899437,
+      "ownershipBreadth": 2.833213344056216,
+      "reviewLeverage": 4.330733340286331,
+      "executionQuality": 0.10057515511256492
+    },
+    "metrics": {
+      "authoredMergedPrs": 48,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 75,
+      "distinctAreas": [
+        ".flox",
+        ".github",
+        ".gitignore",
+        "bin",
+        "cli",
+        "common",
+        "devenv",
+        "docs",
+        "frontend",
+        "package.json",
+        "pnpm-lock.yaml",
+        "posthog",
+        "products",
+        "rust",
+        "services",
+        "test-snapshot-resolver.js"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 17.7
+    },
+    "subscores": {
+      "shipped_work": 78.6,
+      "ownership_breadth": 72.8,
+      "review_leverage": 70.1,
+      "execution_quality": 30
+    }
+  },
+  {
+    "login": "andehen",
+    "finalScore": 67.7,
+    "reasons": [
+      "Shipped 49 merged PRs across 10 code areas",
+      "Reviewed 85 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 19.52809282607214,
+      "ownershipBreadth": 2.3978952727983707,
+      "reviewLeverage": 4.454347296253507,
+      "executionQuality": 0.17715612383416887
+    },
+    "metrics": {
+      "authoredMergedPrs": 49,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 85,
+      "distinctAreas": [
+        "common",
+        "docs",
+        "ee",
+        "frontend",
+        "posthog",
+        "products",
+        "pyproject.toml",
+        "rust",
+        "services",
+        "uv.lock"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 3.4
+    },
+    "subscores": {
+      "shipped_work": 74.8,
+      "ownership_breadth": 61.6,
+      "review_leverage": 72.1,
+      "execution_quality": 52.9
+    }
+  },
+  {
+    "login": "jordanm-posthog",
+    "finalScore": 67.5,
+    "reasons": [
+      "Shipped 57 merged PRs across 15 code areas",
+      "Reviewed 37 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 22.46452042082582,
+      "ownershipBreadth": 2.772588722239781,
+      "reviewLeverage": 3.6375861597263857,
+      "executionQuality": 0.07816291652937339
+    },
+    "metrics": {
+      "authoredMergedPrs": 57,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 37,
+      "distinctAreas": [
+        ".dagster_home",
+        ".flox",
+        ".github",
+        "bin",
+        "common",
+        "devenv",
+        "docker",
+        "docker-compose.dev-coordinator.yml",
+        "docker-compose.dev.yml",
+        "ee",
+        "frontend",
+        "livestream",
+        "pnpm-lock.yaml",
+        "posthog",
+        "products"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 44.4
+    },
+    "subscores": {
+      "shipped_work": 86.1,
+      "ownership_breadth": 71.2,
+      "review_leverage": 58.9,
+      "execution_quality": 23.3
+    }
+  },
+  {
+    "login": "yasen-posthog",
+    "finalScore": 67.1,
+    "reasons": [
+      "Shipped 76 merged PRs across 9 code areas",
+      "Reviewed 89 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 21.725397371991207,
+      "ownershipBreadth": 2.302585092994046,
+      "reviewLeverage": 4.499809670330265,
+      "executionQuality": 0.09918656644060532
+    },
+    "metrics": {
+      "authoredMergedPrs": 76,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 89,
+      "distinctAreas": [
+        ".claude",
+        ".gitignore",
+        "common",
+        "ee",
+        "frontend",
+        "pnpm-lock.yaml",
+        "posthog",
+        "products",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 18.6
+    },
+    "subscores": {
+      "shipped_work": 83.2,
+      "ownership_breadth": 59.2,
+      "review_leverage": 72.9,
+      "execution_quality": 29.6
+    }
+  },
+  {
+    "login": "tomasfarias",
+    "finalScore": 66.2,
+    "reasons": [
+      "Shipped 44 merged PRs across 7 code areas",
+      "Reviewed 132 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 17.40989815215991,
+      "ownershipBreadth": 2.0794415416798357,
+      "reviewLeverage": 4.890349128221754,
+      "executionQuality": 0.2297681316190411
+    },
+    "metrics": {
+      "authoredMergedPrs": 44,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 132,
+      "distinctAreas": [
+        "frontend",
+        "nodejs",
+        "posthog",
+        "products",
+        "pyproject.toml",
+        "services",
+        "uv.lock"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 1.7
+    },
+    "subscores": {
+      "shipped_work": 66.7,
+      "ownership_breadth": 53.4,
+      "review_leverage": 79.2,
+      "execution_quality": 68.6
+    }
+  },
+  {
+    "login": "georgemunyoro",
+    "finalScore": 66.2,
+    "reasons": [
+      "Shipped 26 merged PRs across 12 code areas",
+      "Reviewed 74 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 21.11601869146274,
+      "ownershipBreadth": 2.5649493574615367,
+      "reviewLeverage": 4.31748811353631,
+      "executionQuality": 0.07521653051155912
+    },
+    "metrics": {
+      "authoredMergedPrs": 26,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 74,
+      "distinctAreas": [
+        ".flox",
+        ".github",
+        ".prettierignore",
+        "common",
+        "frontend",
+        "mypy-baseline.txt",
+        "pnpm-lock.yaml",
+        "pnpm-workspace.yaml",
+        "posthog",
+        "pyproject.toml",
+        "services",
+        "uv.lock"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 52
+    },
+    "subscores": {
+      "shipped_work": 80.9,
+      "ownership_breadth": 65.9,
+      "review_leverage": 69.9,
+      "execution_quality": 22.5
+    }
+  },
+  {
+    "login": "gustavohstrassburger",
+    "finalScore": 64.5,
+    "reasons": [
+      "Shipped 64 merged PRs across 10 code areas",
+      "Reviewed 67 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 20.182298185679976,
+      "ownershipBreadth": 2.3978952727983707,
+      "reviewLeverage": 4.219507705176107,
+      "executionQuality": 0.10103212232253829
+    },
+    "metrics": {
+      "authoredMergedPrs": 64,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 67,
+      "distinctAreas": [
+        "common",
+        "ee",
+        "frontend",
+        "nodejs",
+        "playwright",
+        "plugin-server",
+        "posthog",
+        "products",
+        "rust",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 17.5
+    },
+    "subscores": {
+      "shipped_work": 77.3,
+      "ownership_breadth": 61.6,
+      "review_leverage": 68.3,
+      "execution_quality": 30.2
+    }
+  },
+  {
+    "login": "richardsolomou",
+    "finalScore": 64.3,
+    "reasons": [
+      "Shipped 38 merged PRs across 9 code areas",
+      "Reviewed 36 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 20.719501537556404,
+      "ownershipBreadth": 2.302585092994046,
+      "reviewLeverage": 3.6109179126442243,
+      "executionQuality": 0.13440957855841285
+    },
+    "metrics": {
+      "authoredMergedPrs": 38,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 36,
+      "distinctAreas": [
+        ".github",
+        "docs",
+        "frontend",
+        "nodejs",
+        "pnpm-lock.yaml",
+        "posthog",
+        "products",
+        "rust",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 7.3
+    },
+    "subscores": {
+      "shipped_work": 79.4,
+      "ownership_breadth": 59.2,
+      "review_leverage": 58.5,
+      "execution_quality": 40.1
+    }
+  },
+  {
+    "login": "carlos-marchal-ph",
+    "finalScore": 64.2,
+    "reasons": [
+      "Shipped 41 merged PRs across 11 code areas",
+      "Reviewed 78 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 19.22997831108218,
+      "ownershipBreadth": 2.4849066497880004,
+      "reviewLeverage": 4.3694478524670215,
+      "executionQuality": 0.10372592868976753
+    },
+    "metrics": {
+      "authoredMergedPrs": 41,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 78,
+      "distinctAreas": [
+        ".github",
+        "devenv",
+        "docs",
+        "ee",
+        "frontend",
+        "nodejs",
+        "pnpm-lock.yaml",
+        "posthog",
+        "products",
+        "rust",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 16
+    },
+    "subscores": {
+      "shipped_work": 73.7,
+      "ownership_breadth": 63.8,
+      "review_leverage": 70.8,
+      "execution_quality": 31
+    }
+  },
+  {
+    "login": "rossgray",
+    "finalScore": 64.1,
+    "reasons": [
+      "Shipped 40 merged PRs across 8 code areas",
+      "Reviewed 87 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 19.685676166867566,
+      "ownershipBreadth": 2.1972245773362196,
+      "reviewLeverage": 4.477336814478207,
+      "executionQuality": 0.11752284903784527
+    },
+    "metrics": {
+      "authoredMergedPrs": 40,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 87,
+      "distinctAreas": [
+        ".github",
+        "ee",
+        "frontend",
+        "playwright",
+        "posthog",
+        "products",
+        "pyproject.toml",
+        "uv.lock"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 10.8
+    },
+    "subscores": {
+      "shipped_work": 75.4,
+      "ownership_breadth": 56.5,
+      "review_leverage": 72.5,
+      "execution_quality": 35.1
+    }
+  },
+  {
+    "login": "MattBro",
+    "finalScore": 64.1,
+    "reasons": [
+      "Shipped 68 merged PRs across 8 code areas",
+      "Reviewed 82 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 20.507914996311655,
+      "ownershipBreadth": 2.1972245773362196,
+      "reviewLeverage": 4.418840607796598,
+      "executionQuality": 0.09334689850526459
+    },
+    "metrics": {
+      "authoredMergedPrs": 68,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 82,
+      "distinctAreas": [
+        ".github",
+        "ee",
+        "frontend",
+        "pnpm-lock.yaml",
+        "pnpm-workspace.yaml",
+        "posthog",
+        "products",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 22.9
+    },
+    "subscores": {
+      "shipped_work": 78.6,
+      "ownership_breadth": 56.5,
+      "review_leverage": 71.6,
+      "execution_quality": 27.9
+    }
+  },
+  {
+    "login": "sampennington",
+    "finalScore": 64.1,
+    "reasons": [
+      "Shipped 82 merged PRs across 6 code areas",
+      "Reviewed 93 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 21.3040123492958,
+      "ownershipBreadth": 1.9459101490553132,
+      "reviewLeverage": 4.543294782270004,
+      "executionQuality": 0.09544085970764093
+    },
+    "metrics": {
+      "authoredMergedPrs": 82,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 93,
+      "distinctAreas": [
+        ".github",
+        "docker-compose.dev.yml",
+        "ee",
+        "frontend",
+        "playwright",
+        "posthog"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 21.2
+    },
+    "subscores": {
+      "shipped_work": 81.6,
+      "ownership_breadth": 50,
+      "review_leverage": 73.6,
+      "execution_quality": 28.5
+    }
+  },
+  {
+    "login": "arthurdedeus",
+    "finalScore": 63.6,
+    "reasons": [
+      "Shipped 78 merged PRs across 8 code areas",
+      "Reviewed 45 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 21.488960478625565,
+      "ownershipBreadth": 2.1972245773362196,
+      "reviewLeverage": 3.828641396489095,
+      "executionQuality": 0.09223708438814189
+    },
+    "metrics": {
+      "authoredMergedPrs": 78,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 45,
+      "distinctAreas": [
+        "common",
+        "ee",
+        "frontend",
+        "nodejs",
+        "pnpm-lock.yaml",
+        "pnpm-workspace.yaml",
+        "posthog",
+        "products"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 23.9
+    },
+    "subscores": {
+      "shipped_work": 82.3,
+      "ownership_breadth": 56.5,
+      "review_leverage": 62,
+      "execution_quality": 27.5
+    }
+  },
+  {
+    "login": "jabahamondes",
+    "finalScore": 63.4,
+    "reasons": [
+      "Shipped 56 merged PRs across 8 code areas",
+      "Reviewed 77 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 20.738907631024308,
+      "ownershipBreadth": 2.1972245773362196,
+      "reviewLeverage": 4.356708826689592,
+      "executionQuality": 0.07613247480786905
+    },
+    "metrics": {
+      "authoredMergedPrs": 56,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 77,
+      "distinctAreas": [
+        "common",
+        "ee",
+        "frontend",
+        "mypy-baseline.txt",
+        "nodejs",
+        "posthog",
+        "products",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 49.4
+    },
+    "subscores": {
+      "shipped_work": 79.4,
+      "ownership_breadth": 56.5,
+      "review_leverage": 70.6,
+      "execution_quality": 22.7
+    }
+  },
+  {
+    "login": "lricoy",
+    "finalScore": 63.2,
+    "reasons": [
+      "Shipped 55 merged PRs across 6 code areas",
+      "Reviewed 146 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 19.639675720600753,
+      "ownershipBreadth": 1.9459101490553132,
+      "reviewLeverage": 4.990432586778736,
+      "executionQuality": 0.09868717646919749
+    },
+    "metrics": {
+      "authoredMergedPrs": 55,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 146,
+      "distinctAreas": [
+        ".github",
+        "common",
+        "frontend",
+        "nodejs",
+        "posthog",
+        "products"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 18.9
+    },
+    "subscores": {
+      "shipped_work": 75.2,
+      "ownership_breadth": 50,
+      "review_leverage": 80.8,
+      "execution_quality": 29.5
+    }
+  },
+  {
+    "login": "estefaniarabadan",
+    "finalScore": 63.2,
+    "reasons": [
+      "Shipped 37 merged PRs across 7 code areas",
+      "Reviewed 104 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 18.316598331221524,
+      "ownershipBreadth": 2.0794415416798357,
+      "reviewLeverage": 4.653960350157523,
+      "executionQuality": 0.1486994553689096
+    },
+    "metrics": {
+      "authoredMergedPrs": 37,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 104,
+      "distinctAreas": [
+        "bin",
+        "frontend",
+        "mypy-baseline.txt",
+        "posthog",
+        "products",
+        "pyproject.toml",
+        "uv.lock"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 5.5
+    },
+    "subscores": {
+      "shipped_work": 70.2,
+      "ownership_breadth": 53.4,
+      "review_leverage": 75.4,
+      "execution_quality": 44.4
+    }
+  },
+  {
+    "login": "odin-posthog",
+    "finalScore": 63.2,
+    "reasons": [
+      "Shipped 23 merged PRs across 10 code areas",
+      "Reviewed 34 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 18.062696966272494,
+      "ownershipBreadth": 2.3978952727983707,
+      "reviewLeverage": 3.5553480614894135,
+      "executionQuality": 0.19181172666848487
+    },
+    "metrics": {
+      "authoredMergedPrs": 23,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 34,
+      "distinctAreas": [
+        "common",
+        "docs",
+        "ee",
+        "frontend",
+        "mypy-baseline.txt",
+        "nodejs",
+        "plugin-server",
+        "posthog",
+        "products",
+        "rust"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 2.8
+    },
+    "subscores": {
+      "shipped_work": 69.2,
+      "ownership_breadth": 61.6,
+      "review_leverage": 57.6,
+      "execution_quality": 57.3
+    }
+  },
+  {
+    "login": "a-lider",
+    "finalScore": 62.8,
+    "reasons": [
+      "Shipped 38 merged PRs across 8 code areas",
+      "Reviewed 91 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 19.792516751512274,
+      "ownershipBreadth": 2.1972245773362196,
+      "reviewLeverage": 4.5217885770490405,
+      "executionQuality": 0.08259016845682002
+    },
+    "metrics": {
+      "authoredMergedPrs": 38,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 91,
+      "distinctAreas": [
+        ".semgrep",
+        "ee",
+        "frontend",
+        "mypy-baseline.txt",
+        "playwright",
+        "posthog",
+        "products",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 35.8
+    },
+    "subscores": {
+      "shipped_work": 75.8,
+      "ownership_breadth": 56.5,
+      "review_leverage": 73.2,
+      "execution_quality": 24.7
+    }
+  },
+  {
+    "login": "jurajmajerik",
+    "finalScore": 62.8,
+    "reasons": [
+      "Shipped 48 merged PRs across 7 code areas",
+      "Reviewed 76 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 20.143015914363062,
+      "ownershipBreadth": 2.0794415416798357,
+      "reviewLeverage": 4.343805421853684,
+      "executionQuality": 0.10120143208396572
+    },
+    "metrics": {
+      "authoredMergedPrs": 48,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 76,
+      "distinctAreas": [
+        "devenv",
+        "docs",
+        "ee",
+        "frontend",
+        "posthog",
+        "products",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 17.4
+    },
+    "subscores": {
+      "shipped_work": 77.2,
+      "ownership_breadth": 53.4,
+      "review_leverage": 70.4,
+      "execution_quality": 30.2
+    }
+  },
+  {
+    "login": "fercgomes",
+    "finalScore": 62.3,
+    "reasons": [
+      "Shipped 36 merged PRs across 6 code areas",
+      "Reviewed 91 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 19.778951988310922,
+      "ownershipBreadth": 1.9459101490553132,
+      "reviewLeverage": 4.5217885770490405,
+      "executionQuality": 0.10819264464496474
+    },
+    "metrics": {
+      "authoredMergedPrs": 36,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 91,
+      "distinctAreas": [
+        "docs",
+        "ee",
+        "frontend",
+        "posthog",
+        "products",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 14
+    },
+    "subscores": {
+      "shipped_work": 75.8,
+      "ownership_breadth": 50,
+      "review_leverage": 73.2,
+      "execution_quality": 32.3
+    }
+  },
+  {
+    "login": "mp-hog",
+    "finalScore": 62.2,
+    "reasons": [
+      "Shipped 54 merged PRs across 9 code areas",
+      "Reviewed 32 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 20.115683417307878,
+      "ownershipBreadth": 2.302585092994046,
+      "reviewLeverage": 3.4965075614664802,
+      "executionQuality": 0.11797795524425593
+    },
+    "metrics": {
+      "authoredMergedPrs": 54,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 32,
+      "distinctAreas": [
+        "AGENTS.md",
+        "bin",
+        "common",
+        "devenv",
+        "ee",
+        "frontend",
+        "playwright",
+        "posthog",
+        "products"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 10.7
+    },
+    "subscores": {
+      "shipped_work": 77.1,
+      "ownership_breadth": 59.2,
+      "review_leverage": 56.6,
+      "execution_quality": 35.2
+    }
+  },
+  {
+    "login": "orian",
+    "finalScore": 61.6,
+    "reasons": [
+      "Shipped 29 merged PRs across 7 code areas",
+      "Reviewed 99 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 16.4388820421747,
+      "ownershipBreadth": 2.0794415416798357,
+      "reviewLeverage": 4.605170185988092,
+      "executionQuality": 0.18267868308352186
+    },
+    "metrics": {
+      "authoredMergedPrs": 29,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 99,
+      "distinctAreas": [
+        ".github",
+        "common",
+        "docker-compose.base.yml",
+        "ee",
+        "frontend",
+        "posthog",
+        "products"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 3.2
+    },
+    "subscores": {
+      "shipped_work": 63,
+      "ownership_breadth": 53.4,
+      "review_leverage": 74.6,
+      "execution_quality": 54.5
+    }
+  },
+  {
+    "login": "gantoine",
+    "finalScore": 61.3,
+    "reasons": [
+      "Shipped 11 merged PRs across 14 code areas",
+      "Reviewed 51 peer PRs during the window",
+      "Touched 14 distinct top-level code areas"
+    ],
+    "rawScores": {
+      "shippedWork": 17.581300081538284,
+      "ownershipBreadth": 2.70805020110221,
+      "reviewLeverage": 3.9512437185814275,
+      "executionQuality": 0.09304233586336368
+    },
+    "metrics": {
+      "authoredMergedPrs": 11,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 51,
+      "distinctAreas": [
+        ".flox",
+        ".github",
+        ".gitignore",
+        "bin",
+        "common",
+        "frontend",
+        "nodejs",
+        "package.json",
+        "pnpm-lock.yaml",
+        "products",
+        "rust",
+        "services",
+        "tools",
+        "turbo.json"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 23.1
+    },
+    "subscores": {
+      "shipped_work": 67.3,
+      "ownership_breadth": 69.6,
+      "review_leverage": 64,
+      "execution_quality": 27.8
+    }
+  },
+  {
+    "login": "lucasheriques",
+    "finalScore": 61.2,
+    "reasons": [
+      "Shipped 28 merged PRs across 7 code areas",
+      "Reviewed 111 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 18.787312475755368,
+      "ownershipBreadth": 2.0794415416798357,
+      "reviewLeverage": 4.718498871295094,
+      "executionQuality": 0.08337928527156037
+    },
+    "metrics": {
+      "authoredMergedPrs": 28,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 111,
+      "distinctAreas": [
+        ".interface-design",
+        "ee",
+        "frontend",
+        "nodejs",
+        "pnpm-lock.yaml",
+        "posthog",
+        "products"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 34.5
+    },
+    "subscores": {
+      "shipped_work": 72,
+      "ownership_breadth": 53.4,
+      "review_leverage": 76.4,
+      "execution_quality": 24.9
+    }
+  },
+  {
+    "login": "fuziontech",
+    "finalScore": 60.5,
+    "reasons": [
+      "Shipped 40 merged PRs across 3 code areas",
+      "Reviewed 19 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 17.767687146481066,
+      "ownershipBreadth": 1.3862943611198906,
+      "reviewLeverage": 2.995732273553991,
+      "executionQuality": 0.3264975529060946
+    },
+    "metrics": {
+      "authoredMergedPrs": 40,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 19,
+      "distinctAreas": [
+        "frontend",
+        "posthog",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 0.5
+    },
+    "subscores": {
+      "shipped_work": 68.1,
+      "ownership_breadth": 35.6,
+      "review_leverage": 48.5,
+      "execution_quality": 97.5
+    }
+  },
+  {
+    "login": "andyzzhao",
+    "finalScore": 59.6,
+    "reasons": [
+      "Shipped 37 merged PRs across 6 code areas",
+      "Reviewed 89 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 18.329996422468014,
+      "ownershipBreadth": 1.9459101490553132,
+      "reviewLeverage": 4.499809670330265,
+      "executionQuality": 0.09958436458265035
+    },
+    "metrics": {
+      "authoredMergedPrs": 37,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 89,
+      "distinctAreas": [
+        "ee",
+        "frontend",
+        "mypy-baseline.txt",
+        "nodejs",
+        "posthog",
+        "products"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 18.3
+    },
+    "subscores": {
+      "shipped_work": 70.2,
+      "ownership_breadth": 50,
+      "review_leverage": 72.9,
+      "execution_quality": 29.7
+    }
+  },
+  {
+    "login": "gesh",
+    "finalScore": 59,
+    "reasons": [
+      "Shipped 32 merged PRs across 5 code areas",
+      "Reviewed 87 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 18.630197904103845,
+      "ownershipBreadth": 1.791759469228055,
+      "reviewLeverage": 4.477336814478207,
+      "executionQuality": 0.10023250078750666
+    },
+    "metrics": {
+      "authoredMergedPrs": 32,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 87,
+      "distinctAreas": [
+        "frontend",
+        "playwright",
+        "pnpm-lock.yaml",
+        "posthog",
+        "products"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 17.9
+    },
+    "subscores": {
+      "shipped_work": 71.4,
+      "ownership_breadth": 46,
+      "review_leverage": 72.5,
+      "execution_quality": 29.9
+    }
+  },
+  {
+    "login": "rodrigoi",
+    "finalScore": 58.9,
+    "reasons": [
+      "Shipped 50 merged PRs across 4 code areas",
+      "Reviewed 69 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 20.21676136953818,
+      "ownershipBreadth": 1.6094379124341003,
+      "reviewLeverage": 4.248495242049359,
+      "executionQuality": 0.08589291991991448
+    },
+    "metrics": {
+      "authoredMergedPrs": 50,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 69,
+      "distinctAreas": [
+        "ee",
+        "frontend",
+        "posthog",
+        "products"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 30.9
+    },
+    "subscores": {
+      "shipped_work": 77.4,
+      "ownership_breadth": 41.4,
+      "review_leverage": 68.8,
+      "execution_quality": 25.6
+    }
+  },
+  {
+    "login": "MarconLP",
+    "finalScore": 57.6,
+    "reasons": [
+      "Shipped 23 merged PRs across 5 code areas",
+      "Reviewed 38 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 19.569185074124682,
+      "ownershipBreadth": 1.791759469228055,
+      "reviewLeverage": 3.6635616461296463,
+      "executionQuality": 0.0952128598673614
+    },
+    "metrics": {
+      "authoredMergedPrs": 23,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 38,
+      "distinctAreas": [
+        "AGENTS.md",
+        "ee",
+        "frontend",
+        "posthog",
+        "products"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 21.4
+    },
+    "subscores": {
+      "shipped_work": 75,
+      "ownership_breadth": 46,
+      "review_leverage": 59.3,
+      "execution_quality": 28.4
+    }
+  },
+  {
+    "login": "fasyy612",
+    "finalScore": 57.4,
+    "reasons": [
+      "Shipped 49 merged PRs across 3 code areas",
+      "Reviewed 72 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 19.72757538399804,
+      "ownershipBreadth": 1.3862943611198906,
+      "reviewLeverage": 4.290459441148391,
+      "executionQuality": 0.09818926936036998
+    },
+    "metrics": {
+      "authoredMergedPrs": 49,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 72,
+      "distinctAreas": [
+        "frontend",
+        "posthog",
+        "products"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 19.2
+    },
+    "subscores": {
+      "shipped_work": 75.6,
+      "ownership_breadth": 35.6,
+      "review_leverage": 69.5,
+      "execution_quality": 29.3
+    }
+  },
+  {
+    "login": "lmenezes",
+    "finalScore": 57.4,
+    "reasons": [
+      "Shipped 26 merged PRs across 4 code areas",
+      "Reviewed 53 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 19.45345183930748,
+      "ownershipBreadth": 1.6094379124341003,
+      "reviewLeverage": 3.9889840465642745,
+      "executionQuality": 0.09612531501135786
+    },
+    "metrics": {
+      "authoredMergedPrs": 26,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 53,
+      "distinctAreas": [
+        ".github",
+        "docker",
+        "nodejs",
+        "posthog"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 20.7
+    },
+    "subscores": {
+      "shipped_work": 74.5,
+      "ownership_breadth": 41.4,
+      "review_leverage": 64.6,
+      "execution_quality": 28.7
+    }
+  },
+  {
+    "login": "aspicer",
+    "finalScore": 56.5,
+    "reasons": [
+      "Shipped 17 merged PRs across 10 code areas",
+      "Reviewed 25 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 17.621318508245718,
+      "ownershipBreadth": 2.3978952727983707,
+      "reviewLeverage": 3.258096538021482,
+      "executionQuality": 0.07793369102488705
+    },
+    "metrics": {
+      "authoredMergedPrs": 17,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 25,
+      "distinctAreas": [
+        ".flox",
+        ".github",
+        "ee",
+        "frontend",
+        "mypy-baseline.txt",
+        "nodejs",
+        "posthog",
+        "products",
+        "rust",
+        "tach.toml"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 45
+    },
+    "subscores": {
+      "shipped_work": 67.5,
+      "ownership_breadth": 61.6,
+      "review_leverage": 52.8,
+      "execution_quality": 23.3
+    }
+  },
+  {
+    "login": "anirudhpillai",
+    "finalScore": 55.8,
+    "reasons": [
+      "Shipped 38 merged PRs across 4 code areas",
+      "Reviewed 46 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 19.029694776812462,
+      "ownershipBreadth": 1.6094379124341003,
+      "reviewLeverage": 3.8501476017100584,
+      "executionQuality": 0.08461587495783292
+    },
+    "metrics": {
+      "authoredMergedPrs": 38,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 46,
+      "distinctAreas": [
+        "ee",
+        "frontend",
+        "posthog",
+        "products"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 32.7
+    },
+    "subscores": {
+      "shipped_work": 72.9,
+      "ownership_breadth": 41.4,
+      "review_leverage": 62.4,
+      "execution_quality": 25.3
+    }
+  },
+  {
+    "login": "luke-belton",
+    "finalScore": 55.6,
+    "reasons": [
+      "Shipped 44 merged PRs across 10 code areas",
+      "Reviewed 11 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 18.205985244398864,
+      "ownershipBreadth": 2.3978952727983707,
+      "reviewLeverage": 2.4849066497880004,
+      "executionQuality": 0.09569030914619722
+    },
+    "metrics": {
+      "authoredMergedPrs": 44,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 11,
+      "distinctAreas": [
+        "Dockerfile",
+        "docs",
+        "ee",
+        "frontend",
+        "nodejs",
+        "posthog",
+        "products",
+        "pyproject.toml",
+        "services",
+        "uv.lock"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 21
+    },
+    "subscores": {
+      "shipped_work": 69.7,
+      "ownership_breadth": 61.6,
+      "review_leverage": 40.2,
+      "execution_quality": 28.6
+    }
+  },
+  {
+    "login": "ksvat",
+    "finalScore": 55.4,
+    "reasons": [
+      "Shipped 36 merged PRs across 5 code areas",
+      "Reviewed 51 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 17.63176835704579,
+      "ownershipBreadth": 1.791759469228055,
+      "reviewLeverage": 3.9512437185814275,
+      "executionQuality": 0.09146393394932943
+    },
+    "metrics": {
+      "authoredMergedPrs": 36,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 51,
+      "distinctAreas": [
+        "ee",
+        "frontend",
+        "playwright",
+        "posthog",
+        "products"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 24.6
+    },
+    "subscores": {
+      "shipped_work": 67.5,
+      "ownership_breadth": 46,
+      "review_leverage": 64,
+      "execution_quality": 27.3
+    }
+  },
+  {
+    "login": "Daesgar",
+    "finalScore": 55.1,
+    "reasons": [
+      "Shipped 18 merged PRs across 5 code areas",
+      "Reviewed 25 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 14.97943913392437,
+      "ownershipBreadth": 1.791759469228055,
+      "reviewLeverage": 3.258096538021482,
+      "executionQuality": 0.22440587982370694
+    },
+    "metrics": {
+      "authoredMergedPrs": 18,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 25,
+      "distinctAreas": [
+        "docker",
+        "ee",
+        "mypy-baseline.txt",
+        "posthog",
+        "products"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 1.8
+    },
+    "subscores": {
+      "shipped_work": 57.4,
+      "ownership_breadth": 46,
+      "review_leverage": 52.8,
+      "execution_quality": 67
+    }
+  },
+  {
+    "login": "pawel-cebula",
+    "finalScore": 53.8,
+    "reasons": [
+      "Shipped 23 merged PRs across 5 code areas",
+      "Reviewed 31 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 16.11896247519182,
+      "ownershipBreadth": 1.791759469228055,
+      "reviewLeverage": 3.4657359027997265,
+      "executionQuality": 0.14360135295719365
+    },
+    "metrics": {
+      "authoredMergedPrs": 23,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 31,
+      "distinctAreas": [
+        "ee",
+        "frontend",
+        "mypy-baseline.txt",
+        "nodejs",
+        "posthog"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 6.1
+    },
+    "subscores": {
+      "shipped_work": 61.7,
+      "ownership_breadth": 46,
+      "review_leverage": 56.1,
+      "execution_quality": 42.9
+    }
+  },
+  {
+    "login": "edwinyjlim",
+    "finalScore": 53.7,
+    "reasons": [
+      "Shipped 9 merged PRs across 5 code areas",
+      "Reviewed 14 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 16.524610446174446,
+      "ownershipBreadth": 1.791759469228055,
+      "reviewLeverage": 2.70805020110221,
+      "executionQuality": 0.18074313046784352
+    },
+    "metrics": {
+      "authoredMergedPrs": 9,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 14,
+      "distinctAreas": [
+        ".github",
+        "README.md",
+        "docs",
+        "frontend",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 3.3
+    },
+    "subscores": {
+      "shipped_work": 63.3,
+      "ownership_breadth": 46,
+      "review_leverage": 43.9,
+      "execution_quality": 54
+    }
+  },
+  {
+    "login": "cvolzer3",
+    "finalScore": 53.2,
+    "reasons": [
+      "Shipped 20 merged PRs across 9 code areas",
+      "Reviewed 4 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 18.43528614674765,
+      "ownershipBreadth": 2.302585092994046,
+      "reviewLeverage": 1.6094379124341003,
+      "executionQuality": 0.1093797566279266
+    },
+    "metrics": {
+      "authoredMergedPrs": 20,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 4,
+      "distinctAreas": [
+        ".github",
+        ".semgrep",
+        "ee",
+        "frontend",
+        "playwright",
+        "pnpm-lock.yaml",
+        "posthog",
+        "products",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 13.5
+    },
+    "subscores": {
+      "shipped_work": 70.6,
+      "ownership_breadth": 59.2,
+      "review_leverage": 26.1,
+      "execution_quality": 32.7
+    }
+  },
+  {
+    "login": "VojtechBartos",
+    "finalScore": 53.2,
+    "reasons": [
+      "Shipped 12 merged PRs across 4 code areas",
+      "Reviewed 9 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 19.596876516227866,
+      "ownershipBreadth": 1.6094379124341003,
+      "reviewLeverage": 2.302585092994046,
+      "executionQuality": 0.11963853089803989
+    },
+    "metrics": {
+      "authoredMergedPrs": 12,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 9,
+      "distinctAreas": [
+        "bin",
+        "posthog",
+        "products",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 10.3
+    },
+    "subscores": {
+      "shipped_work": 75.1,
+      "ownership_breadth": 41.4,
+      "review_leverage": 37.3,
+      "execution_quality": 35.7
+    }
+  },
+  {
+    "login": "patricio-posthog",
+    "finalScore": 52.5,
+    "reasons": [
+      "Shipped 16 merged PRs across 6 code areas",
+      "Reviewed 44 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 15.771587154295048,
+      "ownershipBreadth": 1.9459101490553132,
+      "reviewLeverage": 3.8066624897703196,
+      "executionQuality": 0.07788295780774294
+    },
+    "metrics": {
+      "authoredMergedPrs": 16,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 44,
+      "distinctAreas": [
+        "docs",
+        "ee",
+        "posthog",
+        "products",
+        "rust",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 45.1
+    },
+    "subscores": {
+      "shipped_work": 60.4,
+      "ownership_breadth": 50,
+      "review_leverage": 61.7,
+      "execution_quality": 23.2
+    }
+  },
+  {
+    "login": "MattPua",
+    "finalScore": 52.3,
+    "reasons": [
+      "Shipped 37 merged PRs across 4 code areas",
+      "Reviewed 13 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 17.42890289745456,
+      "ownershipBreadth": 1.6094379124341003,
+      "reviewLeverage": 2.639057329615259,
+      "executionQuality": 0.14874304517099593
+    },
+    "metrics": {
+      "authoredMergedPrs": 37,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 13,
+      "distinctAreas": [
+        "frontend",
+        "playwright",
+        "pnpm-lock.yaml",
+        "products"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 5.5
+    },
+    "subscores": {
+      "shipped_work": 66.8,
+      "ownership_breadth": 41.4,
+      "review_leverage": 42.7,
+      "execution_quality": 44.4
+    }
+  },
+  {
+    "login": "bciaraldi",
+    "finalScore": 51.9,
+    "reasons": [
+      "Shipped 12 merged PRs across 10 code areas",
+      "Reviewed 16 peer PRs during the window",
+      "Touched 10 distinct top-level code areas"
+    ],
+    "rawScores": {
+      "shippedWork": 12.892540921481531,
+      "ownershipBreadth": 2.3978952727983707,
+      "reviewLeverage": 2.833213344056216,
+      "executionQuality": 0.16803427108293464
+    },
+    "metrics": {
+      "authoredMergedPrs": 12,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 16,
+      "distinctAreas": [
+        ".dockerignore",
+        ".github",
+        "Dockerfile",
+        "bin",
+        "docker-compose.hobby.yml",
+        "livestream",
+        "nodejs",
+        "posthog",
+        "rust",
+        "unit.json.tpl"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 4
+    },
+    "subscores": {
+      "shipped_work": 49.4,
+      "ownership_breadth": 61.6,
+      "review_leverage": 45.9,
+      "execution_quality": 50.2
+    }
+  },
+  {
+    "login": "EDsCODE",
+    "finalScore": 51.5,
+    "reasons": [
+      "Shipped 13 merged PRs across 4 code areas",
+      "Reviewed 40 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 14.856600636614385,
+      "ownershipBreadth": 1.6094379124341003,
+      "reviewLeverage": 3.713572066704308,
+      "executionQuality": 0.14098400497484695
+    },
+    "metrics": {
+      "authoredMergedPrs": 13,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 40,
+      "distinctAreas": [
+        ".github",
+        "frontend",
+        "posthog",
+        "products"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 6.4
+    },
+    "subscores": {
+      "shipped_work": 56.9,
+      "ownership_breadth": 41.4,
+      "review_leverage": 60.2,
+      "execution_quality": 42.1
+    }
+  },
+  {
+    "login": "clr182",
+    "finalScore": 51.3,
+    "reasons": [
+      "Shipped 18 merged PRs across 5 code areas",
+      "Reviewed 9 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 18.24977886629093,
+      "ownershipBreadth": 1.791759469228055,
+      "reviewLeverage": 2.302585092994046,
+      "executionQuality": 0.09720608385658001
+    },
+    "metrics": {
+      "authoredMergedPrs": 18,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 9,
+      "distinctAreas": [
+        "ee",
+        "frontend",
+        "posthog",
+        "products",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 19.9
+    },
+    "subscores": {
+      "shipped_work": 69.9,
+      "ownership_breadth": 46,
+      "review_leverage": 37.3,
+      "execution_quality": 29
+    }
+  },
+  {
+    "login": "abhischekt",
+    "finalScore": 51.2,
+    "reasons": [
+      "Shipped 15 merged PRs across 5 code areas",
+      "Reviewed 25 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 16.284897042135636,
+      "ownershipBreadth": 1.791759469228055,
+      "reviewLeverage": 3.258096538021482,
+      "executionQuality": 0.09294280575311871
+    },
+    "metrics": {
+      "authoredMergedPrs": 15,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 25,
+      "distinctAreas": [
+        ".dagster_home",
+        "ee",
+        "posthog",
+        "pyproject.toml",
+        "uv.lock"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 23.2
+    },
+    "subscores": {
+      "shipped_work": 62.4,
+      "ownership_breadth": 46,
+      "review_leverage": 52.8,
+      "execution_quality": 27.7
+    }
+  },
+  {
+    "login": "gewenyu99",
+    "finalScore": 51,
+    "reasons": [
+      "Shipped 7 merged PRs across 5 code areas",
+      "Reviewed 18 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 17.65186592280713,
+      "ownershipBreadth": 1.791759469228055,
+      "reviewLeverage": 2.9444389791664403,
+      "executionQuality": 0.06504953642249084
+    },
+    "metrics": {
+      "authoredMergedPrs": 7,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 18,
+      "distinctAreas": [
+        ".github",
+        "docs",
+        "frontend",
+        "posthog",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 98.7
+    },
+    "subscores": {
+      "shipped_work": 67.6,
+      "ownership_breadth": 46,
+      "review_leverage": 47.7,
+      "execution_quality": 19.4
+    }
+  },
+  {
+    "login": "dustinbyrne",
+    "finalScore": 49.6,
+    "reasons": [
+      "Shipped 13 merged PRs across 4 code areas",
+      "Reviewed 39 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 14.871306784004078,
+      "ownershipBreadth": 1.6094379124341003,
+      "reviewLeverage": 3.6888794541139363,
+      "executionQuality": 0.10023879779193036
+    },
+    "metrics": {
+      "authoredMergedPrs": 13,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 39,
+      "distinctAreas": [
+        "frontend",
+        "posthog",
+        "products",
+        "rust"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 17.9
+    },
+    "subscores": {
+      "shipped_work": 57,
+      "ownership_breadth": 41.4,
+      "review_leverage": 59.8,
+      "execution_quality": 29.9
+    }
+  },
+  {
+    "login": "z0br0wn",
+    "finalScore": 49.6,
+    "reasons": [
+      "Shipped 14 merged PRs across 3 code areas",
+      "Reviewed 34 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 16.610536455170674,
+      "ownershipBreadth": 1.3862943611198906,
+      "reviewLeverage": 3.5553480614894135,
+      "executionQuality": 0.08255445851287384
+    },
+    "metrics": {
+      "authoredMergedPrs": 14,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 34,
+      "distinctAreas": [
+        "nodejs",
+        "posthog",
+        "rust"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 35.9
+    },
+    "subscores": {
+      "shipped_work": 63.6,
+      "ownership_breadth": 35.6,
+      "review_leverage": 57.6,
+      "execution_quality": 24.6
+    }
+  },
+  {
+    "login": "sarahxsanders",
+    "finalScore": 48.6,
+    "reasons": [
+      "Shipped 13 merged PRs across 3 code areas",
+      "Reviewed 8 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 18.24760039691998,
+      "ownershipBreadth": 1.3862943611198906,
+      "reviewLeverage": 2.1972245773362196,
+      "executionQuality": 0.103495174694968
+    },
+    "metrics": {
+      "authoredMergedPrs": 13,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 8,
+      "distinctAreas": [
+        ".github",
+        "docs",
+        "frontend"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 16.2
+    },
+    "subscores": {
+      "shipped_work": 69.9,
+      "ownership_breadth": 35.6,
+      "review_leverage": 35.6,
+      "execution_quality": 30.9
+    }
+  },
+  {
+    "login": "k11kirky",
+    "finalScore": 48.4,
+    "reasons": [
+      "Shipped 10 merged PRs across 6 code areas",
+      "Reviewed 12 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 15.11571886289456,
+      "ownershipBreadth": 1.9459101490553132,
+      "reviewLeverage": 2.5649493574615367,
+      "executionQuality": 0.09989261655515526
+    },
+    "metrics": {
+      "authoredMergedPrs": 10,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 12,
+      "distinctAreas": [
+        ".github",
+        "ee",
+        "frontend",
+        "posthog",
+        "products",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 18.2
+    },
+    "subscores": {
+      "shipped_work": 57.9,
+      "ownership_breadth": 50,
+      "review_leverage": 41.5,
+      "execution_quality": 29.8
+    }
+  },
+  {
+    "login": "raquelmsmith",
+    "finalScore": 48.4,
+    "reasons": [
+      "Shipped 10 merged PRs across 9 code areas",
+      "Reviewed 4 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 16.375865763216844,
+      "ownershipBreadth": 2.302585092994046,
+      "reviewLeverage": 1.6094379124341003,
+      "executionQuality": 0.07471699014277675
+    },
+    "metrics": {
+      "authoredMergedPrs": 10,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 4,
+      "distinctAreas": [
+        "AGENTS.md",
+        "docs",
+        "ee",
+        "frontend",
+        "playwright",
+        "pnpm-lock.yaml",
+        "posthog",
+        "products",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 53.4
+    },
+    "subscores": {
+      "shipped_work": 62.7,
+      "ownership_breadth": 59.2,
+      "review_leverage": 26.1,
+      "execution_quality": 22.3
+    }
+  },
+  {
+    "login": "ordehi",
+    "finalScore": 48,
+    "reasons": [
+      "Shipped 37 merged PRs across 7 code areas",
+      "Reviewed 1 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 18.262169973207598,
+      "ownershipBreadth": 2.0794415416798357,
+      "reviewLeverage": 0.6931471805599453,
+      "executionQuality": 0.09854404441639986
+    },
+    "metrics": {
+      "authoredMergedPrs": 37,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 1,
+      "distinctAreas": [
+        "ee",
+        "frontend",
+        "nodejs",
+        "playwright",
+        "pnpm-lock.yaml",
+        "posthog",
+        "products"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 19
+    },
+    "subscores": {
+      "shipped_work": 70,
+      "ownership_breadth": 53.4,
+      "review_leverage": 11.2,
+      "execution_quality": 29.4
+    }
+  },
+  {
+    "login": "timgl",
+    "finalScore": 46.7,
+    "reasons": [
+      "Shipped 9 merged PRs across 4 code areas",
+      "Reviewed 18 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 13.647806342081973,
+      "ownershipBreadth": 1.6094379124341003,
+      "reviewLeverage": 2.9444389791664403,
+      "executionQuality": 0.13057893747059612
+    },
+    "metrics": {
+      "authoredMergedPrs": 9,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 18,
+      "distinctAreas": [
+        ".github",
+        "frontend",
+        "posthog",
+        "products"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 7.9
+    },
+    "subscores": {
+      "shipped_work": 52.3,
+      "ownership_breadth": 41.4,
+      "review_leverage": 47.7,
+      "execution_quality": 39
+    }
+  },
+  {
+    "login": "danielxnj",
+    "finalScore": 46.3,
+    "reasons": [
+      "Shipped 13 merged PRs across 6 code areas",
+      "Reviewed 5 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 15.19286336578684,
+      "ownershipBreadth": 1.9459101490553132,
+      "reviewLeverage": 1.791759469228055,
+      "executionQuality": 0.10611457644680956
+    },
+    "metrics": {
+      "authoredMergedPrs": 13,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 5,
+      "distinctAreas": [
+        ".dockerignore",
+        "Dockerfile",
+        "common",
+        "frontend",
+        "manage.py",
+        "posthog"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 14.9
+    },
+    "subscores": {
+      "shipped_work": 58.2,
+      "ownership_breadth": 50,
+      "review_leverage": 29,
+      "execution_quality": 31.7
+    }
+  },
+  {
+    "login": "matheus-vb",
+    "finalScore": 46.1,
+    "reasons": [
+      "Shipped 19 merged PRs across 1 code areas",
+      "Reviewed 29 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 17.33269149375831,
+      "ownershipBreadth": 0.6931471805599453,
+      "reviewLeverage": 3.4011973816621555,
+      "executionQuality": 0.09109082419225936
+    },
+    "metrics": {
+      "authoredMergedPrs": 19,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 29,
+      "distinctAreas": [
+        "rust"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 24.9
+    },
+    "subscores": {
+      "shipped_work": 66.4,
+      "ownership_breadth": 17.8,
+      "review_leverage": 55.1,
+      "execution_quality": 27.2
+    }
+  },
+  {
+    "login": "christiaan-ph",
+    "finalScore": 45.3,
+    "reasons": [
+      "Shipped 18 merged PRs across 3 code areas",
+      "Reviewed 6 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 13.613117812004248,
+      "ownershipBreadth": 1.3862943611198906,
+      "reviewLeverage": 1.9459101490553132,
+      "executionQuality": 0.20632943609573537
+    },
+    "metrics": {
+      "authoredMergedPrs": 18,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 6,
+      "distinctAreas": [
+        "frontend",
+        "posthog",
+        "products"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 2.3
+    },
+    "subscores": {
+      "shipped_work": 52.1,
+      "ownership_breadth": 35.6,
+      "review_leverage": 31.5,
+      "execution_quality": 61.6
+    }
+  },
+  {
+    "login": "jonathanlab",
+    "finalScore": 45,
+    "reasons": [
+      "Shipped 8 merged PRs across 3 code areas",
+      "Reviewed 42 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 12.403936325428301,
+      "ownershipBreadth": 1.3862943611198906,
+      "reviewLeverage": 3.7612001156935624,
+      "executionQuality": 0.1108863482450042
+    },
+    "metrics": {
+      "authoredMergedPrs": 8,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 42,
+      "distinctAreas": [
+        "posthog",
+        "products",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 13
+    },
+    "subscores": {
+      "shipped_work": 47.5,
+      "ownership_breadth": 35.6,
+      "review_leverage": 60.9,
+      "execution_quality": 33.1
+    }
+  },
+  {
+    "login": "langesven",
+    "finalScore": 44.7,
+    "reasons": [
+      "Shipped 3 merged PRs across 3 code areas",
+      "Reviewed 20 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 8.94149180628953,
+      "ownershipBreadth": 1.3862943611198906,
+      "reviewLeverage": 3.044522437723423,
+      "executionQuality": 0.2729108109889708
+    },
+    "metrics": {
+      "authoredMergedPrs": 3,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 20,
+      "distinctAreas": [
+        ".github",
+        "bin",
+        "rust"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 1
+    },
+    "subscores": {
+      "shipped_work": 34.3,
+      "ownership_breadth": 35.6,
+      "review_leverage": 49.3,
+      "execution_quality": 81.5
+    }
+  },
+  {
+    "login": "MichaelKutsch-ph",
+    "finalScore": 41.7,
+    "reasons": [
+      "Shipped 5 merged PRs across 4 code areas",
+      "Reviewed 13 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 11.40924189921928,
+      "ownershipBreadth": 1.6094379124341003,
+      "reviewLeverage": 2.639057329615259,
+      "executionQuality": 0.11822439185202936
+    },
+    "metrics": {
+      "authoredMergedPrs": 5,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 13,
+      "distinctAreas": [
+        ".github",
+        "Dockerfile",
+        "Dockerfile.node",
+        "bin"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 10.6
+    },
+    "subscores": {
+      "shipped_work": 43.7,
+      "ownership_breadth": 41.4,
+      "review_leverage": 42.7,
+      "execution_quality": 35.3
+    }
+  },
+  {
+    "login": "darkopia",
+    "finalScore": 40.6,
+    "reasons": [
+      "Shipped 12 merged PRs across 2 code areas",
+      "Reviewed 6 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 13.407805011178343,
+      "ownershipBreadth": 1.0986122886681096,
+      "reviewLeverage": 1.9459101490553132,
+      "executionQuality": 0.1503046147202116
+    },
+    "metrics": {
+      "authoredMergedPrs": 12,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 6,
+      "distinctAreas": [
+        "frontend",
+        "posthog"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 5.4
+    },
+    "subscores": {
+      "shipped_work": 51.4,
+      "ownership_breadth": 28.2,
+      "review_leverage": 31.5,
+      "execution_quality": 44.9
+    }
+  },
+  {
+    "login": "marandaneto",
+    "finalScore": 40.6,
+    "reasons": [
+      "Shipped 5 merged PRs across 3 code areas",
+      "Reviewed 44 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 9.964107038076456,
+      "ownershipBreadth": 1.3862943611198906,
+      "reviewLeverage": 3.8066624897703196,
+      "executionQuality": 0.09086047346870516
+    },
+    "metrics": {
+      "authoredMergedPrs": 5,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 44,
+      "distinctAreas": [
+        ".github",
+        "docs",
+        "frontend"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 25.2
+    },
+    "subscores": {
+      "shipped_work": 38.2,
+      "ownership_breadth": 35.6,
+      "review_leverage": 61.7,
+      "execution_quality": 27.1
+    }
+  },
+  {
+    "login": "daniloc",
+    "finalScore": 40.2,
+    "reasons": [
+      "Shipped 5 merged PRs across 3 code areas",
+      "Reviewed 6 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 11.580069076587499,
+      "ownershipBreadth": 1.3862943611198906,
+      "reviewLeverage": 1.9459101490553132,
+      "executionQuality": 0.1613783563477202
+    },
+    "metrics": {
+      "authoredMergedPrs": 5,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 6,
+      "distinctAreas": [
+        "frontend",
+        "products",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 4.4
+    },
+    "subscores": {
+      "shipped_work": 44.4,
+      "ownership_breadth": 35.6,
+      "review_leverage": 31.5,
+      "execution_quality": 48.2
+    }
+  },
+  {
+    "login": "ioannisj",
+    "finalScore": 39.5,
+    "reasons": [
+      "Shipped 3 merged PRs across 4 code areas",
+      "Reviewed 6 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 13.155255061862471,
+      "ownershipBreadth": 1.6094379124341003,
+      "reviewLeverage": 1.9459101490553132,
+      "executionQuality": 0.059770258413122
+    },
+    "metrics": {
+      "authoredMergedPrs": 3,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 6,
+      "distinctAreas": [
+        "cli",
+        "docs",
+        "frontend",
+        "rust"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 149.3
+    },
+    "subscores": {
+      "shipped_work": 50.4,
+      "ownership_breadth": 41.4,
+      "review_leverage": 31.5,
+      "execution_quality": 17.8
+    }
+  },
+  {
+    "login": "danielcarletti",
+    "finalScore": 39.3,
+    "reasons": [
+      "Shipped 5 merged PRs across 5 code areas",
+      "Reviewed 3 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 13.161402170979489,
+      "ownershipBreadth": 1.791759469228055,
+      "reviewLeverage": 1.3862943611198906,
+      "executionQuality": 0.07003044862474572
+    },
+    "metrics": {
+      "authoredMergedPrs": 5,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 3,
+      "distinctAreas": [
+        ".agents",
+        "frontend",
+        "mypy-baseline.txt",
+        "posthog",
+        "products"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 70.5
+    },
+    "subscores": {
+      "shipped_work": 50.4,
+      "ownership_breadth": 46,
+      "review_leverage": 22.5,
+      "execution_quality": 20.9
+    }
+  },
+  {
+    "login": "daibhin",
+    "finalScore": 39,
+    "reasons": [
+      "Shipped 4 merged PRs across 3 code areas",
+      "Reviewed 5 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 13.63748772842561,
+      "ownershipBreadth": 1.3862943611198906,
+      "reviewLeverage": 1.791759469228055,
+      "executionQuality": 0.07714693563627954
+    },
+    "metrics": {
+      "authoredMergedPrs": 4,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 5,
+      "distinctAreas": [
+        "frontend",
+        "posthog",
+        "products"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 46.8
+    },
+    "subscores": {
+      "shipped_work": 52.2,
+      "ownership_breadth": 35.6,
+      "review_leverage": 29,
+      "execution_quality": 23
+    }
+  },
+  {
+    "login": "charlesvien",
+    "finalScore": 38,
+    "reasons": [
+      "Shipped 6 merged PRs across 3 code areas",
+      "Reviewed 9 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 11.296971191544058,
+      "ownershipBreadth": 1.3862943611198906,
+      "reviewLeverage": 2.302585092994046,
+      "executionQuality": 0.0975717965882881
+    },
+    "metrics": {
+      "authoredMergedPrs": 6,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 9,
+      "distinctAreas": [
+        "frontend",
+        "posthog",
+        "products"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 19.6
+    },
+    "subscores": {
+      "shipped_work": 43.3,
+      "ownership_breadth": 35.6,
+      "review_leverage": 37.3,
+      "execution_quality": 29.1
+    }
+  },
+  {
+    "login": "buildwithmalik",
+    "finalScore": 36.2,
+    "reasons": [
+      "Shipped 3 merged PRs across 6 code areas",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 13.957444430010952,
+      "ownershipBreadth": 1.9459101490553132,
+      "reviewLeverage": 0,
+      "executionQuality": 0.05037375201444102
+    },
+    "metrics": {
+      "authoredMergedPrs": 3,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        ".github",
+        "frontend",
+        "posthog",
+        "products",
+        "pyproject.toml",
+        "uv.lock"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 383.9
+    },
+    "subscores": {
+      "shipped_work": 53.5,
+      "ownership_breadth": 50,
+      "review_leverage": 0,
+      "execution_quality": 15
+    }
+  },
+  {
+    "login": "rnegron",
+    "finalScore": 35.3,
+    "reasons": [
+      "Shipped 8 merged PRs across 4 code areas",
+      "Reviewed 2 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 10.979509297074923,
+      "ownershipBreadth": 1.6094379124341003,
+      "reviewLeverage": 1.0986122886681096,
+      "executionQuality": 0.10253418034945892
+    },
+    "metrics": {
+      "authoredMergedPrs": 8,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 2,
+      "distinctAreas": [
+        ".github",
+        "docs",
+        "frontend",
+        "services"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 16.7
+    },
+    "subscores": {
+      "shipped_work": 42.1,
+      "ownership_breadth": 41.4,
+      "review_leverage": 17.8,
+      "execution_quality": 30.6
+    }
+  },
+  {
+    "login": "nicowaltz",
+    "finalScore": 34.9,
+    "reasons": [
+      "Shipped 2 merged PRs across 2 code areas",
+      "Reviewed 1 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 13.394270232375398,
+      "ownershipBreadth": 1.0986122886681096,
+      "reviewLeverage": 0.6931471805599453,
+      "executionQuality": 0.11325919575309648
+    },
+    "metrics": {
+      "authoredMergedPrs": 2,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 1,
+      "distinctAreas": [
+        "posthog",
+        "products"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 12.1
+    },
+    "subscores": {
+      "shipped_work": 51.3,
+      "ownership_breadth": 28.2,
+      "review_leverage": 11.2,
+      "execution_quality": 33.8
+    }
+  },
+  {
+    "login": "bill-ph",
+    "finalScore": 34.7,
+    "reasons": [
+      "Shipped 2 merged PRs across 2 code areas",
+      "Reviewed 10 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 10.92119006731045,
+      "ownershipBreadth": 1.0986122886681096,
+      "reviewLeverage": 2.3978952727983707,
+      "executionQuality": 0.06960868814112593
+    },
+    "metrics": {
+      "authoredMergedPrs": 2,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 10,
+      "distinctAreas": [
+        "bin",
+        "posthog"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 72.4
+    },
+    "subscores": {
+      "shipped_work": 41.8,
+      "ownership_breadth": 28.2,
+      "review_leverage": 38.8,
+      "execution_quality": 20.8
+    }
+  },
+  {
+    "login": "abheek9",
+    "finalScore": 34.6,
+    "reasons": [
+      "Shipped 2 merged PRs across 4 code areas",
+      "Reviewed 5 peer PRs during the window",
+      "Touched 4 distinct top-level code areas"
+    ],
+    "rawScores": {
+      "shippedWork": 9.58321300920348,
+      "ownershipBreadth": 1.6094379124341003,
+      "reviewLeverage": 1.791759469228055,
+      "executionQuality": 0.08325363240147969
+    },
+    "metrics": {
+      "authoredMergedPrs": 2,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 5,
+      "distinctAreas": [
+        "frontend",
+        "nodejs",
+        "posthog",
+        "products"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 34.7
+    },
+    "subscores": {
+      "shipped_work": 36.7,
+      "ownership_breadth": 41.4,
+      "review_leverage": 29,
+      "execution_quality": 24.9
+    }
+  },
+  {
+    "login": "posthog-bot",
+    "finalScore": 33.3,
+    "reasons": [
+      "Shipped 8 merged PRs across 2 code areas",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 12.060830088632972,
+      "ownershipBreadth": 1.0986122886681096,
+      "reviewLeverage": 0,
+      "executionQuality": 0.17381373110024964
+    },
+    "metrics": {
+      "authoredMergedPrs": 8,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "nodejs",
+        "plugin-server"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 3.6
+    },
+    "subscores": {
+      "shipped_work": 46.2,
+      "ownership_breadth": 28.2,
+      "review_leverage": 0,
+      "execution_quality": 51.9
+    }
+  },
+  {
+    "login": "lshaowei18",
+    "finalScore": 31.5,
+    "reasons": [
+      "Shipped 5 merged PRs across 3 code areas",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 13.07996304007028,
+      "ownershipBreadth": 1.3862943611198906,
+      "reviewLeverage": 0,
+      "executionQuality": 0.056588780079684535
+    },
+    "metrics": {
+      "authoredMergedPrs": 5,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "ee",
+        "frontend",
+        "posthog"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 198.6
+    },
+    "subscores": {
+      "shipped_work": 50.1,
+      "ownership_breadth": 35.6,
+      "review_leverage": 0,
+      "execution_quality": 16.9
+    }
+  },
+  {
+    "login": "slshults",
+    "finalScore": 30.6,
+    "reasons": [
+      "Shipped 5 merged PRs across 1 code areas",
+      "Reviewed 7 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 10.601164751985358,
+      "ownershipBreadth": 0.6931471805599453,
+      "reviewLeverage": 2.0794415416798357,
+      "executionQuality": 0.07168709432628308
+    },
+    "metrics": {
+      "authoredMergedPrs": 5,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 7,
+      "distinctAreas": [
+        "frontend"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 63.7
+    },
+    "subscores": {
+      "shipped_work": 40.6,
+      "ownership_breadth": 17.8,
+      "review_leverage": 33.7,
+      "execution_quality": 21.4
+    }
+  },
+  {
+    "login": "zlwaterfield",
+    "finalScore": 29.8,
+    "reasons": [
+      "Shipped 1 merged PRs across 4 code areas",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 11.602049481178376,
+      "ownershipBreadth": 1.6094379124341003,
+      "reviewLeverage": 0,
+      "executionQuality": 0.03850849926341151
+    },
+    "metrics": {
+      "authoredMergedPrs": 1,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "common",
+        "frontend",
+        "posthog",
+        "products"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 2415.5
+    },
+    "subscores": {
+      "shipped_work": 44.4,
+      "ownership_breadth": 41.4,
+      "review_leverage": 0,
+      "execution_quality": 11.5
+    }
+  },
+  {
+    "login": "dmarchuk",
+    "finalScore": 28.4,
+    "reasons": [
+      "Shipped 3 merged PRs across 2 code areas",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 10.98579269781746,
+      "ownershipBreadth": 1.0986122886681096,
+      "reviewLeverage": 0,
+      "executionQuality": 0.10080318976810669
+    },
+    "metrics": {
+      "authoredMergedPrs": 3,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "frontend",
+        "nodejs"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 17.6
+    },
+    "subscores": {
+      "shipped_work": 42.1,
+      "ownership_breadth": 28.2,
+      "review_leverage": 0,
+      "execution_quality": 30.1
+    }
+  },
+  {
+    "login": "kurekszymon",
+    "finalScore": 25.7,
+    "reasons": [
+      "Shipped 1 merged PRs across 1 code areas",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 4.089873154693416,
+      "ownershipBreadth": 0.6931471805599453,
+      "reviewLeverage": 0,
+      "executionQuality": 0.33500053032828153
+    },
+    "metrics": {
+      "authoredMergedPrs": 1,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "docs"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 0.4
+    },
+    "subscores": {
+      "shipped_work": 15.7,
+      "ownership_breadth": 17.8,
+      "review_leverage": 0,
+      "execution_quality": 100
+    }
+  },
+  {
+    "login": "kliment-slice",
+    "finalScore": 24.8,
+    "reasons": [
+      "Shipped 1 merged PRs across 3 code areas",
+      "Touched 3 distinct top-level code areas"
+    ],
+    "rawScores": {
+      "shippedWork": 8.60495029715447,
+      "ownershipBreadth": 1.3862943611198906,
+      "reviewLeverage": 0,
+      "executionQuality": 0.0612703078909023
+    },
+    "metrics": {
+      "authoredMergedPrs": 1,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "frontend",
+        "posthog",
+        "products"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 131.8
+    },
+    "subscores": {
+      "shipped_work": 33,
+      "ownership_breadth": 35.6,
+      "review_leverage": 0,
+      "execution_quality": 18.3
+    }
+  },
+  {
+    "login": "zachstence",
+    "finalScore": 24.6,
+    "reasons": [
+      "Shipped 1 merged PRs across 2 code areas",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 3.539826817774144,
+      "ownershipBreadth": 1.0986122886681096,
+      "reviewLeverage": 0,
+      "executionQuality": 0.2697744085605472
+    },
+    "metrics": {
+      "authoredMergedPrs": 1,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        ".github",
+        "dist-workspace.toml"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 1
+    },
+    "subscores": {
+      "shipped_work": 13.6,
+      "ownership_breadth": 28.2,
+      "review_leverage": 0,
+      "execution_quality": 80.5
+    }
+  },
+  {
+    "login": "parinporecha",
+    "finalScore": 23.3,
+    "reasons": [
+      "Shipped 1 merged PRs across 4 code areas",
+      "Touched 4 distinct top-level code areas"
+    ],
+    "rawScores": {
+      "shippedWork": 6.491258832431556,
+      "ownershipBreadth": 1.6094379124341003,
+      "reviewLeverage": 0,
+      "executionQuality": 0.06674549379473417
+    },
+    "metrics": {
+      "authoredMergedPrs": 1,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        ".github",
+        "posthog",
+        "pyproject.toml",
+        "uv.lock"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 87.5
+    },
+    "subscores": {
+      "shipped_work": 24.9,
+      "ownership_breadth": 41.4,
+      "review_leverage": 0,
+      "execution_quality": 19.9
+    }
+  },
+  {
+    "login": "Nezz",
+    "finalScore": 23.2,
+    "reasons": [
+      "Shipped 1 merged PRs across 1 code areas",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 5.364376109825191,
+      "ownershipBreadth": 0.6931471805599453,
+      "reviewLeverage": 0,
+      "executionQuality": 0.23522718390637015
+    },
+    "metrics": {
+      "authoredMergedPrs": 1,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "posthog"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 1.6
+    },
+    "subscores": {
+      "shipped_work": 20.5,
+      "ownership_breadth": 17.8,
+      "review_leverage": 0,
+      "execution_quality": 70.2
+    }
+  },
+  {
+    "login": "ceyniustranberg",
+    "finalScore": 22.7,
+    "reasons": [
+      "Shipped 1 merged PRs across 1 code areas",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 7.522618894090498,
+      "ownershipBreadth": 0.6931471805599453,
+      "reviewLeverage": 0,
+      "executionQuality": 0.1498020375554666
+    },
+    "metrics": {
+      "authoredMergedPrs": 1,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "frontend"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 5.4
+    },
+    "subscores": {
+      "shipped_work": 28.8,
+      "ownership_breadth": 17.8,
+      "review_leverage": 0,
+      "execution_quality": 44.7
+    }
+  },
+  {
+    "login": "ProCO-RPHopkins",
+    "finalScore": 22.5,
+    "reasons": [
+      "Shipped 1 merged PRs across 3 code areas",
+      "Touched 3 distinct top-level code areas"
+    ],
+    "rawScores": {
+      "shippedWork": 7.597968331332285,
+      "ownershipBreadth": 1.3862943611198906,
+      "reviewLeverage": 0,
+      "executionQuality": 0.04317496196822388
+    },
+    "metrics": {
+      "authoredMergedPrs": 1,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "package.json",
+        "pnpm-lock.yaml",
+        "products"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 1039.6
+    },
+    "subscores": {
+      "shipped_work": 29.1,
+      "ownership_breadth": 35.6,
+      "review_leverage": 0,
+      "execution_quality": 12.9
+    }
+  },
+  {
+    "login": "dmiska25",
+    "finalScore": 22.3,
+    "reasons": [
+      "Shipped 2 merged PRs across 2 code areas",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 8.238018596249143,
+      "ownershipBreadth": 1.0986122886681096,
+      "reviewLeverage": 0,
+      "executionQuality": 0.0593299014161324
+    },
+    "metrics": {
+      "authoredMergedPrs": 2,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "frontend",
+        "posthog"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 155
+    },
+    "subscores": {
+      "shipped_work": 31.6,
+      "ownership_breadth": 28.2,
+      "review_leverage": 0,
+      "execution_quality": 17.7
+    }
+  },
+  {
+    "login": "salmanmkc",
+    "finalScore": 22,
+    "reasons": [
+      "Shipped 1 merged PRs across 1 code areas",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 9.62082733019298,
+      "ownershipBreadth": 0.6931471805599453,
+      "reviewLeverage": 0,
+      "executionQuality": 0.06333656499486118
+    },
+    "metrics": {
+      "authoredMergedPrs": 1,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        ".github"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 112
+    },
+    "subscores": {
+      "shipped_work": 36.9,
+      "ownership_breadth": 17.8,
+      "review_leverage": 0,
+      "execution_quality": 18.9
+    }
+  },
+  {
+    "login": "beatlevic",
+    "finalScore": 21.6,
+    "reasons": [
+      "Shipped 1 merged PRs across 1 code areas",
+      "Reviewed 3 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 6.484265796940585,
+      "ownershipBreadth": 0.6931471805599453,
+      "reviewLeverage": 1.3862943611198906,
+      "executionQuality": 0.06013973936226901
+    },
+    "metrics": {
+      "authoredMergedPrs": 1,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 3,
+      "distinctAreas": [
+        "nodejs"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 144.7
+    },
+    "subscores": {
+      "shipped_work": 24.8,
+      "ownership_breadth": 17.8,
+      "review_leverage": 22.5,
+      "execution_quality": 18
+    }
+  },
+  {
+    "login": "GauravBansal29",
+    "finalScore": 21.2,
+    "reasons": [
+      "Shipped 1 merged PRs across 2 code areas",
+      "Touched 2 distinct top-level code areas"
+    ],
+    "rawScores": {
+      "shippedWork": 7.036334379240625,
+      "ownershipBreadth": 1.0986122886681096,
+      "reviewLeverage": 0,
+      "executionQuality": 0.07513960655318447
+    },
+    "metrics": {
+      "authoredMergedPrs": 1,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "frontend",
+        "posthog"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 52.2
+    },
+    "subscores": {
+      "shipped_work": 27,
+      "ownership_breadth": 28.2,
+      "review_leverage": 0,
+      "execution_quality": 22.4
+    }
+  },
+  {
+    "login": "andre347",
+    "finalScore": 20.6,
+    "reasons": [
+      "Shipped 1 merged PRs across 1 code areas",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 4.615966250590196,
+      "ownershipBreadth": 0.6931471805599453,
+      "reviewLeverage": 0,
+      "executionQuality": 0.20179702470887043
+    },
+    "metrics": {
+      "authoredMergedPrs": 1,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "frontend"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 2.4
+    },
+    "subscores": {
+      "shipped_work": 17.7,
+      "ownership_breadth": 17.8,
+      "review_leverage": 0,
+      "execution_quality": 60.2
+    }
+  },
+  {
+    "login": "Classy-Bear",
+    "finalScore": 20.3,
+    "reasons": [
+      "Shipped 1 merged PRs across 1 code areas",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 3.13436170966598,
+      "ownershipBreadth": 0.6931471805599453,
+      "reviewLeverage": 0,
+      "executionQuality": 0.24658029958910432
+    },
+    "metrics": {
+      "authoredMergedPrs": 1,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "docs"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 1.4
+    },
+    "subscores": {
+      "shipped_work": 12,
+      "ownership_breadth": 17.8,
+      "review_leverage": 0,
+      "execution_quality": 73.6
+    }
+  },
+  {
+    "login": "harihran-del",
+    "finalScore": 19.8,
+    "reasons": [
+      "Shipped 2 merged PRs across 2 code areas",
+      "Touched 2 distinct top-level code areas"
+    ],
+    "rawScores": {
+      "shippedWork": 6.1703650103213485,
+      "ownershipBreadth": 1.0986122886681096,
+      "reviewLeverage": 0,
+      "executionQuality": 0.07301613134402651
+    },
+    "metrics": {
+      "authoredMergedPrs": 2,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "frontend",
+        "posthog"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 58.9
+    },
+    "subscores": {
+      "shipped_work": 23.6,
+      "ownership_breadth": 28.2,
+      "review_leverage": 0,
+      "execution_quality": 21.8
+    }
+  },
+  {
+    "login": "mircoboettcher",
+    "finalScore": 19.2,
+    "reasons": [
+      "Shipped 2 merged PRs across 2 code areas",
+      "Touched 2 distinct top-level code areas"
+    ],
+    "rawScores": {
+      "shippedWork": 6.2599771690110355,
+      "ownershipBreadth": 1.0986122886681096,
+      "reviewLeverage": 0,
+      "executionQuality": 0.056177396644891894
+    },
+    "metrics": {
+      "authoredMergedPrs": 2,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "frontend",
+        "posthog"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 206.6
+    },
+    "subscores": {
+      "shipped_work": 24,
+      "ownership_breadth": 28.2,
+      "review_leverage": 0,
+      "execution_quality": 16.8
+    }
+  },
+  {
+    "login": "zhou-quickli",
+    "finalScore": 16.5,
+    "reasons": [
+      "Shipped 1 merged PRs across 1 code areas",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 5.973440173174595,
+      "ownershipBreadth": 0.6931471805599453,
+      "reviewLeverage": 0,
+      "executionQuality": 0.06482309399944645
+    },
+    "metrics": {
+      "authoredMergedPrs": 1,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "posthog"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 100.3
+    },
+    "subscores": {
+      "shipped_work": 22.9,
+      "ownership_breadth": 17.8,
+      "review_leverage": 0,
+      "execution_quality": 19.4
+    }
+  },
+  {
+    "login": "abigailbramble",
+    "finalScore": 16.3,
+    "reasons": [
+      "Shipped 1 merged PRs across 1 code areas",
+      "Reviewed 1 peer PRs during the window",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 4.00983044701988,
+      "ownershipBreadth": 0.6931471805599453,
+      "reviewLeverage": 0.6931471805599453,
+      "executionQuality": 0.07641029665936681
+    },
+    "metrics": {
+      "authoredMergedPrs": 1,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 1,
+      "distinctAreas": [
+        "frontend"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 48.7
+    },
+    "subscores": {
+      "shipped_work": 15.4,
+      "ownership_breadth": 17.8,
+      "review_leverage": 11.2,
+      "execution_quality": 22.8
+    }
+  },
+  {
+    "login": "fivestarspicy",
+    "finalScore": 16.1,
+    "reasons": [
+      "Shipped 1 merged PRs across 1 code areas",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 4.615966250590196,
+      "ownershipBreadth": 0.6931471805599453,
+      "reviewLeverage": 0,
+      "executionQuality": 0.10273215518086916
+    },
+    "metrics": {
+      "authoredMergedPrs": 1,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "products"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 16.5
+    },
+    "subscores": {
+      "shipped_work": 17.7,
+      "ownership_breadth": 17.8,
+      "review_leverage": 0,
+      "execution_quality": 30.7
+    }
+  },
+  {
+    "login": "charlescook-ph",
+    "finalScore": 16.1,
+    "reasons": [
+      "Shipped 2 merged PRs across 1 code areas",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 4.901853684857841,
+      "ownershipBreadth": 0.6931471805599453,
+      "reviewLeverage": 0,
+      "executionQuality": 0.09246169397740506
+    },
+    "metrics": {
+      "authoredMergedPrs": 2,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "frontend"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 23.7
+    },
+    "subscores": {
+      "shipped_work": 18.8,
+      "ownership_breadth": 17.8,
+      "review_leverage": 0,
+      "execution_quality": 27.6
+    }
+  },
+  {
+    "login": "igormq",
+    "finalScore": 16,
+    "reasons": [
+      "Shipped 1 merged PRs across 1 code areas",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 5.149264730208245,
+      "ownershipBreadth": 0.6931471805599453,
+      "reviewLeverage": 0,
+      "executionQuality": 0.08148268233595858
+    },
+    "metrics": {
+      "authoredMergedPrs": 1,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "rust"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 37.7
+    },
+    "subscores": {
+      "shipped_work": 19.7,
+      "ownership_breadth": 17.8,
+      "review_leverage": 0,
+      "execution_quality": 24.3
+    }
+  },
+  {
+    "login": "carlosguso",
+    "finalScore": 15.8,
+    "reasons": [
+      "Shipped 1 merged PRs across 1 code areas",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 3.722148374568099,
+      "ownershipBreadth": 0.6931471805599453,
+      "reviewLeverage": 0,
+      "executionQuality": 0.12541703997595824
+    },
+    "metrics": {
+      "authoredMergedPrs": 1,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "frontend"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 8.9
+    },
+    "subscores": {
+      "shipped_work": 14.3,
+      "ownership_breadth": 17.8,
+      "review_leverage": 0,
+      "execution_quality": 37.4
+    }
+  },
+  {
+    "login": "jeremylongshore",
+    "finalScore": 15.5,
+    "reasons": [
+      "Shipped 2 merged PRs across 1 code areas",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 5.412679308623831,
+      "ownershipBreadth": 0.6931471805599453,
+      "reviewLeverage": 0,
+      "executionQuality": 0.0620187326866285
+    },
+    "metrics": {
+      "authoredMergedPrs": 2,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "frontend"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 124.1
+    },
+    "subscores": {
+      "shipped_work": 20.7,
+      "ownership_breadth": 17.8,
+      "review_leverage": 0,
+      "execution_quality": 18.5
+    }
+  },
+  {
+    "login": "JJCLane",
+    "finalScore": 15.4,
+    "reasons": [
+      "Shipped 1 merged PRs across 1 code areas",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 4.520656070785871,
+      "ownershipBreadth": 0.6931471805599453,
+      "reviewLeverage": 0,
+      "executionQuality": 0.08960751900307515
+    },
+    "metrics": {
+      "authoredMergedPrs": 1,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "frontend"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 26.4
+    },
+    "subscores": {
+      "shipped_work": 17.3,
+      "ownership_breadth": 17.8,
+      "review_leverage": 0,
+      "execution_quality": 26.7
+    }
+  },
+  {
+    "login": "xljones",
+    "finalScore": 14.9,
+    "reasons": [
+      "Shipped 2 merged PRs across 1 code areas",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 4.026384947503941,
+      "ownershipBreadth": 0.6931471805599453,
+      "reviewLeverage": 0,
+      "executionQuality": 0.0948902604313803
+    },
+    "metrics": {
+      "authoredMergedPrs": 2,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "frontend"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 21.6
+    },
+    "subscores": {
+      "shipped_work": 15.4,
+      "ownership_breadth": 17.8,
+      "review_leverage": 0,
+      "execution_quality": 28.3
+    }
+  },
+  {
+    "login": "orlandohohmeier",
+    "finalScore": 14.9,
+    "reasons": [
+      "Shipped 1 merged PRs across 1 code areas",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 3.13436170966598,
+      "ownershipBreadth": 0.6931471805599453,
+      "reviewLeverage": 0,
+      "executionQuality": 0.12669568783055674
+    },
+    "metrics": {
+      "authoredMergedPrs": 1,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "frontend"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 8.7
+    },
+    "subscores": {
+      "shipped_work": 12,
+      "ownership_breadth": 17.8,
+      "review_leverage": 0,
+      "execution_quality": 37.8
+    }
+  },
+  {
+    "login": "annikaschmid",
+    "finalScore": 13.2,
+    "reasons": [
+      "Shipped 1 merged PRs across 1 code areas",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 3.13436170966598,
+      "ownershipBreadth": 0.6931471805599453,
+      "reviewLeverage": 0,
+      "executionQuality": 0.08781370699236436
+    },
+    "metrics": {
+      "authoredMergedPrs": 1,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "posthog"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 28.5
+    },
+    "subscores": {
+      "shipped_work": 12,
+      "ownership_breadth": 17.8,
+      "review_leverage": 0,
+      "execution_quality": 26.2
+    }
+  },
+  {
+    "login": "sayer122",
+    "finalScore": 11.9,
+    "reasons": [
+      "Shipped 1 merged PRs across 1 code areas",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 2.218070977791825,
+      "ownershipBreadth": 0.6931471805599453,
+      "reviewLeverage": 0,
+      "executionQuality": 0.09117202401658994
+    },
+    "metrics": {
+      "authoredMergedPrs": 1,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "docker-compose.hobby.yml"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 24.9
+    },
+    "subscores": {
+      "shipped_work": 8.5,
+      "ownership_breadth": 17.8,
+      "review_leverage": 0,
+      "execution_quality": 27.2
+    }
+  },
+  {
+    "login": "rorylshanks",
+    "finalScore": 11.9,
+    "reasons": [
+      "Reviewed 38 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 0,
+      "ownershipBreadth": 0,
+      "reviewLeverage": 3.6635616461296463,
+      "executionQuality": 0
+    },
+    "metrics": {
+      "authoredMergedPrs": 0,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 38,
+      "distinctAreas": [],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 0
+    },
+    "subscores": {
+      "shipped_work": 0,
+      "ownership_breadth": 0,
+      "review_leverage": 59.3,
+      "execution_quality": 0
+    }
+  },
+  {
+    "login": "will-marella",
+    "finalScore": 11.4,
+    "reasons": [
+      "Shipped 1 merged PRs across 1 code areas",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 2.6235360858999894,
+      "ownershipBreadth": 0.6931471805599453,
+      "reviewLeverage": 0,
+      "executionQuality": 0.06497965439054858
+    },
+    "metrics": {
+      "authoredMergedPrs": 1,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "frontend"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 99.2
+    },
+    "subscores": {
+      "shipped_work": 10,
+      "ownership_breadth": 17.8,
+      "review_leverage": 0,
+      "execution_quality": 19.4
+    }
+  },
+  {
+    "login": "antlio",
+    "finalScore": 11.1,
+    "reasons": [
+      "Shipped 1 merged PRs across 1 code areas",
+      "Touched 1 distinct top-level code areas"
+    ],
+    "rawScores": {
+      "shippedWork": 3.13436170966598,
+      "ownershipBreadth": 0.6931471805599453,
+      "reviewLeverage": 0,
+      "executionQuality": 0.041642590793714664
+    },
+    "metrics": {
+      "authoredMergedPrs": 1,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "frontend"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 1343
+    },
+    "subscores": {
+      "shipped_work": 12,
+      "ownership_breadth": 17.8,
+      "review_leverage": 0,
+      "execution_quality": 12.4
+    }
+  },
+  {
+    "login": "caiquejjx",
+    "finalScore": 11.1,
+    "reasons": [
+      "Shipped 1 merged PRs across 1 code areas",
+      "Balanced shipping volume, repo breadth, and execution efficiency"
+    ],
+    "rawScores": {
+      "shippedWork": 2.218070977791825,
+      "ownershipBreadth": 0.6931471805599453,
+      "reviewLeverage": 0,
+      "executionQuality": 0.07330324266873241
+    },
+    "metrics": {
+      "authoredMergedPrs": 1,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "frontend"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 57.9
+    },
+    "subscores": {
+      "shipped_work": 8.5,
+      "ownership_breadth": 17.8,
+      "review_leverage": 0,
+      "execution_quality": 21.9
+    }
+  },
+  {
+    "login": "darkLord19",
+    "finalScore": 11,
+    "reasons": [
+      "Shipped 1 merged PRs across 1 code areas",
+      "Touched 1 distinct top-level code areas"
+    ],
+    "rawScores": {
+      "shippedWork": 2.6235360858999894,
+      "ownershipBreadth": 0.6931471805599453,
+      "reviewLeverage": 0,
+      "executionQuality": 0.05726733993862668
+    },
+    "metrics": {
+      "authoredMergedPrs": 1,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "frontend"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 186.4
+    },
+    "subscores": {
+      "shipped_work": 10,
+      "ownership_breadth": 17.8,
+      "review_leverage": 0,
+      "execution_quality": 17.1
+    }
+  },
+  {
+    "login": "KaranPradhan266",
+    "finalScore": 10.9,
+    "reasons": [
+      "Shipped 1 merged PRs across 1 code areas",
+      "Touched 1 distinct top-level code areas"
+    ],
+    "rawScores": {
+      "shippedWork": 2.6235360858999894,
+      "ownershipBreadth": 0.6931471805599453,
+      "reviewLeverage": 0,
+      "executionQuality": 0.05421188648144515
+    },
+    "metrics": {
+      "authoredMergedPrs": 1,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 0,
+      "distinctAreas": [
+        "frontend"
+      ],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 251.1
+    },
+    "subscores": {
+      "shipped_work": 10,
+      "ownership_breadth": 17.8,
+      "review_leverage": 0,
+      "execution_quality": 16.2
+    }
+  },
+  {
+    "login": "mcoll-posthog",
+    "finalScore": 5.8,
+    "reasons": [
+      "Reviewed 5 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 0,
+      "ownershipBreadth": 0,
+      "reviewLeverage": 1.791759469228055,
+      "executionQuality": 0
+    },
+    "metrics": {
+      "authoredMergedPrs": 0,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 5,
+      "distinctAreas": [],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 0
+    },
+    "subscores": {
+      "shipped_work": 0,
+      "ownership_breadth": 0,
+      "review_leverage": 29,
+      "execution_quality": 0
+    }
+  },
+  {
+    "login": "vmaineng",
+    "finalScore": 4.5,
+    "reasons": [
+      "Reviewed 3 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 0,
+      "ownershipBreadth": 0,
+      "reviewLeverage": 1.3862943611198906,
+      "executionQuality": 0
+    },
+    "metrics": {
+      "authoredMergedPrs": 0,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 3,
+      "distinctAreas": [],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 0
+    },
+    "subscores": {
+      "shipped_work": 0,
+      "ownership_breadth": 0,
+      "review_leverage": 22.5,
+      "execution_quality": 0
+    }
+  },
+  {
+    "login": "joethreepwood",
+    "finalScore": 3.6,
+    "reasons": [
+      "Reviewed 2 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 0,
+      "ownershipBreadth": 0,
+      "reviewLeverage": 1.0986122886681096,
+      "executionQuality": 0
+    },
+    "metrics": {
+      "authoredMergedPrs": 0,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 2,
+      "distinctAreas": [],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 0
+    },
+    "subscores": {
+      "shipped_work": 0,
+      "ownership_breadth": 0,
+      "review_leverage": 17.8,
+      "execution_quality": 0
+    }
+  },
+  {
+    "login": "Azayed10",
+    "finalScore": 3.6,
+    "reasons": [
+      "Reviewed 2 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 0,
+      "ownershipBreadth": 0,
+      "reviewLeverage": 1.0986122886681096,
+      "executionQuality": 0
+    },
+    "metrics": {
+      "authoredMergedPrs": 0,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 2,
+      "distinctAreas": [],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 0
+    },
+    "subscores": {
+      "shipped_work": 0,
+      "ownership_breadth": 0,
+      "review_leverage": 17.8,
+      "execution_quality": 0
+    }
+  },
+  {
+    "login": "lochie",
+    "finalScore": 3.6,
+    "reasons": [
+      "Reviewed 2 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 0,
+      "ownershipBreadth": 0,
+      "reviewLeverage": 1.0986122886681096,
+      "executionQuality": 0
+    },
+    "metrics": {
+      "authoredMergedPrs": 0,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 2,
+      "distinctAreas": [],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 0
+    },
+    "subscores": {
+      "shipped_work": 0,
+      "ownership_breadth": 0,
+      "review_leverage": 17.8,
+      "execution_quality": 0
+    }
+  },
+  {
+    "login": "tojin12341za",
+    "finalScore": 3.6,
+    "reasons": [
+      "Reviewed 2 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 0,
+      "ownershipBreadth": 0,
+      "reviewLeverage": 1.0986122886681096,
+      "executionQuality": 0
+    },
+    "metrics": {
+      "authoredMergedPrs": 0,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 2,
+      "distinctAreas": [],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 0
+    },
+    "subscores": {
+      "shipped_work": 0,
+      "ownership_breadth": 0,
+      "review_leverage": 17.8,
+      "execution_quality": 0
+    }
+  },
+  {
+    "login": "SaraMiteva",
+    "finalScore": 2.2,
+    "reasons": [
+      "Reviewed 1 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 0,
+      "ownershipBreadth": 0,
+      "reviewLeverage": 0.6931471805599453,
+      "executionQuality": 0
+    },
+    "metrics": {
+      "authoredMergedPrs": 0,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 1,
+      "distinctAreas": [],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 0
+    },
+    "subscores": {
+      "shipped_work": 0,
+      "ownership_breadth": 0,
+      "review_leverage": 11.2,
+      "execution_quality": 0
+    }
+  },
+  {
+    "login": "kyleswank",
+    "finalScore": 2.2,
+    "reasons": [
+      "Reviewed 1 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 0,
+      "ownershipBreadth": 0,
+      "reviewLeverage": 0.6931471805599453,
+      "executionQuality": 0
+    },
+    "metrics": {
+      "authoredMergedPrs": 0,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 1,
+      "distinctAreas": [],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 0
+    },
+    "subscores": {
+      "shipped_work": 0,
+      "ownership_breadth": 0,
+      "review_leverage": 11.2,
+      "execution_quality": 0
+    }
+  },
+  {
+    "login": "minekansu",
+    "finalScore": 2.2,
+    "reasons": [
+      "Reviewed 1 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 0,
+      "ownershipBreadth": 0,
+      "reviewLeverage": 0.6931471805599453,
+      "executionQuality": 0
+    },
+    "metrics": {
+      "authoredMergedPrs": 0,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 1,
+      "distinctAreas": [],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 0
+    },
+    "subscores": {
+      "shipped_work": 0,
+      "ownership_breadth": 0,
+      "review_leverage": 11.2,
+      "execution_quality": 0
+    }
+  },
+  {
+    "login": "consultingsultan",
+    "finalScore": 2.2,
+    "reasons": [
+      "Reviewed 1 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 0,
+      "ownershipBreadth": 0,
+      "reviewLeverage": 0.6931471805599453,
+      "executionQuality": 0
+    },
+    "metrics": {
+      "authoredMergedPrs": 0,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 1,
+      "distinctAreas": [],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 0
+    },
+    "subscores": {
+      "shipped_work": 0,
+      "ownership_breadth": 0,
+      "review_leverage": 11.2,
+      "execution_quality": 0
+    }
+  },
+  {
+    "login": "jghoman",
+    "finalScore": 2.2,
+    "reasons": [
+      "Reviewed 1 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 0,
+      "ownershipBreadth": 0,
+      "reviewLeverage": 0.6931471805599453,
+      "executionQuality": 0
+    },
+    "metrics": {
+      "authoredMergedPrs": 0,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 1,
+      "distinctAreas": [],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 0
+    },
+    "subscores": {
+      "shipped_work": 0,
+      "ownership_breadth": 0,
+      "review_leverage": 11.2,
+      "execution_quality": 0
+    }
+  },
+  {
+    "login": "annaszell",
+    "finalScore": 2.2,
+    "reasons": [
+      "Reviewed 1 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 0,
+      "ownershipBreadth": 0,
+      "reviewLeverage": 0.6931471805599453,
+      "executionQuality": 0
+    },
+    "metrics": {
+      "authoredMergedPrs": 0,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 1,
+      "distinctAreas": [],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 0
+    },
+    "subscores": {
+      "shipped_work": 0,
+      "ownership_breadth": 0,
+      "review_leverage": 11.2,
+      "execution_quality": 0
+    }
+  },
+  {
+    "login": "abcdan",
+    "finalScore": 2.2,
+    "reasons": [
+      "Reviewed 1 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 0,
+      "ownershipBreadth": 0,
+      "reviewLeverage": 0.6931471805599453,
+      "executionQuality": 0
+    },
+    "metrics": {
+      "authoredMergedPrs": 0,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 1,
+      "distinctAreas": [],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 0
+    },
+    "subscores": {
+      "shipped_work": 0,
+      "ownership_breadth": 0,
+      "review_leverage": 11.2,
+      "execution_quality": 0
+    }
+  },
+  {
+    "login": "cleo-pleurodon",
+    "finalScore": 2.2,
+    "reasons": [
+      "Reviewed 1 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 0,
+      "ownershipBreadth": 0,
+      "reviewLeverage": 0.6931471805599453,
+      "executionQuality": 0
+    },
+    "metrics": {
+      "authoredMergedPrs": 0,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 1,
+      "distinctAreas": [],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 0
+    },
+    "subscores": {
+      "shipped_work": 0,
+      "ownership_breadth": 0,
+      "review_leverage": 11.2,
+      "execution_quality": 0
+    }
+  },
+  {
+    "login": "landon-posthog",
+    "finalScore": 2.2,
+    "reasons": [
+      "Reviewed 1 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 0,
+      "ownershipBreadth": 0,
+      "reviewLeverage": 0.6931471805599453,
+      "executionQuality": 0
+    },
+    "metrics": {
+      "authoredMergedPrs": 0,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 1,
+      "distinctAreas": [],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 0
+    },
+    "subscores": {
+      "shipped_work": 0,
+      "ownership_breadth": 0,
+      "review_leverage": 11.2,
+      "execution_quality": 0
+    }
+  },
+  {
+    "login": "natalia-amorim",
+    "finalScore": 2.2,
+    "reasons": [
+      "Reviewed 1 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 0,
+      "ownershipBreadth": 0,
+      "reviewLeverage": 0.6931471805599453,
+      "executionQuality": 0
+    },
+    "metrics": {
+      "authoredMergedPrs": 0,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 1,
+      "distinctAreas": [],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 0
+    },
+    "subscores": {
+      "shipped_work": 0,
+      "ownership_breadth": 0,
+      "review_leverage": 11.2,
+      "execution_quality": 0
+    }
+  },
+  {
+    "login": "benben",
+    "finalScore": 2.2,
+    "reasons": [
+      "Reviewed 1 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 0,
+      "ownershipBreadth": 0,
+      "reviewLeverage": 0.6931471805599453,
+      "executionQuality": 0
+    },
+    "metrics": {
+      "authoredMergedPrs": 0,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 1,
+      "distinctAreas": [],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 0
+    },
+    "subscores": {
+      "shipped_work": 0,
+      "ownership_breadth": 0,
+      "review_leverage": 11.2,
+      "execution_quality": 0
+    }
+  },
+  {
+    "login": "asdiamond",
+    "finalScore": 2.2,
+    "reasons": [
+      "Reviewed 1 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 0,
+      "ownershipBreadth": 0,
+      "reviewLeverage": 0.6931471805599453,
+      "executionQuality": 0
+    },
+    "metrics": {
+      "authoredMergedPrs": 0,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 1,
+      "distinctAreas": [],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 0
+    },
+    "subscores": {
+      "shipped_work": 0,
+      "ownership_breadth": 0,
+      "review_leverage": 11.2,
+      "execution_quality": 0
+    }
+  },
+  {
+    "login": "eleftheriatrivyzaki",
+    "finalScore": 2.2,
+    "reasons": [
+      "Reviewed 1 peer PRs during the window",
+      "Created leverage through above-average code review activity"
+    ],
+    "rawScores": {
+      "shippedWork": 0,
+      "ownershipBreadth": 0,
+      "reviewLeverage": 0.6931471805599453,
+      "executionQuality": 0
+    },
+    "metrics": {
+      "authoredMergedPrs": 0,
+      "authoredOpenedPrs": 0,
+      "reviewsGiven": 1,
+      "distinctAreas": [],
+      "mergeRate": 0,
+      "medianTimeToMergeHours": 0
+    },
+    "subscores": {
+      "shipped_work": 0,
+      "ownership_breadth": 0,
+      "review_leverage": 11.2,
+      "execution_quality": 0
+    }
+  }
+]
