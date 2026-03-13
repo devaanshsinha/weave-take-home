@@ -53,24 +53,24 @@ export function EngineersTable({ engineers }: EngineersTableProps) {
           <TableBody>
             {engineers.map((engineer) => (
               <TableRow key={engineer.login} className="last:border-b-0">
-                <TableCell className="font-medium text-slate-900">{engineer.login}</TableCell>
-                <TableCell className="font-mono text-slate-900">{engineer.finalScore}</TableCell>
-                <TableCell className="font-mono text-slate-600">
+                <TableCell className="font-medium text-foreground">{engineer.login}</TableCell>
+                <TableCell className="font-mono text-foreground">{engineer.finalScore}</TableCell>
+                <TableCell className="font-mono text-muted-foreground">
                   {engineer.metrics.averagePrImpactScore}
                 </TableCell>
-                <TableCell className="font-mono text-slate-600">
+                <TableCell className="font-mono text-muted-foreground">
                   {engineer.metrics.highImpactPrs}
                 </TableCell>
-                <TableCell className="font-mono text-slate-600">
+                <TableCell className="font-mono text-muted-foreground">
                   {engineer.subscores.ownership_breadth}
                 </TableCell>
-                <TableCell className="font-mono text-slate-600">
+                <TableCell className="font-mono text-muted-foreground">
                   {engineer.subscores.review_leverage}
                 </TableCell>
-                <TableCell className="font-mono text-slate-600">
+                <TableCell className="font-mono text-muted-foreground">
                   {engineer.subscores.execution_quality}
                 </TableCell>
-                <TableCell className="font-mono text-slate-600">
+                <TableCell className="font-mono text-muted-foreground">
                   {engineer.metrics.mergeRate}%
                 </TableCell>
               </TableRow>
