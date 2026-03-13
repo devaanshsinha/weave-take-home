@@ -43,6 +43,9 @@ function normalizeEngineer(engineer: Partial<EngineerScoreBreakdown>): EngineerS
       distinctAreas: engineer.metrics?.distinctAreas ?? [],
       mergeRate: engineer.metrics?.mergeRate ?? 0,
       medianTimeToMergeHours: engineer.metrics?.medianTimeToMergeHours ?? 0,
+      averagePrImpactScore: engineer.metrics?.averagePrImpactScore ?? 0,
+      highImpactPrs: engineer.metrics?.highImpactPrs ?? 0,
+      impactConsistency: engineer.metrics?.impactConsistency ?? 0,
     },
     subscores: {
       shipped_work: engineer.subscores?.shipped_work ?? 0,

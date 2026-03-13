@@ -49,8 +49,96 @@ export function median(values: number[]): number {
 }
 
 export function deriveTopLevelArea(path: string): string {
-  const [topLevel] = path.split("/");
-  return topLevel && topLevel.length > 0 ? topLevel : "root";
+  const normalizedPath = path.replace(/^\.\//, "");
+  const [topLevel] = normalizedPath.split("/");
+
+  if (!topLevel || topLevel.length === 0) {
+    return "repo-meta";
+  }
+
+  const docsLike = new Set([
+    "docs",
+    "README.md",
+    "CLAUDE.md",
+    "AGENTS.md",
+  ]);
+  if (docsLike.has(topLevel)) {
+    return "docs";
+  }
+
+  const infraLike = new Set([
+    ".github",
+    ".devcontainer",
+    ".config",
+    ".vscode",
+    ".claude",
+    ".agents",
+    ".flox",
+    ".semgrep",
+    ".husky",
+    "Dockerfile",
+    "Dockerfile.ai-evals",
+    "docker-compose.base.yml",
+    "docker-compose.dev-coordinator.yml",
+    "docker-compose.dev-full.yml",
+    "docker-compose.dev-minimal.yml",
+    "docker-compose.dev.yml",
+    "docker-compose.hobby.yml",
+    "docker-compose.profiles.yml",
+    "bin",
+    "devenv",
+    "playwright",
+    "share",
+    "tools",
+  ]);
+  if (infraLike.has(topLevel)) {
+    return "infra";
+  }
+
+  const toolingLike = new Set([
+    ".gitignore",
+    ".prettierignore",
+    ".stylelintignore",
+    ".watchmanconfig",
+    ".env.example",
+    ".oxfmtrc.json",
+    ".oxlintrc.json",
+    ".test_durations",
+    "greptile.json",
+    "mypy-baseline.txt",
+    "mypy.ini",
+    "package.json",
+    "pnpm-lock.yaml",
+    "pnpm-workspace.yaml",
+    "pyproject.toml",
+    "tach.toml",
+    "test-runner-jest-environment.js",
+    "test-snapshot-resolver.js",
+    "tsconfig.json",
+    "turbo.json",
+    "uv.lock",
+  ]);
+  if (toolingLike.has(topLevel)) {
+    return "tooling";
+  }
+
+  const productAreas = new Set([
+    "frontend",
+    "products",
+    "posthog",
+    "services",
+    "common",
+    "ee",
+    "rust",
+    "nodejs",
+    "cli",
+    "livestream",
+  ]);
+  if (productAreas.has(topLevel)) {
+    return topLevel;
+  }
+
+  return "repo-meta";
 }
 
 export function isBotLogin(login: string): boolean {
@@ -60,6 +148,10 @@ export function isBotLogin(login: string): boolean {
 export function roundTo(value: number, decimals = 1): number {
   const factor = 10 ** decimals;
   return Math.round(value * factor) / factor;
+}
+
+function clamp(value: number, min: number, max: number): number {
+  return Math.min(max, Math.max(min, value));
 }
 
 export function getMergeTimeHours(createdAt: string, mergedAt: string): number {
@@ -98,6 +190,9 @@ export function buildEngineerMetricsWithOpenedCounts(
         totalChangedFiles: 0,
         distinctAreas: [],
         mergeTimeHours: [],
+        prImpactScores: [],
+        prLandingQualityScores: [],
+        prMergeSpeedScores: [],
       } satisfies EngineerRawMetrics);
 
     current.authoredMergedPrs += 1;
@@ -105,6 +200,9 @@ export function buildEngineerMetricsWithOpenedCounts(
     current.totalDeletions += pullRequest.deletions;
     current.totalChangedFiles += pullRequest.changedFiles;
     current.mergeTimeHours.push(getMergeTimeHours(pullRequest.createdAt, pullRequest.mergedAt));
+    current.prImpactScores.push(computePrImpactScore(pullRequest));
+    current.prLandingQualityScores.push(scoreLandingQuality(pullRequest));
+    current.prMergeSpeedScores.push(scoreMergeSpeed(pullRequest));
 
     const allAreas = new Set([...current.distinctAreas, ...pullRequest.topLevelAreas]);
     current.distinctAreas = [...allAreas].sort();
@@ -138,6 +236,9 @@ export function buildEngineerMetricsWithOpenedCounts(
       totalChangedFiles: 0,
       distinctAreas: [],
       mergeTimeHours: [],
+      prImpactScores: [],
+      prLandingQualityScores: [],
+      prMergeSpeedScores: [],
     });
   }
 
@@ -159,6 +260,9 @@ export function buildEngineerMetricsWithOpenedCounts(
       totalChangedFiles: 0,
       distinctAreas: [],
       mergeTimeHours: [],
+      prImpactScores: [],
+      prLandingQualityScores: [],
+      prMergeSpeedScores: [],
     });
   }
 
@@ -169,10 +273,18 @@ export function computeRawScoreComponents(
   engineers: EngineerRawMetrics[],
 ): EngineerRawScoreComponents[] {
   return engineers.map((engineer) => {
+    const averagePrImpact = average(engineer.prImpactScores);
+    const highImpactPrs = engineer.prImpactScores.filter((score) => score >= 500).length;
+    const impactConsistency =
+      engineer.prImpactScores.length > 0
+        ? engineer.prImpactScores.filter((score) => score >= averagePrImpact).length /
+          engineer.prImpactScores.length
+        : 0;
+
     const shippedWork =
-      logScale(engineer.authoredMergedPrs) * 1.2 +
-      logScale(engineer.totalAdditions + engineer.totalDeletions) +
-      logScale(engineer.totalChangedFiles);
+      logScale(averagePrImpact) * 1.4 +
+      logScale(highImpactPrs) +
+      impactConsistency * 2;
 
     const ownershipBreadth =
       engineer.distinctAreas.length > 0 ? logScale(engineer.distinctAreas.length) : 0;
@@ -183,11 +295,11 @@ export function computeRawScoreComponents(
       engineer.authoredOpenedPrs > 0
         ? engineer.authoredMergedPrs / engineer.authoredOpenedPrs
         : 0;
-    const medianTimeToMergeHours = median(engineer.mergeTimeHours);
-    const speedBonus =
-      medianTimeToMergeHours > 0 ? 1 / Math.log1p(1 + medianTimeToMergeHours) : 0;
-
-    const executionQuality = mergeRate * 0.7 + speedBonus * 0.3;
+    const mergeReliability = mergeRate * 100;
+    const landingQuality = average(engineer.prLandingQualityScores);
+    const mergeSpeed = average(engineer.prMergeSpeedScores);
+    const executionQuality =
+      mergeReliability * 0.4 + landingQuality * 0.35 + mergeSpeed * 0.25;
 
     return {
       shippedWork,
@@ -230,6 +342,13 @@ export function buildEngineerRankings(
         ? engineer.authoredMergedPrs / engineer.authoredOpenedPrs
         : 0;
     const medianTimeToMergeHours = median(engineer.mergeTimeHours);
+    const averagePrImpactScore = average(engineer.prImpactScores);
+    const highImpactPrs = engineer.prImpactScores.filter((score) => score >= 500).length;
+    const impactConsistency =
+      engineer.prImpactScores.length > 0
+        ? engineer.prImpactScores.filter((score) => score >= averagePrImpactScore).length /
+          engineer.prImpactScores.length
+        : 0;
 
     const finalScore = roundTo(
       subscores.shipped_work * weights.shippedWork +
@@ -250,6 +369,9 @@ export function buildEngineerRankings(
         distinctAreas: engineer.distinctAreas,
         mergeRate: roundTo(mergeRate * 100),
         medianTimeToMergeHours: roundTo(medianTimeToMergeHours),
+        averagePrImpactScore: roundTo(averagePrImpactScore),
+        highImpactPrs,
+        impactConsistency: roundTo(impactConsistency * 100),
       },
       subscores,
     } satisfies EngineerScoreBreakdown;
@@ -280,6 +402,11 @@ function buildReasonBullets(
     bullets.push(`Reviewed ${engineer.reviewsGiven} peer PRs during the window`);
   }
 
+  const highImpactPrs = engineer.prImpactScores.filter((score) => score >= 500).length;
+  if (highImpactPrs > 0) {
+    bullets.push(`${highImpactPrs} PRs scored as high-impact based on importance and leverage`);
+  }
+
   const strongestScore = Math.max(
     subscores.shipped_work,
     subscores.ownership_breadth,
@@ -303,4 +430,132 @@ function buildReasonBullets(
   }
 
   return bullets.slice(0, 3);
+}
+
+function average(values: number[]): number {
+  if (values.length === 0) {
+    return 0;
+  }
+
+  return values.reduce((sum, value) => sum + value, 0) / values.length;
+}
+
+function computePrImpactScore(pullRequest: PullRequestRecord): number {
+  const importance = scoreImportance(pullRequest);
+  const scope = scoreScope(pullRequest);
+  const complexity = scoreComplexity(pullRequest);
+  const quality = scoreQuality(pullRequest);
+  const leverage = scoreLeverage(pullRequest);
+
+  return importance * scope * complexity * quality * leverage;
+}
+
+function scoreMergeSpeed(pullRequest: PullRequestRecord): number {
+  const mergeTimeHours = getMergeTimeHours(pullRequest.createdAt, pullRequest.mergedAt);
+  let score = 20;
+
+  if (mergeTimeHours < 24) {
+    score = 100;
+  } else if (mergeTimeHours < 24 * 3) {
+    score = 80;
+  } else if (mergeTimeHours < 24 * 7) {
+    score = 60;
+  } else if (mergeTimeHours < 24 * 14) {
+    score = 40;
+  }
+
+  const complexity = scoreComplexity(pullRequest);
+  if (complexity >= 4.5 && score < 100) {
+    score += 20;
+  } else if (complexity >= 3.5 && score < 100) {
+    score += 10;
+  }
+
+  return clamp(score, 20, 100);
+}
+
+function scoreLandingQuality(pullRequest: PullRequestRecord): number {
+  const text = `${pullRequest.title} ${pullRequest.body}`.toLowerCase();
+  const hasTests = pullRequest.files.some((file) =>
+    /test|spec|__tests__|playwright|jest/i.test(file.path),
+  );
+  const approvals = pullRequest.reviews.filter((review) => review.state === "APPROVED").length;
+  const reviewSignals = pullRequest.reviews.filter((review) =>
+    ["APPROVED", "CHANGES_REQUESTED", "COMMENTED"].includes(review.state),
+  ).length;
+  const negativeSignals = ["revert", "hotfix", "follow-up", "temporary"].filter((keyword) =>
+    text.includes(keyword),
+  ).length;
+
+  const baseScore =
+    45 +
+    (hasTests ? 20 : 0) +
+    Math.min(approvals, 3) * 10 +
+    Math.min(reviewSignals, 4) * 4 -
+    negativeSignals * 15;
+
+  return clamp(baseScore, 20, 100);
+}
+
+function scoreImportance(pullRequest: PullRequestRecord): number {
+  const text = `${pullRequest.title} ${pullRequest.body} ${pullRequest.labels.join(" ")}`.toLowerCase();
+  const importantKeywords = [
+    "feature",
+    "customer",
+    "billing",
+    "security",
+    "performance",
+    "reliability",
+    "bug",
+    "fix",
+    "infra",
+    "migration",
+  ];
+  const keywordMatches = importantKeywords.filter((keyword) => text.includes(keyword)).length;
+  const highValueAreas = pullRequest.topLevelAreas.filter((area) =>
+    ["frontend", "products", "posthog", "services", "ee", "common"].includes(area),
+  ).length;
+
+  return clamp(1 + keywordMatches * 0.5 + highValueAreas * 0.4, 1, 5);
+}
+
+function scoreScope(pullRequest: PullRequestRecord): number {
+  return clamp(
+    1 +
+      logScale(pullRequest.changedFiles) * 0.9 +
+      logScale(pullRequest.topLevelAreas.length) * 1.1,
+    1,
+    5,
+  );
+}
+
+function scoreComplexity(pullRequest: PullRequestRecord): number {
+  const text = `${pullRequest.title} ${pullRequest.body}`.toLowerCase();
+  const complexityKeywords = ["refactor", "migration", "schema", "api", "query", "backfill"];
+  const keywordMatches = complexityKeywords.filter((keyword) => text.includes(keyword)).length;
+  const reviewRounds = pullRequest.reviews.length;
+
+  return clamp(
+    1 +
+      logScale(pullRequest.changedFiles) * 0.7 +
+      logScale(reviewRounds) * 1 +
+      keywordMatches * 0.5,
+    1,
+    5,
+  );
+}
+
+function scoreQuality(pullRequest: PullRequestRecord): number {
+  return clamp(scoreLandingQuality(pullRequest) / 20, 1, 5);
+}
+
+function scoreLeverage(pullRequest: PullRequestRecord): number {
+  const text = `${pullRequest.title} ${pullRequest.body}`.toLowerCase();
+  const leverageKeywords = ["tooling", "infra", "platform", "foundation", "unblock", "shared"];
+  const keywordMatches = leverageKeywords.filter((keyword) => text.includes(keyword)).length;
+  const sharedAreas = pullRequest.topLevelAreas.filter((area) =>
+    ["common", "services", "products", "frontend", "posthog"].includes(area),
+  ).length;
+
+  return clamp(1 + keywordMatches * 0.6 + sharedAreas * 0.5, 1, 5);
 }

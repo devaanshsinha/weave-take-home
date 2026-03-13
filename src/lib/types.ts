@@ -48,6 +48,9 @@ export interface EngineerRawMetrics {
   totalChangedFiles: number;
   distinctAreas: string[];
   mergeTimeHours: number[];
+  prImpactScores: number[];
+  prLandingQualityScores: number[];
+  prMergeSpeedScores: number[];
 }
 
 export interface EngineerRawScoreComponents {
@@ -76,6 +79,9 @@ export interface EngineerScoreBreakdown {
     distinctAreas: string[];
     mergeRate: number;
     medianTimeToMergeHours: number;
+    averagePrImpactScore: number;
+    highImpactPrs: number;
+    impactConsistency: number;
   };
   subscores: EngineerSubscores;
 }
