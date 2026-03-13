@@ -1,16 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import {
-  Bar,
-  BarChart,
-  CartesianGrid,
-  Cell,
-  ResponsiveContainer,
-  Tooltip,
-  XAxis,
-  YAxis,
-} from "recharts";
+import dynamic from "next/dynamic";
 
 import type { EngineerScoreBreakdown } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
@@ -27,6 +18,18 @@ const scoreLabels = [
   { key: "review_leverage", label: "Review leverage" },
   { key: "execution_quality", label: "Execution quality" },
 ] as const;
+
+const EngineerScoreChart = dynamic(
+  () => import("@/components/engineer-score-chart").then((mod) => mod.EngineerScoreChart),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="flex h-full items-center justify-center rounded-[14px] border border-dashed border-black/20 text-sm text-slate-500">
+        Loading chart...
+      </div>
+    ),
+  },
+);
 
 export function EngineerBreakdown({ engineers }: EngineerBreakdownProps) {
   const [selectedLogin, setSelectedLogin] = useState(engineers[0]?.login ?? "");
@@ -48,7 +51,6 @@ export function EngineerBreakdown({ engineers }: EngineerBreakdownProps) {
     label,
     value: engineer.subscores[key],
   }));
-  const chartColors = ["#ff7a59", "#ffd84d", "#74d3ae", "#77aaff"];
 
   return (
     <Card className="p-6">
@@ -78,40 +80,7 @@ export function EngineerBreakdown({ engineers }: EngineerBreakdownProps) {
 
       <CardContent className="mt-6 grid gap-6 lg:grid-cols-[1.4fr_0.9fr]">
         <Card className="h-80 rounded-[20px] p-3">
-          <ResponsiveContainer width="100%" height="100%">
-            <BarChart data={chartData} margin={{ top: 12, right: 8, left: -16, bottom: 12 }}>
-              <CartesianGrid stroke="#d1c6aa" strokeDasharray="3 3" vertical={false} />
-              <XAxis
-                dataKey="label"
-                tick={{ fill: "#111111", fontSize: 12 }}
-                axisLine={false}
-                tickLine={false}
-              />
-              <YAxis
-                domain={[0, 100]}
-                tick={{ fill: "#111111", fontSize: 12 }}
-                axisLine={false}
-                tickLine={false}
-              />
-              <Tooltip
-                cursor={{ fill: "#f3ecdc" }}
-                contentStyle={{
-                  borderRadius: 18,
-                  border: "2px solid #111111",
-                  boxShadow: "none",
-                  backgroundColor: "#fffdf7",
-                }}
-              />
-              <Bar dataKey="value" radius={[10, 10, 0, 0]}>
-                {chartData.map((entry, index) => (
-                  <Cell
-                    key={entry.label}
-                    fill={chartColors[index % chartColors.length]}
-                  />
-                ))}
-              </Bar>
-            </BarChart>
-          </ResponsiveContainer>
+          <EngineerScoreChart data={chartData} />
         </Card>
 
         <Card className="rounded-[20px] bg-[#ffd84d] p-4">
