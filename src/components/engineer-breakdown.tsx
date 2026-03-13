@@ -120,6 +120,24 @@ export function EngineerBreakdown({ engineers }: EngineerBreakdownProps) {
           </h3>
           <dl className="mt-4 space-y-3 text-sm">
             <div className="flex items-center justify-between gap-4">
+              <dt className="text-slate-800">Avg PR impact</dt>
+              <dd className="font-mono font-semibold text-slate-900">
+                {engineer.metrics.averagePrImpactScore}
+              </dd>
+            </div>
+            <div className="flex items-center justify-between gap-4">
+              <dt className="text-slate-800">High-impact PRs</dt>
+              <dd className="font-mono font-semibold text-slate-900">
+                {engineer.metrics.highImpactPrs}
+              </dd>
+            </div>
+            <div className="flex items-center justify-between gap-4">
+              <dt className="text-slate-800">Impact consistency</dt>
+              <dd className="font-mono font-semibold text-slate-900">
+                {engineer.metrics.impactConsistency}%
+              </dd>
+            </div>
+            <div className="flex items-center justify-between gap-4">
               <dt className="text-slate-800">Merged PRs</dt>
               <dd className="font-mono font-semibold text-slate-900">
                 {engineer.metrics.authoredMergedPrs}

@@ -3,12 +3,12 @@ import type { ComponentPropsWithoutRef } from "react";
 import { cn } from "@/lib/utils";
 
 const badgeVariants = {
-  coral: "bg-[#ff7a59]",
-  mint: "bg-[#74d3ae]",
-  yellow: "bg-[#ffd84d]",
-  blue: "bg-[#77aaff]",
-  pink: "bg-[#f4a6ff]",
-  black: "bg-black text-white",
+  coral: "border-primary/20 bg-primary text-primary-foreground",
+  mint: "bg-secondary text-secondary-foreground",
+  yellow: "bg-accent text-accent-foreground",
+  blue: "bg-secondary text-secondary-foreground",
+  pink: "bg-muted text-muted-foreground",
+  black: "border-primary/20 bg-primary text-primary-foreground",
 } as const;
 
 interface BadgeProps extends ComponentPropsWithoutRef<"span"> {
@@ -23,7 +23,7 @@ export function Badge({
   return (
     <span
       className={cn(
-        "inline-flex rounded-full border-2 border-black px-3 py-1 text-xs font-black uppercase tracking-[0.16em] text-black",
+        "inline-flex rounded-full border border-border px-3 py-1 text-xs font-black uppercase tracking-[0.16em]",
         badgeVariants[variant],
         className,
       )}

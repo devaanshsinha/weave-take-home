@@ -9,7 +9,7 @@ export function Card({
   return (
     <section
       className={cn(
-        "rounded-[24px] border-2 border-black bg-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]",
+        "rounded-[24px] border border-border bg-card text-card-foreground shadow-sm",
         className,
       )}
       {...props}
@@ -28,14 +28,14 @@ export function CardTitle({
   className,
   ...props
 }: ComponentPropsWithoutRef<"h2">) {
-  return <h2 className={cn("text-xl font-black text-slate-900", className)} {...props} />;
+  return <h2 className={cn("text-xl font-black text-foreground", className)} {...props} />;
 }
 
 export function CardDescription({
   className,
   ...props
 }: ComponentPropsWithoutRef<"p">) {
-  return <p className={cn("text-sm text-slate-700", className)} {...props} />;
+  return <p className={cn("text-sm text-muted-foreground", className)} {...props} />;
 }
 
 export function CardContent({

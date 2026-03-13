@@ -81,39 +81,48 @@ export default async function Home() {
             <Badge variant="coral">Methodology</Badge>
             <CardTitle className="mt-3">How the metric works</CardTitle>
           </CardHeader>
-          <div className="mt-4 grid gap-4 text-sm text-slate-600 md:grid-cols-4">
+          <div className="mt-4 grid gap-4 text-sm text-slate-600 md:grid-cols-5">
             <Card className="rounded-[18px] p-4">
-              <p className="font-black text-slate-900">Shipped work</p>
+              <p className="font-black text-slate-900">Importance</p>
               <p className="mt-1">
-                Weighted from merged PR count, code churn, and changed files with log scaling
-                so one giant PR does not dominate.
+                Rewards PRs that likely solved meaningful problems such as features, bugs,
+                reliability, infra, performance, or customer-facing work.
               </p>
             </Card>
             <Card className="rounded-[18px] p-4">
-              <p className="font-black text-slate-900">Ownership breadth</p>
+              <p className="font-black text-slate-900">Scope</p>
               <p className="mt-1">
-                Counts distinct top-level code areas inferred from file paths rather than raw
-                file totals.
+                Uses changed files and cross-area reach to tell the difference between narrow
+                edits and broad changes that move multiple parts of the system.
               </p>
             </Card>
             <Card className="rounded-[18px] p-4">
-              <p className="font-black text-slate-900">Review leverage</p>
+              <p className="font-black text-slate-900">Complexity</p>
               <p className="mt-1">
-                Rewards reviewers who help peers move work forward instead of looking only at
-                authored output.
+                Looks for deeper review cycles, heavier discussions, refactors, migrations, and
+                risky/shared areas as signals that a PR was harder to execute.
               </p>
             </Card>
             <Card className="rounded-[18px] p-4">
-              <p className="font-black text-slate-900">Execution quality</p>
+              <p className="font-black text-slate-900">Quality</p>
               <p className="mt-1">
-                Uses merge rate and median time to merge as pragmatic delivery signals, not as
-                absolute performance measures.
+                Favors PRs that appear to land cleanly, including tests, review approvals, and
+                fewer revert or hotfix-like signals.
+              </p>
+            </Card>
+            <Card className="rounded-[18px] p-4">
+              <p className="font-black text-slate-900">Leverage</p>
+              <p className="mt-1">
+                Gives extra credit to shared infrastructure, enabling work, and changes that
+                likely made the rest of the team faster.
               </p>
             </Card>
           </div>
           <p className="mt-4 border-t border-black/10 pt-4 text-xs leading-5 text-slate-500">
-            Impact is inferred from GitHub collaboration signals, not direct performance
-            evaluation. Snapshot data is precomputed for speed and reliability.
+            Each PR gets an inferred impact score from those five dimensions. Engineers are then
+            ranked by average PR impact, number of high-impact PRs, ownership breadth, review
+            leverage, and execution quality. Impact is inferred from GitHub signals, not direct
+            performance evaluation.
           </p>
           {dataCompleteness !== "Full snapshot" ? (
             <p className="mt-3 text-xs leading-5 text-amber-700">

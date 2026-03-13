@@ -204,7 +204,11 @@ export function buildEngineerMetricsWithOpenedCounts(
     current.prLandingQualityScores.push(scoreLandingQuality(pullRequest));
     current.prMergeSpeedScores.push(scoreMergeSpeed(pullRequest));
 
-    const allAreas = new Set([...current.distinctAreas, ...pullRequest.topLevelAreas]);
+    const derivedAreas =
+      pullRequest.files.length > 0
+        ? [...new Set(pullRequest.files.map((file) => deriveTopLevelArea(file.path)))]
+        : pullRequest.topLevelAreas;
+    const allAreas = new Set([...current.distinctAreas, ...derivedAreas]);
     current.distinctAreas = [...allAreas].sort();
 
     engineers.set(pullRequest.author, current);

@@ -42,12 +42,12 @@ export function EngineersTable({ engineers }: EngineersTableProps) {
             <tr>
               <TableHead>Engineer</TableHead>
               <TableHead>Score</TableHead>
-              <TableHead>Shipped</TableHead>
+              <TableHead>Avg PR Impact</TableHead>
+              <TableHead>High-Impact PRs</TableHead>
               <TableHead>Breadth</TableHead>
               <TableHead>Review</TableHead>
               <TableHead>Execution</TableHead>
-              <TableHead>Merged PRs</TableHead>
-              <TableHead>Reviews</TableHead>
+              <TableHead>Merge Rate</TableHead>
             </tr>
           </TableHeader>
           <TableBody>
@@ -56,7 +56,10 @@ export function EngineersTable({ engineers }: EngineersTableProps) {
                 <TableCell className="font-medium text-slate-900">{engineer.login}</TableCell>
                 <TableCell className="font-mono text-slate-900">{engineer.finalScore}</TableCell>
                 <TableCell className="font-mono text-slate-600">
-                  {engineer.subscores.shipped_work}
+                  {engineer.metrics.averagePrImpactScore}
+                </TableCell>
+                <TableCell className="font-mono text-slate-600">
+                  {engineer.metrics.highImpactPrs}
                 </TableCell>
                 <TableCell className="font-mono text-slate-600">
                   {engineer.subscores.ownership_breadth}
@@ -68,10 +71,7 @@ export function EngineersTable({ engineers }: EngineersTableProps) {
                   {engineer.subscores.execution_quality}
                 </TableCell>
                 <TableCell className="font-mono text-slate-600">
-                  {engineer.metrics.authoredMergedPrs}
-                </TableCell>
-                <TableCell className="font-mono text-slate-600">
-                  {engineer.metrics.reviewsGiven}
+                  {engineer.metrics.mergeRate}%
                 </TableCell>
               </TableRow>
             ))}

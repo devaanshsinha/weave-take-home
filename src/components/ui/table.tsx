@@ -15,7 +15,7 @@ export function TableHeader({
 }: ComponentPropsWithoutRef<"thead">) {
   return (
     <thead
-      className={cn("border-y-2 border-black bg-black text-[#efe7d2]", className)}
+      className={cn("border-b border-border bg-muted/50 text-muted-foreground", className)}
       {...props}
     />
   );
@@ -34,7 +34,7 @@ export function TableRow({
 }: ComponentPropsWithoutRef<"tr">) {
   return (
     <tr
-      className={cn("border-b border-black/10 odd:bg-white even:bg-[#f6efdc]", className)}
+      className={cn("border-b border-border/70 transition-colors hover:bg-muted/40", className)}
       {...props}
     />
   );
@@ -44,7 +44,12 @@ export function TableHead({
   className,
   ...props
 }: ComponentPropsWithoutRef<"th">) {
-  return <th className={cn("px-3 py-3 font-medium", className)} {...props} />;
+  return (
+    <th
+      className={cn("px-3 py-3 text-xs font-semibold uppercase tracking-[0.12em]", className)}
+      {...props}
+    />
+  );
 }
 
 export function TableCell({
