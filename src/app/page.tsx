@@ -32,7 +32,7 @@ export default async function Home() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-8 px-5 py-8 md:px-8 lg:px-10">
-        <Card className="rounded-[28px] px-6 py-8 md:px-8">
+        <Card className="rounded-[28px] bg-[#fffaf4] px-6 py-8 md:px-8">
           <div className="mb-6 flex flex-wrap gap-2">
             <span className="h-4 w-4 rounded-full bg-chart-1" />
             <span className="h-4 w-4 rounded-full bg-chart-2" />
@@ -51,32 +51,32 @@ export default async function Home() {
           </p>
 
           <div className="mt-6 grid gap-4 text-sm md:grid-cols-5">
-            <div className="rounded-[20px] border border-border bg-muted/40 p-4">
+            <div className="rounded-[20px] border border-[#8db7ff] bg-[#dbeafe] p-4">
               <p className="text-muted-foreground">Repository</p>
               <p className="mt-1 font-mono font-semibold text-foreground">{summary.repo}</p>
             </div>
-            <div className="rounded-[20px] border border-border bg-muted/40 p-4">
+            <div className="rounded-[20px] border border-[#f2cf66] bg-[#fef3c7] p-4">
               <p className="text-muted-foreground">Snapshot</p>
               <p className="mt-1 font-mono font-semibold text-foreground">
                 {formatSnapshotDate(summary.generatedAt)}
               </p>
             </div>
-            <div className="rounded-[20px] border border-border bg-muted/40 p-4">
+            <div className="rounded-[20px] border border-[#79d7b4] bg-[#d1fae5] p-4">
               <p className="text-muted-foreground">Snapshot status</p>
               <p className="mt-1 font-mono font-semibold text-foreground">{dataCompleteness}</p>
             </div>
-            <div className="rounded-[20px] border border-border bg-muted/40 p-4">
+            <div className="rounded-[20px] border border-[#ff9b82] bg-[#ffddd4] p-4">
               <p className="text-muted-foreground">Merged PRs</p>
               <p className="mt-1 font-mono text-xl font-semibold text-foreground">
                 {summary.mergedPrCount}
               </p>
             </div>
-            <div className="rounded-[20px] border border-border bg-muted/40 p-4">
+            <div className="rounded-[20px] border border-[#ebb0f6] bg-[#f8d8ff] p-4">
               <p className="text-muted-foreground">Ranked engineers</p>
               <p className="mt-1 font-mono text-xl font-semibold text-foreground">
                 {summary.engineerCount}
               </p>
-            </div>
+              </div>
           </div>
         </Card>
 
@@ -86,35 +86,35 @@ export default async function Home() {
             <CardTitle className="mt-3">How the metric works</CardTitle>
           </CardHeader>
           <div className="mt-4 grid gap-4 text-sm text-muted-foreground md:grid-cols-5">
-            <Card className="rounded-[18px] bg-muted/20 p-4">
+            <Card className="rounded-[18px] border-[#ffb39f] bg-[#fff1ec] p-4">
               <p className="font-black text-foreground">Importance</p>
               <p className="mt-1">
                 Rewards PRs that likely solved meaningful problems such as features, bugs,
                 reliability, infra, performance, or customer-facing work.
               </p>
             </Card>
-            <Card className="rounded-[18px] bg-muted/20 p-4">
+            <Card className="rounded-[18px] border-[#f2cf66] bg-[#fff7d6] p-4">
               <p className="font-black text-foreground">Scope</p>
               <p className="mt-1">
                 Uses changed files and cross-area reach to tell the difference between narrow
                 edits and broad changes that move multiple parts of the system.
               </p>
             </Card>
-            <Card className="rounded-[18px] bg-muted/20 p-4">
+            <Card className="rounded-[18px] border-[#79d7b4] bg-[#e5fbf2] p-4">
               <p className="font-black text-foreground">Complexity</p>
               <p className="mt-1">
                 Looks for deeper review cycles, heavier discussions, refactors, migrations, and
                 risky/shared areas as signals that a PR was harder to execute.
               </p>
             </Card>
-            <Card className="rounded-[18px] bg-muted/20 p-4">
+            <Card className="rounded-[18px] border-[#8db7ff] bg-[#eef5ff] p-4">
               <p className="font-black text-foreground">Quality</p>
               <p className="mt-1">
                 Favors PRs that appear to land cleanly, including tests, review approvals, and
                 fewer revert or hotfix-like signals.
               </p>
             </Card>
-            <Card className="rounded-[18px] bg-muted/20 p-4">
+            <Card className="rounded-[18px] border-[#ebb0f6] bg-[#fbecff] p-4">
               <p className="font-black text-foreground">Leverage</p>
               <p className="mt-1">
                 Gives extra credit to shared infrastructure, enabling work, and changes that
