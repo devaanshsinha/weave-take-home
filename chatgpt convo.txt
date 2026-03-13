@@ -1,0 +1,410 @@
+
+help me devise a good way or ranking engineering impact based on prs, we have all available data that comes with a pr how would we go about it in an automated numbers based fashion
+
+Thought for a few seconds
+Do not make it “who merged the most PRs” or “who wrote the most lines.” That gives you activity, not impact.
+A good automated PR-based engineering impact ranking should separate volume, difficulty, importance, quality, and collaboration, then combine them with weights.
+
+Core idea
+For each PR, assign an Impact Score.
+Then for each engineer, sum or average their PR scores over a time window.
+A strong formula looks like this:
+
+PR Impact = Importance × Complexity × Quality × Delivery Modifier × Collaboration Modifier
+
+Then:
+
+Engineer Impact = sum(PR Impact over last N days)
+
+or better:
+
+Engineer Impact = 70% sum of PR impact + 30% consistency/reliability score
+
+1. Importance: was the PR meaningful?
+This should matter the most.
+Use signals like:
+
+merged to default branch
+linked to production release
+touched business-critical or core infra directories
+linked issue/label priority
+bugfix/security/performance/reliability labels
+revert prevention or incident-related tags
+Example scoring:
+trivial/docs/chore only: 0.3
+normal product/internal change: 1.0
+important feature or meaningful bugfix: 1.5
+critical infra/security/incident fix: 2.0–2.5
+You can automate this from:
+PR labels
+files changed path weights
+linked Jira/GitHub issue priority
+release tags
+incident references
+2. Complexity: was it hard to do?
+Not raw LOC. Use a controlled complexity score.
+Signals:
+
+number of files changed
+number of subsystems/directories touched
+code additions/deletions with caps
+number of commits
+review cycles required
+test changes included
+migration/config/api/schema changes
+cross-cutting changes
+Example complexity formula:
+files_score = min(files_changed / 8, 1.0)
+size_score = min((additions + deletions) / 800, 1.0)
+subsystem_score = min(distinct_top_level_dirs / 4, 1.0)
+review_iteration_score = min(review_rounds / 3, 1.0)
+Then:
+Complexity = 0.35files_score + 0.25size_score + 0.25subsystem_score + 0.15review_iteration_score
+Cap size contribution so huge messy PRs do not dominate.
+
+3. Quality: did it land cleanly?
+This prevents rewarding risky or sloppy work.
+Signals:
+
+CI passed
+has tests
+review approval strength
+post-merge defects
+reverts
+follow-up fix PRs shortly after merge
+review comment resolution rate
+Example scoring:
+CI passed: required
+tests added/updated: +0.2
+approved by 2+ reviewers: +0.2
+no rollback/fix within 14 days: +0.3
+reverted: -0.8
+hotfix needed soon after: -0.4
+Quality can be a multiplier:
+poor: 0.6
+average: 1.0
+strong: 1.2–1.4
+4. Delivery: did they move things efficiently?
+You want to reward shipping, but not rushing.
+Signals:
+
+time from open to merge relative to PR size
+time waiting on author vs reviewers
+draft duration
+responsiveness to review comments
+Good automated rule:
+reward PRs that are merged at a healthy speed for their size
+do not punish people if delay was mostly reviewer/organizational wait time
+Example:
+faster-than-expected for size: 1.1
+normal: 1.0
+very slow due to author churn: 0.85
+5. Collaboration: did they help unblock others?
+Impact is not just solo coding.
+Signals from PR data:
+
+co-authored PRs
+reviewing others’ PRs
+authoring foundational changes others build on
+dependency/unblock relationships
+shared ownership across teams/modules
+Examples:
+PR unblocked 3 dependent PRs: +0.3 to +0.7
+meaningful review participation elsewhere should contribute to engineer score separately
+cross-team collaboration bonus: 1.1
+I would actually score review impact separately instead of burying it fully inside PR impact.
+Recommended actual scoring model
+A practical version:
+PR score
+PR Impact Score = Base Importance × (1 + Complexity) × Quality × Delivery × Collaboration
+Where:
+
+Base Importance: 0.5 to 2.5
+Complexity: 0 to 1
+Quality: 0.6 to 1.4
+Delivery: 0.85 to 1.1
+Collaboration: 1.0 to 1.2
+Example:
+important feature PR = 1.6
+complexity = 0.7
+quality = 1.2
+delivery = 1.05
+collaboration = 1.1
+Score:
+1.6 × 1.7 × 1.2 × 1.05 × 1.1 = 3.77
+A trivial docs PR might be:
+0.3 × 1.1 × 1.0 × 1.0 × 1.0 = 0.33
+
+That is the kind of separation you want.
+
+Engineer ranking
+Over a rolling 90-day window:
+Engineer Score =
+
+65% merged PR impact sum
+20% review impact
+10% reliability score
+5% consistency score
+Review impact
+Score reviews based on:
+number of reviewed PRs
+whether comments led to changes
+catching issues before merge
+reviewing important/high-complexity PRs
+Reliability score
+Use:
+low revert rate
+low hotfix rate
+strong CI/test discipline
+low post-merge defect association
+Consistency score
+Reward engineers who repeatedly ship meaningful work, not one giant PR and then nothing.
+Important anti-gaming protections
+You need these or the metric becomes useless.
+1. Penalize oversized PRs
+Huge PRs should not automatically win. Use capped size contribution.
+2. Reward decomposition
+Multiple well-scoped PRs should often score better than one bloated PR.
+3. Do not over-reward review count
+A one-word review is not impact. Measure whether comments were substantive and resolved.
+4. Do not over-reward fast merges
+Fast can mean low scrutiny. Speed should be a weak modifier.
+5. Penalize rework
+Reverts, follow-up fixes, flaky breakages, and rollback events matter a lot.
+6. Normalize by role if needed
+Infra, platform, and product engineers may have very different PR patterns.
+Features I would extract from PR data
+If you have all PR metadata, I’d compute:
+PR-level features
+files changed
+additions
+deletions
+commits
+directories/modules touched
+labels
+linked issue priority
+author
+reviewers
+approvals requested/received
+review rounds
+comments and resolved threads
+time open
+author response time
+merged or closed
+CI pass/fail
+tests changed
+release linkage
+reverted or not
+follow-up bugfix within X days
+dependent PRs or unblock count
+core codepath touched or not
+Engineer-level rollups
+total PR impact
+avg PR impact
+median PR impact
+% high-importance PRs
+revert rate
+test inclusion rate
+review impact score
+review responsiveness
+consistency by week/month
+Best simple version to start with
+If you want something implementable quickly:
+Per PR:
+PR Score = Importance Weight + Complexity Weight + Quality Weight + Unblock Bonus
+Where:
+
+Importance Weight
+docs/chore: 1
+normal: 3
+important feature/bugfix: 5
+critical/security/infra: 8
+Complexity Weight
+based on capped combination of files changed, dirs touched, review rounds
+range: 0 to 4
+Quality Weight
+tests included: +1
+strong approvals: +1
+reverted: -4
+follow-up fix needed soon: -2
+Unblock Bonus
+merged dependencies or enabled follow-up work: 0 to 3
+Then:
+Engineer Score = sum(PR Score) + 0.3 × Review Score
+
+This is crude, but actually usable.
+
+What I would avoid
+Do not base the ranking mainly on:
+lines of code
+raw commit count
+number of PRs
+number of comments
+time online
+number of review approvals alone
+Those are all easy to game and weak proxies.
+Best framing
+The cleanest definition is:
+Engineering impact is the amount of meaningful, difficult, high-quality, business-relevant work an engineer ships, adjusted for collaboration and reduced for rework.
+
+That is what your numbers should try to reflect.
+
+If you want, I can turn this into:
+
+a concrete scoring formula with exact weights,
+a Postgres/SQL schema + computation plan, or
+a dashboard breakdown of what to show per engineer.
+
+okay make it slightly simpler I'm dong the whole thing with the help of ai in 90 minutes give me better ideas of measurement, I will decide the actual measurement ideas myself but help me brainstorm
+
+Thought for a few seconds
+Think in terms of “what kind of impact did this PR have?” instead of “how much code was in it?”
+The best brainstorm buckets are these:
+
+1. Scope of change
+Not LOC by itself, but how broad or deep the PR was.
+Ideas:
+number of files changed
+number of services/modules touched
+frontend + backend + infra touched in one PR
+whether it touched core/shared code instead of isolated leaf code
+whether it included tests, migrations, configs, docs together
+This is basically: was this a small local edit or a meaningful systems-level change?
+2. Importance of what was changed
+This matters more than volume.
+Ideas:
+PR labels like bug, feature, infra, performance, security, incident
+whether it touched critical directories
+whether it was linked to a high-priority issue
+whether it was release-blocking or customer-facing
+whether it fixed production pain vs just cleanup
+This is: did this PR matter to the business or product?
+3. Difficulty / complexity
+Not “big,” but “hard.”
+Ideas:
+number of review rounds before merge
+number of meaningful comments/discussion
+cross-team reviewers involved
+schema changes / migrations
+API contract changes
+refactor across multiple modules
+risky areas touched
+amount of back-and-forth before it was accepted
+This is: did this require real engineering thought and coordination?
+4. Quality of outcome
+A strong impact metric should punish messy work.
+Ideas:
+CI passed cleanly
+tests added or updated
+reverted later or not
+hotfix/follow-up fix needed soon after
+bug reports after merge
+comment resolution rate
+whether reviewers requested major changes
+This is: did the PR land well, or did it create more work later?
+5. Speed / execution
+Not “faster is always better,” but execution does matter.
+Ideas:
+time from open to merge relative to PR size
+how long author took to respond to review
+how quickly author resolved requested changes
+whether it sat idle or moved consistently
+This is: did the engineer move the work forward efficiently?
+6. Collaboration / leverage
+Impact is often about making others faster.
+Ideas:
+PR unblocked other PRs
+PR created reusable infrastructure/components
+PR was co-authored
+PR was heavily reviewed by others because it mattered
+PR enabled a release, migration, or rollout
+other PRs built on top of it soon after
+This is: did this work have downstream impact beyond itself?
+7. Ownership / reliability
+Some engineers quietly do the work nobody else can do.
+Ideas:
+frequency of fixing tricky bugs
+incident-response PRs
+stabilization / reliability work
+hard-to-review legacy areas touched
+maintenance of critical internal tooling
+reduction in flaky tests / build failures / errors
+This is: is this person carrying important engineering load, even if the PR isn’t flashy?
+Better measurement ideas than the obvious ones
+These are the more interesting ones:
+PR criticality score
+How business-critical was the area or issue this PR touched?
+Blast radius handled successfully
+PR touched many systems, but still merged cleanly with no rollback.
+Unblock score
+How many later PRs, releases, or teams depended on this work?
+Clean ship score
+Merged with tests, passed CI, no revert, no immediate bugfix.
+Review friction score
+How much real engineering discussion happened before merge?
+Not just comment count, but depth of discussion.
+Reusability score
+Did this PR create shared utilities/components/infrastructure others can use?
+Risk-adjusted success
+Did the engineer successfully ship something risky or cross-cutting without causing damage?
+Latent impact
+Was this PR small, but foundational?
+Examples: refactor enabling future work, infra setup, build tooling, schema groundwork.
+Nice framing categories for a dashboard
+Instead of one boring number, you can show engineers across dimensions:
+Shipped important work
+Handled complex changes
+Delivered high-quality merges
+Unblocked teammates
+Improved system reliability
+Moved work efficiently
+That is way better than “top engineer = most PRs.”
+Good brainstorm examples of specific metrics
+Here are candidate ideas you can mix and match:
+% of PRs merged without follow-up fixes
+average importance of merged PRs
+number of high-criticality PRs
+number of PRs touching core/shared systems
+number of cross-functional PRs
+number of PRs with tests included
+revert-adjusted merged PR count
+downstream PRs referencing or depending on this PR
+median review depth on authored PRs
+average time to address review feedback
+number of incident/security/perf PRs
+release-linked PR count
+reliability-improvement PR count
+foundational/internal tooling PR count
+Strong angle if you want this to look smarter
+A very solid framing is:
+Impact = importance × complexity × quality × leverage
+
+Where:
+
+importance = how much the problem mattered
+complexity = how hard the change was
+quality = how cleanly it landed
+leverage = how much it helped others or future work
+That gives you a much smarter story than raw activity metrics.
+Things that sound smart but are actually weak
+Avoid making the ranking mainly based on:
+lines added
+commits count
+raw PR count
+comment count
+approvals count alone
+files changed alone
+time open alone
+Those are okay as supporting signals, not primary measures.
+Best brainstorm directions for your 90-minute situation
+If you need something convincing fast, focus on just these measurement ideas:
+importance of PR
+complexity of PR
+quality after merge
+unblocking / downstream leverage
+consistency of meaningful work
+That will already feel much more thoughtful than most dashboards.
+I can also give you a tighter list of 15 concrete metric ideas with one-line descriptions you can hand directly to your other agent.
+
+
+
