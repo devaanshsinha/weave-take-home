@@ -261,11 +261,15 @@ async function fetchMergedPullRequests(
     console.log(`Fetching merged PRs for ${bucketLabel}...`);
 
     while (hasNextPage) {
-      const data = await graphqlRequest<GraphQLSearchResponse>(token, query, {
+      const data: GraphQLSearchResponse = await graphqlRequest<GraphQLSearchResponse>(
+        token,
+        query,
+        {
         query: getSearchQuery(bucket),
         first: SEARCH_PAGE_SIZE,
         after: cursor,
-      });
+        },
+      );
 
       for (const node of data.search.nodes) {
         if (!node) {
